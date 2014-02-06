@@ -1,0 +1,61 @@
+.usw-seneschal 
+{
+	margin:	0;
+	padding: 0;	
+	border:	1px solid gray;
+	font-family: sans-serif;
+	font-size: small;
+	background: ghostwhite;
+	color: dimgray;
+	/*width: 400px;*/
+	/*min-height: 100px;*/
+}
+
+.usw-seneschal-header, .usw-seneschal-footer 
+{
+	font-family: sans-serif;
+	font-size: small;
+}
+
+.usw-seneschal-header
+{
+	color : ghostwhite;
+	background-color : dimgray;
+	border : 0px solid gray;
+}
+
+.usw-seneschal-footer
+{
+	color : ghostwhite;
+	background-color : darkgray;
+	border : 1px solid gray;
+}
+
+/*links*/
+.usw-seneschal a {
+	cursor: pointer;
+	color: midnightblue;
+	text-decoration: none;
+}
+.usw-seneschal a:hover	{
+	color: red;
+	background-color: white;
+	text-decoration: underline;
+}
+
+/*.usw-seneschal-conceptdetails {
+	border: 1px solid gray;
+	height: 200px;
+	width: 100%;
+}*/
+
+.usw-seneschal-conceptrelations{}
+.usw-seneschal-conceptrelationsgraphical{}
+.usw-seneschal-schemedetails{}
+.usw-seneschal-schemelist{
+	height: 23px;
+}
+.usw-seneschal-termsearch{}
+.usw-seneschal-topconcepts{	
+}
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Demo SENESCHAL 'conceptdetailscomposite' widget control</title>
+  <meta name="Author" content="Ceri Binding, University of South Wales">
+  <meta name="Description" content="Demo SENESCHAL 'conceptdetailscomposite' widget control">
+
+  <!--The jQuery script is a prerequisite for all SENESCHAL widgets-->
+  <!--either load from CDN, or download and reference your local copy-->
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <!--reference the SENESCHAL widget script, or download and reference your local copy-->
+  <script src="http://www.heritagedata.org/live/usw.seneschal.20140205-min.js"></script>
+  <!--reference the SENESCHAL widget style sheet, or download and reference your local copy-->
+  <link rel="stylesheet" type="text/css" href="http://www.heritagedata.org/live/usw.seneschal.20140203.css">
+
+  <!--this script creates and uses the widget-->
+  <script type="text/javascript">
+	// Testing the widget
+	(function($) { //start of main jQuery closure
+		$(window).load(function(){
+
+			// #myConceptDetailsComposite element will become a conceptdetailscomposite widget
+			// and initially display details for a specified concept URI
+			$("#myConceptDetailsComposite").conceptdetailscomposite({conceptURI: "http://purl.org/heritagedata/schemes/mda_obj/concepts/96662"});
+
+			// taking some action when a concept is selected from the list
+			$("#myConceptDetailsComposite").conceptdetailscomposite().bind("selected", function(e, data) {
+				// build an html string containing the selected data
+				var s = "You selected '" + data.label + "'<br>";
+				s+= "The identifier is <a href='" + data.uri + "' target='_blank'>" + data.uri + "</a>";
+				// display the built string in the #myDescription element
+				$("#myDescription").html(s);
+			});
+
+		}); // end window load
+	})(jQuery); //end of main closure
+	</script>
+
+ </head>
+
+
+ <body>
+  <div id="myConceptDetailsComposite" style="width: 400px; height: 300px;"></div>
+  <br>
+  <div id="myDescription" style="width: 400px; height: 100px;"></div>
+ </body>
+</html>

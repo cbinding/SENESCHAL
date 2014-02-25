@@ -17,6 +17,7 @@ Example		:
 History	 :
 
 21/10/2013 CFB created class
+25/02/2014 CFB Added 'Data Alignment' link to getHtmlHeader
 ================================================================================
 */
 require_once("../arc2-master/ARC2.php");
@@ -86,6 +87,8 @@ class SeneschalAPI
 				
 				<li><a href='/live/getAllSchemes.php'>Scheme List</a></li>
 				<li><a href='/live/searchForm.php'>Concept Search</a></li>
+				<li><a href='/live/alignDataToScheme.php'>Data Alignment</a></li>
+				<li><a href='/live/alignPeriodsToDates.php'>Identify Periods</a></li>	
 				<li><a href='/live/sparql.php'>SPARQL Query</a></li>
 				<li><a href='http://www.heritagedata.org/blog'>About The Project</a></li>
 				
@@ -190,7 +193,7 @@ class SeneschalAPI
 		// [0] => Array([uri] => 'http://xxx' [title] => 'xxxx' [description] => 'gggg' [attributionName] => 'kkkk')
 		if($returnType == ReturnType::ROWS)
 		{
-			function reduceArray($row) {
+			function reduceSchemeArray($row) {
 				return Array(
 					"uri" => $row['uri'], 
 					"title" => $row['title'], 
@@ -200,7 +203,7 @@ class SeneschalAPI
 					"attributionName" => $row['attributionName']
 					);
 			}
-			$data = array_map("reduceArray", $data);
+			$data = array_map("reduceSchemeArray", $data);
 			/*$data = array_map(
 					function($row){
 						return Array("uri" => $row['uri'], "title" => $row['title'], "title lang" => $row['title lang'], "description" => $row['description'], "description lang" => $row['description lang'], "attributionName" => $row['attributionName']);
@@ -253,6 +256,21 @@ class SeneschalAPI
 					return Array("uri" => $row['uri'], "label" => $row['label'], "label lang" => $row['label lang']);
 				}, $data);
 		}*/
+
+		// function to include (&rename) only selected columns
+		/*if($returnType == ReturnType::ROWS) {
+			if(!function_exists('reduceThisArray')){
+				function reduceThisArray($row) {
+					return Array(
+						"uri" => $row['uri'], 
+						"label" => $row['label'], 
+						"label lang" => $row['label lang']
+					);
+				}
+			}
+			// include (&rename) only selected columns
+			$data = array_map("reduceThisArray", $data);
+		}*/		
 		
 		return $data;
 	}
@@ -287,7 +305,7 @@ class SeneschalAPI
 			$data = $this->sparqlSelect($sparql, ReturnType::ROWS);	
 
 			// function to remove unrequired columns
-			function reduceArray($row) {
+			function reduceArray2($row) {
 				$keysToIgnore = array('uri type', 'property type', 'value type');
 				foreach($row as $key=>$value){
 					if (in_array($key, $keysToIgnore)) unset($row[$key]);					
@@ -296,7 +314,7 @@ class SeneschalAPI
 			}
 			
 			// remove unrequired columns from results
-			$data = array_map("reduceArray", $data);
+			$data = array_map("reduceArray2", $data);
 
 			// return the results
 			return $data;
@@ -323,7 +341,7 @@ class SeneschalAPI
 			$data = $this->sparqlSelect($sparql, ReturnType::ROWS);
 			
 			// function to include (&rename) only selected columns
-			function reduceArray($row) {
+			function reduceArray3($row) {
 				return Array(
 					"uri" => $row['uri'], 
 					"label" => $row['label'], 
@@ -334,7 +352,7 @@ class SeneschalAPI
 			}
 
 			// include (&rename) only selected columns
-			$data = array_map("reduceArray", $data);
+			$data = array_map("reduceArray3", $data);
 			
 			// return the results
 			return $data;
@@ -375,7 +393,7 @@ class SeneschalAPI
 			$data = $this->sparqlSelect($sparql, ReturnType::ROWS);	
 
 			// function to remove unrequired columns
-			function reduceArray($row) {
+			function reduceArray4($row) {
 				$keysToIgnore = array('uri type', 'property type', 'value type');
 				foreach($row as $key=>$value){
 					if (in_array($key, $keysToIgnore)) unset($row[$key]);					
@@ -384,7 +402,7 @@ class SeneschalAPI
 			}
 			
 			// remove unrequired columns from results
-			$data = array_map("reduceArray", $data);
+			$data = array_map("reduceArray4", $data);
 
 			// return the results
 			return $data;
@@ -405,7 +423,7 @@ class SeneschalAPI
 			$data = $this->sparqlSelect($sparql, ReturnType::ROWS);
 			
 			// function to include (&rename) only selected columns
-			function reduceArray($row) {
+			function reduceArray5($row) {
 				return Array(
 					"uri" => $row['uri'], 
 					"label" => $row['label'], 
@@ -414,7 +432,7 @@ class SeneschalAPI
 			}
 
 			// include (&rename) only selected columns
-			$data = array_map("reduceArray", $data);
+			$data = array_map("reduceArray5", $data);
 			
 			// return the results
 			return $data;
@@ -458,7 +476,7 @@ class SeneschalAPI
 			$data = $this->sparqlSelect($sparql, ReturnType::ROWS);	
 
 			// function to remove unrequired columns
-			function reduceArray($row) {
+			function reduceArray6($row) {
 				$keysToIgnore = array('uri type', 'property type', 'value type');
 				foreach($row as $key=>$value){
 					if (in_array($key, $keysToIgnore)) unset($row[$key]);					
@@ -467,7 +485,7 @@ class SeneschalAPI
 			}
 			
 			// remove unrequired columns from results
-			$data = array_map("reduceArray", $data);
+			$data = array_map("reduceArray6", $data);
 
 			// return the results
 			return $data;
@@ -493,7 +511,7 @@ class SeneschalAPI
 			$data = $this->sparqlSelect($sparql, ReturnType::ROWS);
 			
 			// function to include (&rename) only selected columns
-			function reduceArray($row) {
+			function reduceArray7($row) {
 				return Array(
 					"property" => $row['property'],
 					"uri" => $row['uri'], 
@@ -503,7 +521,7 @@ class SeneschalAPI
 			}
 
 			// include (&rename) only selected columns
-			$data = array_map("reduceArray", $data);
+			$data = array_map("reduceArray7", $data);
 			
 			// return the results
 			return $data;
@@ -543,7 +561,7 @@ class SeneschalAPI
 		$data = $this->sparqlSelect($sparql, ReturnType::ROWS);
 		
 		// function to include (&rename) only selected columns
-		function reduceArray($row) {
+		function reduceArray8($row) {
 			return Array(
 				"property" => $row['property'],
 				"label" => $row['label'], 
@@ -552,7 +570,7 @@ class SeneschalAPI
 		}
 
 		// include (&rename) only selected columns
-		$data = array_map("reduceArray", $data);
+		$data = array_map("reduceArray8", $data);
 		
 		// return the results
 		return $data;
@@ -591,7 +609,7 @@ class SeneschalAPI
 			$data = $this->sparqlSelect($sparql, ReturnType::ROWS);				
 			
 			// function to remove unrequired columns
-			function reduceArray($row) {
+			function reduceArray9($row) {
 				$keysToIgnore = array('uri type', 'property type', 'value type');
 				foreach($row as $key=>$value){
 					if (in_array($key, $keysToIgnore)) unset($row[$key]);					
@@ -600,7 +618,7 @@ class SeneschalAPI
 			}		
 			
 			// remove unrequired columns from results
-			$data = array_map("reduceArray", $data);
+			$data = array_map("reduceArray9", $data);
 
 			// return the results
 			return $data;
@@ -622,16 +640,18 @@ class SeneschalAPI
 			$data = $this->sparqlSelect($sparql, ReturnType::ROWS);
 
 			// function to include (and rename) only selected columns
-			function reduceArray($row) {
-				return Array(
-					"uri" => $row['uri'], 
-					"label" => $row['label'], 
-					"label lang" => $row['label lang']
-				);
+			if(!function_exists('reduceArray10')){
+				function reduceArray10($row) {
+					return Array(
+						"uri" => $row['uri'], 
+						"label" => $row['label'], 
+						"label lang" => $row['label lang']
+					);
+				}
 			}
 
 			// include (&rename) only selected columns
-			$data = array_map("reduceArray", $data);
+			$data = array_map("reduceArray10", $data);
 			
 			// return the results
 			return $data;
@@ -760,7 +780,7 @@ class SeneschalAPI
 	public function getResource($uri, $format="raw")
 	{
 		// ensure valid input parameters
-		if (!$uri) return array();			
+		if (!$uri) return "";			
 
 		$sparql = "DESCRIBE <" . $uri . ">";
 		$data = $this->sparqlSelect($sparql, ReturnType::RAW);
@@ -780,6 +800,7 @@ class SeneschalAPI
 				break;
 			case "json":
 				return $this->store->toRDFJSON($data);
+				//return $this->store->toLEGACYJSON($data);
 				break;
 			default: // raw
 				return $data;

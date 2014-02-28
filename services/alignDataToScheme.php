@@ -21,7 +21,7 @@
 	$filename = empty($_FILES["file"]["name"]) ? "" : $_FILES["file"]["name"];
 	$column = empty($_REQUEST["column"]) ? 1 : (int)$_REQUEST["column"];
 	if($column < 1) $column = 1;
-	$threshold = empty($_REQUEST["threshold"]) ? 70 : (int)$_REQUEST["threshold"];	
+	$threshold = empty($_REQUEST["threshold"]) ? 80 : (int)$_REQUEST["threshold"];	
 	if($threshold < 0) 
 		$threshold = 0;
 	else if($threshold > 100)
@@ -38,13 +38,13 @@
 </fieldset>
 </form>
 <p>
-First select a data file to be aligned. The data file is expected to be delimited text format (csv|tab|text).<br>
-If the file contains more than one column of data, choose the numbered column to align, starting at 1 on the left.<br>
+First select a data file to be aligned. The data is expected to be a list of values, either as a single column of text (*.txt) or multiple columns of comma delimited text (*.csv) format.<br>
+If the file contains more than one column (*.csv), choose the numbered column to align, starting at 1 on the left.<br>
 Select the scheme you want to align the data to - matches below the threshold percentage will not appear in the results.<br>
 The results contain unique values from the selected data column. Preferred and alternate terms are used in the alignment.<br>
 Alignment is only comparing terms. 100% match does not necessarily indicate the correct concept. Check the results carefully!<br>
 Note: This is an experimental page with acceptable performance for smaller data files (tested on a data file of 25,500 rows).<br>
-In case of problems with larger data files try splitting the data file, alternatively reduce the input data to unique values only
+In case of problems with larger data files try splitting the file, alternatively reduce the input data to unique values only
 </p>
 
 <?php
@@ -54,9 +54,9 @@ In case of problems with larger data files try splitting the data file, alternat
 	}
 	else	// is this a response to upload request?
 	{		
-		$allowedExts = array("txt", "csv", "tab");
+		$allowedExts = array("txt", "csv");
 		$tmp = explode('.', $filename);
-		$ext = end($tmp);
+		$ext = strtolower(end($tmp));
 		//echo "File type: " . $_FILES["file"]["type"];
 
 		if(($_FILES["file"]["type"] == "text/plain" || 

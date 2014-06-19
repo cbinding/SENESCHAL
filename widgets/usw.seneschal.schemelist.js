@@ -5,7 +5,6 @@
 Creator	: Ceri Binding,	University of South	Wales
 Project	: SENESCHAL
 Classes	: usw.seneschal.schemelist.js
-Version	: 20140115
 Summary	: Selectable drop down list	of seneschal concept schemes
 Require	: jquery-1.7.2.min.js, jquery.ui.widget.min.js,	usw.seneschal.waitable.js
 Example	: $("#div1").schemelist();
@@ -13,7 +12,8 @@ License	: http://creativecommons.org/licenses/by/3.0/
 ===============================================================================
 History
 
-15/01/2014	CFB	Initially created script
+15/01/2014 CFB Initially created script
+19/06/2014 CFB any elements of class usw-seneschal-schemelist automatically become one
 ===============================================================================
 */
 (function ($) {	//start	of main	jquery closure
@@ -184,5 +184,10 @@ History
 		}
 
 	});	// end of widget code
+
+	// any elements with class usw-seneschal-schemelist automatically become one
+	$(window).load(function(){
+		$(".usw-seneschal-schemelist").schemelist();
+	});
 
 }(jQuery));	//end of main jquery closure

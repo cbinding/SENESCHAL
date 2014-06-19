@@ -5,7 +5,7 @@
 Creator	: Ceri Binding,	University of South	Wales
 Project	: SENESCHAL
 Classes	: usw.seneschal.schemedetailscomposite
-Version	: 20140120
+Version	: 20140619
 Summary	: Graphical	display	of concepts	related	to the specified concept
 Require	: jquery-XXX.min.js, jquery.ui.widget.min.js, usw.seneschal.waitable.js,
 		  usw.seneschal.schemedetails, usw.seneschal.senechal.topconcepts
@@ -14,7 +14,8 @@ License	: http://creativecommons.org/licenses/by/3.0/
 ===============================================================================
 History
 
-20/01/2014	CFB	Initially created script
+20/01/2014 CFB Initially created script
+19/06/2014 CFB elements with class usw-seneschal-schemedetailscomposite automatically become one
 ===============================================================================
 */
 (function($) { //start of main jquery closure
@@ -26,7 +27,7 @@ History
 
 		// stateful	defaults
 		options: {
-			schemeURI: "",
+			schemeURI: "http://purl.org/heritagedata/schemes/1",
 			title: "Scheme details",
 			useCache: true,
 			displayHeader: true,
@@ -145,5 +146,12 @@ History
 		}
 
 	});	// end of usw.seneschal.schemedetailscomposite
+
+	// any elements with class usw-seneschal-schemedetailscomposite automatically become one
+	// arbitrary default scheme URI is "http://purl.org/heritagedata/schemes/1"
+	$(window).load(function(){
+		$(".usw-seneschal-schemedetailscomposite").schemedetailscomposite();
+	});
+
 
 }(jQuery));	//end of main jQuery closure

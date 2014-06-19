@@ -26,7 +26,7 @@ History
 		// default options
 		options: {
 			useCache: true,
-			schemeURI: "",
+			schemeURI: "http://purl.org/heritagedata/schemes/mda_obj",
 			title: "Top	concepts",
 			serviceURI:	"http://www.heritagedata.org/live/services/getTopConceptsForScheme",
 			//serviceURI: "http://localhost/heritagedata/getTopConceptsForScheme.php",
@@ -179,5 +179,11 @@ History
 		}
 
 	});	// end of widget code
+
+	// any elements of class usw-seneschal-topconcepts automatically become one
+	// arbitrary default schemeURI is http://purl.org/heritagedata/schemes/mda_obj
+	$(window).load(function(){
+		$(".usw-seneschal-topconcepts").topconcepts();
+	});
 
 }(jQuery));	//end of main jquery closure

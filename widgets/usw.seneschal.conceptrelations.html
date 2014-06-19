@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
  <head>
-  <title>Demo SENESCHAL 'schemelist' widget control</title>
+  <title>Demo SENESCHAL 'conceptrelations' widget control</title>
   <meta name="Author" content="Ceri Binding, University of South Wales">
-  <meta name="Description" content="Demo SENESCHAL 'schemelist' widget control">
+  <meta name="Description" content="Demo SENESCHAL 'conceptrelations' widget control">
 
   <!--The jQuery script is a prerequisite for all SENESCHAL widgets-->
   <!--either load from CDN, or download and reference your local copy-->
@@ -16,14 +16,15 @@
 
   <!--this script creates and uses the widget-->
   <script type="text/javascript">
-    // Testing the widget
+	// Testing the widget
 	(function($) { //start of main jQuery closure
 		$(window).load(function(){
 
-			// #mySchemeList element will become a schemelist widget
-			$("#mySchemeList").schemelist();
-			// taking some action when a scheme is selected from the list
-			$("#mySchemeList").schemelist().bind("selected", function(e, data) {
+			// #myConceptRelations element will become a conceptrelations widget, and display relations for a specific concept
+			$("#myConceptRelations").conceptrelations({conceptURI: "http://purl.org/heritagedata/schemes/1/concepts/447"});
+
+			// taking some action when a concept is selected from the list
+			$("#myConceptRelations").conceptrelations().bind("selected", function(e, data) {
 				// build an html string containing the selected data
 				var s = "You selected '" + data.label + "'<br>";
 				s+= "The identifier is <a href='" + data.uri + "' target='_blank'>" + data.uri + "</a>";
@@ -37,12 +38,12 @@
   </head>
 
  <body>
-	<div id="mySchemeList" style="width: 400px;"></div>
+	<div id="myConceptRelations" style="width: 400px; height: 100px;"></div>
 	<br>
-	<div id="myDescription" style="width: 400px;"></div>
+	<div id="myDescription" style="width: 400px; height: 100px;"></div>
 
-	<!--<div class="usw-seneschal-schemelist"></div>
-	<div class="usw-seneschal-schemelist"></div>
-	<div class="usw-seneschal-schemelist"></div>-->
+	<!--<div class="usw-seneschal-conceptrelations"></div>
+	<div class="usw-seneschal-conceptrelations"></div>
+	<div class="usw-seneschal-conceptrelations"></div>-->
  </body>
 </html>

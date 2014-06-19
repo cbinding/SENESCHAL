@@ -1,13 +1,10 @@
 /*jslint browser: true, nomen: true, white: true, unparam: true */
 /*global $, jQuery, alert, usw*/
-/*jslint browser: true, nomen: true, white: true, unparam: true */
-/*global $, jQuery, alert, usw*/
 /*
 ===============================================================================
 Creator	: Ceri Binding,	University of South	Wales
 Project	: SENESCHAL
 Classes	: usw.seneschal.termsuggest.js
-Version	: 20140204
 Summary	: Suggest terms originating from specified ConceptScheme as user types
 Require	: jquery-1.11.0.min.js, jquery.ui.widget.min.js
 Example	: $("#div1").termsuggest();
@@ -15,7 +12,7 @@ License	: http://creativecommons.org/licenses/by/3.0/
 ===============================================================================
 History
 
-04/02/2014	CFB	Initially created script
+04/02/2014 CFB Initially created script
 ===============================================================================
 */
 (function($) { //start of main jquery closure
@@ -171,9 +168,10 @@ History
 
 	});	// end of widget code
 
-	// anything on the page with a class of usw-seneschal-termsuggest becomes one...
+	// any elements of class usw-seneschal-termsuggest automatically become one
+	// arbitrary default schemeURI is http://purl.org/heritagedata/schemes/mda_obj
 	$(window).load(function(){
-		$(".usw-seneschal-termsuggest").termsuggest();
+		$("input.usw-seneschal-termsuggest").termsuggest();
 	});
 
 })(jQuery);	//end of main jquery closure

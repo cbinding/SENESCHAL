@@ -8,9 +8,9 @@
   <!--either load from CDN, or download and reference your local copy-->
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <!--reference the SENESCHAL script-->
-  <script src="http://www.heritagedata.org/live/usw.seneschal.20140205-min.js"></script>
-  <!--local override -->
-  <script src="usw.seneschal.termsuggest.js"></script>
+  <script src="http://www.heritagedata.org/live/usw.seneschal.20140619-min.js"></script>
+
+
   <!--reference the SENESCHAL style sheet-->
   <link rel="stylesheet" type="text/css" href="http://www.heritagedata.org/live/usw.seneschal.20140203.css" />
   <script>
@@ -34,7 +34,7 @@
 				schemeURI: "http://purl.org/heritagedata/schemes/eh_tmt2"
 			});
 
-			// taking some action when a concept is selected from any of the termsuggest controls
+			// taking some action when a concept is selected from ANY of the termsuggest controls
 			$(".usw-seneschal-termsuggest").termsuggest().bind("selected", function(e, data) {
 				// build an html string containing the selected data
 				var s = "<p>You selected '" + data.label + "'<br>";
@@ -58,5 +58,9 @@
 	<p>The following control will suggest terms originating from the Monument Types (EH) thesaurus (e.g. HENGE, BARROW, VILLA etc.)<br><input type="search" id="mySuggestions3" class="test usw-seneschal-termsuggest" /></p>
 
 	<div id="mySelection" style="width: 400px; height: 100px;"></div>
+
+	<!--<input class="usw-seneschal-termsuggest"></input>
+	<input class="usw-seneschal-termsuggest"></input>
+	<input class="usw-seneschal-termsuggest"></input>-->
 	</body>
 	</html>

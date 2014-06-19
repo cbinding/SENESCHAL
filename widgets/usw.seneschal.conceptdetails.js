@@ -5,15 +5,16 @@
 Creator	: Ceri Binding,	University of South	Wales
 Project	: SENESCHAL
 Classes	: usw.seneschal.conceptdetails
-Version	: 20140117
+Version	: 20140619
 Summary	: display details of a single concept based	on conceptURI
-Require	: jquery-1.7.2.min.js, jquery.ui.widget.min.js,	usw.seneschal.waitable.js
-Example	: $("#div1").conceptdetails();
+Require	: jquery-XXX.min.js, jquery.ui.widget.min.js, usw.seneschal.waitable.js, usw.uri.skos.js
+Example	: $("#div1").conceptdetails(); OR <div class='usw-seneschal-conceptdetails'></div>
 License	: http://creativecommons.org/licenses/by/3.0/
 ===============================================================================
 History
 
 17/01/2014	CFB	Extracted and adapted from original STAR.UI controls script
+19/06/2014	CFB elements with class usw-seneschal-conceptdetails automatically become one
 ===============================================================================
 */
 (function ($) {	// start of	main jQuery	closure
@@ -25,9 +26,9 @@ History
 
 		//Default options
 		options: {
-			version: "20140117",
+			version: "20140619",
 			serviceURI:	"http://www.heritagedata.org/live/services/getResource.php",
-			conceptURI:	"",
+			conceptURI:	"http://purl.org/heritagedata/schemes/1/concepts/449", // an arbitrary default
 			useCache: true
 		},
 
@@ -156,5 +157,11 @@ History
 			$(self.element).waitable({"waiting": false});
 		}
 	});	//end of usw.seneschal.conceptdetails
+
+	// any elements with class usw-seneschal-conceptdetails automatically become one
+	// default concept URI is "http://purl.org/heritagedata/schemes/1/concepts/447"
+	$(window).load(function(){
+		$(".usw-seneschal-conceptdetails").conceptdetails();
+	});
 
 }(jQuery));	//end of main jQuery closure

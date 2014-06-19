@@ -14,7 +14,8 @@ License	: http://creativecommons.org/licenses/by/3.0/
 ===============================================================================
 History
 
-20/01/2014	CFB	Initially created script
+20/01/2014 CFB Initially created script
+19/06/2014 CFB Elements with class usw-seneschal-conceptdetailscomposite automatically become one
 ===============================================================================
 */
 (function($) { //start of main jquery closure
@@ -26,7 +27,7 @@ History
 
 		// stateful	defaults
 		options: {
-			conceptURI:	"",
+			conceptURI:	"http://purl.org/heritagedata/schemes/mda_obj/concepts/96662", //arbitrary default
 			useCache: true,
 			title:	"Concept details",
 			//serviceURI: "http://localhost/heritagedata/getconceptrelations.php",
@@ -171,5 +172,11 @@ History
 		}
 
 	});	// end of usw.seneschal.conceptdetailscomposite
+
+	// any elements with class usw-seneschal-conceptdetailscomposite automatically become one
+	// arbitrary default concept URI is "http://purl.org/heritagedata/schemes/1/concepts/447"
+	$(window).load(function(){
+		$(".usw-seneschal-conceptdetailscomposite").conceptdetailscomposite();
+	});
 
 }(jQuery));	//end of main jquery closure

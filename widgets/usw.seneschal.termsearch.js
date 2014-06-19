@@ -5,7 +5,6 @@
 Creator	: Ceri Binding,	University of South	Wales
 Project	: SENESCHAL
 Classes	: usw.seneschal.termsearch.js
-Version	: 20140117
 Summary	: Search for terms within specified	ConceptScheme
 Require	: jquery-1.7.2.min.js, jquery.ui.widget.min.js,	usw.seneschal.waitable.js
 Example	: $("#div1").termsearch();
@@ -13,8 +12,9 @@ License	: http://creativecommons.org/licenses/by/3.0/
 ===============================================================================
 History
 
-19/11/2013	CFB	Initially created script
-17/01/2014	CFB	Simplified - icons removed,	submit search using	enter key
+19/11/2013 CFB Initially created script
+17/01/2014 CFB Simplified - icons removed, submit search using enter key
+19/06/2014 CFB any elements of class usw-seneschal-termsearch automatically become one
 ===============================================================================
 */
 (function($) { //start of main jquery closure
@@ -26,7 +26,6 @@ History
 
 		// default options
 		options: {
-			version: "20131119",
 			placeholder: "Search for...",
 			title: "Concept	search",
 			useCache: true,
@@ -265,5 +264,11 @@ History
 		}
 
 	});	// end of widget code
+
+	// any elements with class usw-seneschal-termsearch automatically become one
+	// arbitrary default schemeURI is http://purl.org/heritagedata/schemes/mda_obj
+	$(window).load(function(){
+		$(".usw-seneschal-termsearch").termsearch();
+	});
 
 })(jQuery);	//end of main jquery closure

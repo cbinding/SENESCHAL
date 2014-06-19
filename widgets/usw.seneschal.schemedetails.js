@@ -13,7 +13,8 @@ License	: http://creativecommons.org/licenses/by/3.0/
 ===============================================================================
 History
 
-19/12/2010	CFB	Extracted and adapted from original	STAR.UI	controls script
+19/12/2010 CFB Extracted and adapted from original STAR.UI controls script
+19/06/2014 CFB elements with class usw-seneschal-schemedetails automatically become one
 ===============================================================================
 */
 (function($) { // start	of main	jQuery closure
@@ -27,7 +28,7 @@ History
 		options: {
 			version: "20140117",
 			serviceURI:	"http://www.heritagedata.org/live/services/getResource.php",
-			schemeURI: "",
+			schemeURI: "http://purl.org/heritagedata/schemes/1",
 			useCache: true
 		},
 
@@ -152,5 +153,11 @@ History
 		}	// end function 'updateComplete'
 
 	});	//end of usw.seneschal.schemedetails
+
+	// any elements with class usw-seneschal-schemedetails automatically become one
+	// arbitrary default scheme URI is "http://purl.org/heritagedata/schemes/1"
+	$(window).load(function(){
+		$(".usw-seneschal-schemedetails").schemedetails();
+	});
 
 }(jQuery));	//end of main jQuery closure

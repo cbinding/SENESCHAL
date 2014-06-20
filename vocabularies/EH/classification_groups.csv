@@ -1,0 +1,15 @@
+"CLA_GR_UID","DESCRIPTION","NAME","CLASS_TYPE","STATUS","OPS_SET"
+77,"Thesaurus of cargo types carried by vessel on final voyage (Maritime).","CARGO","T","O",
+546,,"COMPONENTS","T","O",
+566,,"EVENT TYPE","T","O",
+92,"A new 'Evidence' Thesaurus","EVIDENCE","T","O",
+129,"Thesaurus of main constructional material types (eg. the walls) for indexing of monuments.","MAIN BUILDING MATERIALS","T","O",
+143,"A thesaurus of Maritime Craft.","MARITIME CRAFT TYPE","T","O",
+128,"mda Archaeological Object Thesaurus developed in partnership with mda as part of Archaeological Objects Working Party.  Provides guidance for the recording of archaeological objects in Britain and Ireland covering all historical periods.","MDA OBJECT TYPE","T","T",144
+486,"A test thesaurus for dates and Periods","TIMELINE THESAURUS","T","T",
+568,,"TIMBER STRUCTURAL ELEMENTS","T","T",
+1,"Classification of monument type records by function.","MONUMENT TYPE","T","O",61
+567,,"MASONRY STRUCTURAL ELEMENTS","T","O",
+560,"Used for recording the techniques, recovery methods and materials associated with archaeological sciences.","ARCHAEOLOGICAL SCIENCES","T","O",
+225,,"AIRCRAFT TYPE","T","O",
+145,"Test thesaurus for ports of registration, departure and destination and country of origin.","MARITIME PLACE NAME","T","T",307

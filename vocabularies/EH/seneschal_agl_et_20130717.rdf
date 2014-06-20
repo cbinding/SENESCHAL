@@ -1,0 +1,1419 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cc="http://creativecommons.org/ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:base="http://stellar/">
+	<skos:ConceptScheme rdf:about="http://purl.org/heritagedata/schemes/agl_et">
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et</dcterms:identifier>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:title xml:lang="en">EVENT TYPE (EH)</dcterms:title>
+		<rdfs:label xml:lang="en">EVENT TYPE (EH)</rdfs:label>
+		<dcterms:description xml:lang="en">Terminology used for recording archaeological and architectural investigative, data collection exercises; from intrusive interventions to non damaging surveys</dcterms:description>
+		<dcterms:coverage rdf:resource="http://data.ordnancesurvey.co.uk/id/country/england" />
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+		<skos:hasTopConcept>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/147297">
+				<skos:topConceptOf rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/147297</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">INTRUSIVE EVENT</skos:prefLabel>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+				<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145109" />
+				<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145126" />
+				<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145150" />
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:hasTopConcept>
+		<skos:hasTopConcept>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/147298">
+				<skos:topConceptOf rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/147298</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">NON INTRUSIVE EVENT</skos:prefLabel>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+				<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145131" />
+				<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/147299" />
+				<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145156" />
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:hasTopConcept>
+	</skos:ConceptScheme>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/146342">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/146342</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">LASER SCANNING SURVEY</skos:prefLabel>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145131" />
+		<skos:related rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145142" />
+		<skos:scopeNote xml:lang="en">The recording of a surface, or surfaces, using scanning technologies, to create a 3D model of the target structure/object.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/146346">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/146346</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">FIELD VISIT</skos:prefLabel>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/147299" />
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145131" />
+		<skos:related rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/147317" />
+		<skos:scopeNote xml:lang="en">Observations made by an archaeologist or architectural historian as the result of a field visit to a site or monument.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/146347">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/146347</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">ELECTRICAL RESISTIVITY TOMOGRAPHY</skos:prefLabel>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+		<skos:altLabel xml:lang="en">Electrical Resistivity Imaging Survey</skos:altLabel>
+		<skos:altLabel xml:lang="en">Resistivity Profile</skos:altLabel>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145134" />
+		<skos:related rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145158" />
+		<skos:scopeNote xml:lang="en">A geophysical technique for imaging subsurface structures in cross section from electrical measurements made at the surface, or by electrodes in one or more boreholes.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/147242">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/147242</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">HISTORIC LANDSCAPE CHARACTERISATION</skos:prefLabel>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/147299" />
+		<skos:related rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/147243" />
+		<skos:scopeNote xml:lang="en">An holistic approach to landscape, using GIS, which maps diversity of landscape character as a means to managing future change in ways that are appropriate and sustainable.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/147243">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/147243</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">HISTORIC SEASCAPE CHARACTERISATION</skos:prefLabel>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/147299" />
+		<skos:related rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/147242" />
+		<skos:scopeNote xml:lang="en">A map-based understanding of coastal and marine historic character; its GIS and linked texts extend Historic Landscape Characterisation principles to give a common framework of baseline information for the sustainable management of change from land to sea</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/147244">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/147244</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">ANALYTICAL EARTHWORK SURVEY</skos:prefLabel>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145131" />
+		<skos:related rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145174" />
+		<skos:scopeNote xml:lang="en">The accurate survey and analytical depiction of earthworks and their relative chronological relationships by means of hachures and related symbols.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/147259">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/147259</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">GEOTECHNICAL SURVEY</skos:prefLabel>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145150" />
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/146353">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/146353</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">GEOTECHNICAL TEST PIT</skos:prefLabel>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+				<skos:altLabel xml:lang="en">Subsoil Test Pit</skos:altLabel>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/147259" />
+				<skos:scopeNote xml:lang="en">Test pits dug by geotechnical engineers or engineering geologists to obtain information on the physical properties of soil, sediments and bedrock around a site to design earthworks and foundations for proposed structures.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:scopeNote xml:lang="en">Any subsurface investigation conducted to assist with the technical rather than archaeological aspects of a proposed development or extraction scheme.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/147265">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/147265</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">SONAR SURVEY</skos:prefLabel>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/147268">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/147268</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">BATHYMETRIC SURVEY</skos:prefLabel>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/147265" />
+				<skos:scopeNote xml:lang="en">A maritime investigation that records depth data which can be used to map submerged topography utilising echo sounders which emit a short acoustic pulse. Depth is calculated by measuring the time taken for the pulse to be reflected back to the transducer.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/147319">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/147319</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">MULTI BEAM ECHO SOUNDER SURVEY</skos:prefLabel>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/147265" />
+				<skos:scopeNote xml:lang="en">An underwater technique used to create 3D terrain models and to record objects on the seabed through the comparative analysis of reflections from high frequency sound waves emitted in multiple beams allowing large swathes of the seabed to be surveyed.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/146334">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/146334</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">SIDE SCAN SONAR SURVEY</skos:prefLabel>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+				<skos:altLabel xml:lang="en">Side Looking Sonar Survey</skos:altLabel>
+				<skos:altLabel xml:lang="en">Bottom Classification Sonar</skos:altLabel>
+				<skos:altLabel xml:lang="en">Side Scanning Sonar Survey</skos:altLabel>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/147265" />
+				<skos:scopeNote xml:lang="en">Underwater investigation of the seabed, using side-looking sonar device that emits fan shaped acoustic pulses down toward the seafloor. The intensity of the acoustic reflections from the sea floor are recorded as an image of the seabed.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/147266">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/147266</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">SINGLE BEAM ECHO SOUNDER SURVEY</skos:prefLabel>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/147265" />
+				<skos:scopeNote xml:lang="en">An underwater technique that records bathymetric (depth) data by generating point depths in a line directly beneath the transducer mounted on a vessel as it progresses along the acquisition line.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145134" />
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145168" />
+		<skos:scopeNote xml:lang="en">Active sonar systems are based on the behaviour of sound waves in water; acoustic energy is transmitted and the time for the returning echo is measured to allow submerged seabed features to be mapped. Use specific type where known.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/147299">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/147299</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">HERITAGE ASSESSMENT</skos:prefLabel>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/147552" />
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/146340">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/146340</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">ANTIQUARIAN OBSERVATION</skos:prefLabel>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/147299" />
+				<skos:scopeNote xml:lang="en">Observations made by antiquarians (Those who studied sites and landscapes prior to archaeology and architectural history becoming established disciplines in the 19th century) and reported through publication or from unpublished manuscripts.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/160152">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/160152</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">CONSERVATION AREA APPRAILSAL</skos:prefLabel>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/147299" />
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/145123">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/145123</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">DESK BASED ASSESSMENT</skos:prefLabel>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/147299" />
+				<skos:scopeNote xml:lang="en">A programme of assessment of the known or potential archaeological resource within a specified area or site on land, inter-tidal zone or underwater by the consultation and collation of existing written, graphic, photographic and electronic data.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/145125">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/145125</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">ENVIRONMENTAL IMPACT ASSESSMENT</skos:prefLabel>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/147299" />
+				<skos:scopeNote xml:lang="en">An information gathering exercise to facilitate an understanding of the potential environmental impact of a development proposal; includes the collation of specialist reports from a variety of disciplines.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/147317" />
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/146346" />
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/147298" />
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/147325" />
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/147242" />
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/147243" />
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/145145">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/145145</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">MANAGEMENT SURVEY</skos:prefLabel>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/147299" />
+				<skos:scopeNote xml:lang="en">A field and desk based assessment of heritage asset condition and vulnerability so that informed decisions can be made regarding how best to manage the resource.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:scopeNote xml:lang="en">Programmes of research that seek to identify the archaeological and/or architectural significance of a site or landscape.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/147317">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/147317</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">FIELD OBSERVATION (VISUAL ASSESSMENT)</skos:prefLabel>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+		<skos:altLabel xml:lang="en">Visual Inspection</skos:altLabel>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145131" />
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/147299" />
+		<skos:related rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/146346" />
+		<skos:related rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/147322" />
+		<skos:scopeNote xml:lang="en">A site visit to ascertain the nature and extent of the site and its surrounding environs by means of a visual inspection from which a written and/or photographic record is made.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/147322">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/147322</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">WALKOVER SURVEY</skos:prefLabel>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145131" />
+		<skos:related rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/147317" />
+		<skos:scopeNote xml:lang="en">A planned programme of investigation conducted within a defined area aimed at identifying and surveying previously unrecorded sites and checking the condition of known sites.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/147323">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/147323</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">ELECTROMAGNETIC SURVEY</skos:prefLabel>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145134" />
+		<skos:related rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145158" />
+		<skos:scopeNote xml:lang="en">Technique using electromagnetic fields to map subsurface electrical conductivity anomalies. Can be used as a high-sensitivity metal detector.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/147324">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/147324</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">3D SEISMIC SURVEY</skos:prefLabel>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145134" />
+		<skos:related rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145168" />
+		<skos:scopeNote xml:lang="en">A maritime technique similar in theory to sub bottom profilers, however for 3D seismic surveys the receiver array is more complex involving multiple receivers so that a volume of sediment is studied rather than a single 2D line.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/147325">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/147325</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">HISTORIC AREA ASSESSMENT</skos:prefLabel>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145131" />
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/147299" />
+		<skos:scopeNote xml:lang="en">An overview of the historical and architectural development, character and heritage assets of a settlement or area.  An HAA may result in the creation, at varying levels of intensity, of individual site-based records informed by area context.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/147552">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/147552</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">AERIAL PHOTOGRAPH INTERPRETATION</skos:prefLabel>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/147299" />
+		<skos:related rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145107" />
+		<skos:scopeNote xml:lang="en">The interpretation of information on aerial photographs usually resulting in the production of maps and records of archaeological sites and landscapes. Many aerial photographs may be consulted for a single analytical survey.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/145107">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/145107</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">AERIAL PHOTOGRAPHY</skos:prefLabel>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145108" />
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/145120">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/145120</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">CONVENTIONAL AERIAL PHOTOGRAPHY</skos:prefLabel>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145107" />
+				<skos:scopeNote xml:lang="en">Capturing visible spectrum photographs or images of monument features or character using still or motion cameras from an aircraft or other airborne vehicle or apparatus. Covers both digital and film-based cameras.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145149" />
+		<skos:related rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/147552" />
+		<skos:scopeNote xml:lang="en">The taking of photographs from above using photographic equipment mounted on, or used from an aircraft or other airborne vehicle.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/145108">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/145108</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">AERIAL RECONNAISSANCE</skos:prefLabel>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145107" />
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145156" />
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145142" />
+		<skos:scopeNote xml:lang="en">Airborne survey to discover, record and monitor archaeological sites and other heritage assets. Sites will usually be recorded by aerial photography.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/145109">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/145109</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">ARCHAEOLOGICAL INTERVENTION</skos:prefLabel>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/147297" />
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145111" />
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145112" />
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145128" />
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145129" />
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145130" />
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/147310">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/147310</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">GRAB SAMPLING</skos:prefLabel>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+				<skos:altLabel xml:lang="en">Grab Survey</skos:altLabel>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145109" />
+				<skos:scopeNote xml:lang="en">A maritime technique which involves the simple process of bringing up surface sediments from the seafloor for analysis usually using mechanical apparatus. As the process recovers a mixture of sediments it cannot be used to characterise stratigraphy.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145148" />
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145160" />
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145177" />
+		<skos:scopeNote xml:lang="en">Any activity, undertaken by professional archaeologists or experienced amateurs, that has a physical impact, actual or potential, upon the archaeological resource, substituting the physical resource with recorded information.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/145110">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/145110</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">ARCHITECTURAL SURVEY</skos:prefLabel>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145131" />
+		<skos:related rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145118" />
+		<skos:related rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145146" />
+		<skos:scopeNote xml:lang="en">Recording and analysis of built structures utilising close observation as well as manual or electronic survey equipment such as GPS and REDM (Reflectorless Electromagnetic Distance Measurement). Includes research, fieldwork and a report.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/145111">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/145111</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">AUGER SURVEY</skos:prefLabel>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145126" />
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145109" />
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145150" />
+		<skos:related rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145112" />
+		<skos:related rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145121" />
+		<skos:scopeNote xml:lang="en">Transect or area-based arrangements of drilled auger-holes used to describe deposits and collect samples.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/145112">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/145112</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">BOREHOLE SURVEY</skos:prefLabel>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145109" />
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145150" />
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145126" />
+		<skos:related rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145111" />
+		<skos:related rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145121" />
+		<skos:scopeNote xml:lang="en">Type of survey involving the drilling of deep and narrow shafts in the ground used to describe deposits, understand stratigraphy and collect cores amples.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/145118">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/145118</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">BUILDING SURVEY</skos:prefLabel>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+		<skos:altLabel xml:lang="en">Cross Sectional Building Survey</skos:altLabel>
+		<skos:altLabel xml:lang="en">Building Elevation Survey</skos:altLabel>
+		<skos:altLabel xml:lang="en">Building Plan Survey</skos:altLabel>
+		<skos:altLabel xml:lang="en">Building Recording</skos:altLabel>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145131" />
+		<skos:related rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145110" />
+		<skos:related rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145146" />
+		<skos:scopeNote xml:lang="en">A descriptive survey involving the systematic measurement and recording of the dimensions or features of a building. Where the survey is accompanied by systematic investigation and analysis, use Architectural Survey.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/145121">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/145121</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">CORE SAMPLING</skos:prefLabel>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145127" />
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/147312">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/147312</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">GRAVITY CORE</skos:prefLabel>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145121" />
+				<skos:scopeNote xml:lang="en">A maritime coring technique which penetrates the ground due to the force of gravity. Since the speed of penetration is the same as the sampling speed, it barely disrupts the sedimentary layers. A cable attached to the ship is used to recover the core.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/147313">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/147313</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">VIBRO CORE</skos:prefLabel>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145121" />
+				<skos:scopeNote xml:lang="en">A maritime coring technique which uses vibration to facilitate ground penetration. With the force of gravity, and sometimes a piston, it can penetrate much deeper layers although the vibration provokes a slight mixing of the sediments.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:related rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145111" />
+		<skos:related rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145112" />
+		<skos:scopeNote xml:lang="en">The retrieval of samples for laboratory analysis from buried features that have been sampled using boring equipment.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/145122">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/145122</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">DENDROCHRONOLOGICAL SURVEY</skos:prefLabel>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145126" />
+		<skos:related rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145173" />
+		<skos:scopeNote xml:lang="en">The extraction of wood samples for dating analysis. Tree ring dating is the science of dating cultural and environmental events in the past by comparative study of the growth rings in trees and aged wood.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/145126">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/145126</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">ENVIRONMENTAL INTERVENTION</skos:prefLabel>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145111" />
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145112" />
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145122" />
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/147297" />
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145127" />
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145133" />
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145173" />
+		<skos:scopeNote xml:lang="en">Intervention into the archaeological resource intended to gather information about past ecologies and economies, formation processes, and to retrieve material for scientific dating purposes.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/145127">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/145127</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">ENVIRONMENTAL SAMPLING</skos:prefLabel>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145121" />
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145126" />
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/145164">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/145164</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">MONOLITH SAMPLING</skos:prefLabel>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145127" />
+				<skos:scopeNote xml:lang="en">Removal of a sample from a vertical section generally using a U sectioned tin to extract an intact column of the observed stratigraphy. Used in the study of pollen, diatoms etc.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:scopeNote xml:lang="en">Removal of samples from deposits, including archaeological contexts to recover information about past environments and economies, retrieve material for scientific dating and for the investigation of the deposits themselves e.g. formation processes.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/145128">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/145128</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">EVALUATION</skos:prefLabel>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145109" />
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/145172">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/145172</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">TEST PIT</skos:prefLabel>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+				<skos:altLabel xml:lang="en">Test Pits</skos:altLabel>
+				<skos:altLabel xml:lang="en">Test Pit Survey</skos:altLabel>
+				<skos:altLabel xml:lang="en">Sondage</skos:altLabel>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145128" />
+				<skos:scopeNote xml:lang="en">Systematically positioned hole, or holes, utilised in all studies that aim to sample the nature of the topsoil and subsurface deposits.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/145175">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/145175</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">TRIAL TRENCH</skos:prefLabel>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+				<skos:altLabel xml:lang="en">Targeted Trenches</skos:altLabel>
+				<skos:altLabel xml:lang="en">Sample Trenches</skos:altLabel>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145128" />
+				<skos:scopeNote xml:lang="en">Archaeologically excavated trench, either hand of machine dug, as part of a sampling programme to evaluate the presence/absence, nature, preservation, age and extent of any buried archaeological features.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/163243">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/163243</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">UNDERWATER EVALUATION</skos:prefLabel>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145128" />
+				<skos:scopeNote xml:lang="en">A limited programme of intrusive fieldwork which determines the presence or absence of archaeological features, structures, deposits, artefacts or ecofacts within a specified underwater area.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:scopeNote xml:lang="en">A limited programme of intrusive fieldwork which determines the presence or absence of archaeological features, structures, deposits, artefacts or ecofacts within a specified area or site on land or within the inter-tidal zone.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/145129">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/145129</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">EXCAVATION</skos:prefLabel>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/145114">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/145114</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">BOX TRENCHING</skos:prefLabel>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+				<skos:altLabel xml:lang="en">Grid Excavation</skos:altLabel>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145129" />
+				<skos:scopeNote xml:lang="en">A system of excavation, developed by Mortimer Wheeler, whereby a site was uncovered by means of a grid of square trenches with baulks between them to aid the recording of the stratification of all four sides of each trench.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145109" />
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/145151">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/145151</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">OPEN AREA EXCAVATION</skos:prefLabel>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145129" />
+				<skos:scopeNote xml:lang="en">Controlled investigation, recording and removal of archaeological deposits according to the principles of strategraphic excavation. The size of an open area can range from holes to examine pile foundations to extensive trenches of 100 square meters.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/145157">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/145157</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">RESCUE EXCAVATION</skos:prefLabel>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+				<skos:altLabel xml:lang="en">Salvage Excavation</skos:altLabel>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145129" />
+				<skos:scopeNote xml:lang="en">Controlled investigation, recording and removal of archaeological deposits under threat of destruction from building development. A pre PPG 16 activity, usually under strict time constraints.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/147305">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/147305</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">RESEARCH EXCAVATION</skos:prefLabel>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145129" />
+				<skos:scopeNote xml:lang="en">Controlled investigation, recording and removal of archaeological deposits in targeted areas in order to answer specific questions relating to a particular archaeological site or landscape. Usually undertaken by university departments or amateur groups.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/145167">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/145167</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">STRIP MAP AND SAMPLE</skos:prefLabel>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+				<skos:altLabel xml:lang="en">Strip And Record</skos:altLabel>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145129" />
+				<skos:scopeNote xml:lang="en">An excavation technique that involves the machine stripping the topsoil/subsoil from the area to be excavated, plotting observed features onto a site plan and then partially or fully excavating those features.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/163244">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/163244</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">UNDERWATER EXCAVATION</skos:prefLabel>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145129" />
+				<skos:scopeNote xml:lang="en">Controlled intrusive fieldwork which examines, records and interprets archaeological deposits, features and structures and, as appropriate, retrieves artefacts and ecofact remains within a specified underwater area.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:scopeNote xml:lang="en">Controlled intrusive fieldwork which examines, records and interprets archaeological deposits, features and structures and, as appropriate, retrieves artefacts and ecofact remains within a specified area or site on land or within the inter-tidal zone.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/145130">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/145130</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">FIELD OBSERVATION (MONITORING)</skos:prefLabel>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145109" />
+		<skos:related rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145177" />
+		<skos:scopeNote xml:lang="en">Periodic visits being made to a site by an archaeologist to record archaeological deposits and recover finds that have come to light since the previous visit. An archaeological presence is not maintained during groundwork as it is with a watching brief.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/145131">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/145131</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">FIELD SURVEY</skos:prefLabel>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/147244" />
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145110" />
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/145113">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/145113</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">BOSING SURVEY</skos:prefLabel>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145131" />
+				<skos:scopeNote xml:lang="en">A subsurface detection method performed by striking the ground with a heavy wooden mallet or a lead-filled container on a long handle.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145118" />
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/145124">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/145124</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">DOWSING SURVEY</skos:prefLabel>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145131" />
+				<skos:scopeNote xml:lang="en">The supposed detection of subsurface features by employing a twig, copper rod, pendulum, or other instrument. Discontinuous movements in these instruments are believed by some to record the existence of buried features.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/147317" />
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/147298" />
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/146346" />
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/152410" />
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/146341">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/146341</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">GEOMORPHOLOGICAL SURVEY</skos:prefLabel>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145131" />
+				<skos:scopeNote xml:lang="en">Field survey undertaken to investigate land formation processes often carried out in association with, or in the vicinity of, an archaeological site, or as part of a wider landscape project.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145134" />
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/147306">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/147306</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">HEDGEROW SURVEY</skos:prefLabel>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145131" />
+				<skos:scopeNote xml:lang="en">The assessment of the age of a hedge based on its nature, condition and the number and type of woody plant species present. Most surveys make use of Hooper's hypothesis which states that for every 27m a new woody species invades a hedge every 100 years.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/147325" />
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/146342" />
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145146" />
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145147" />
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/146345">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/146345</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">PHOTOGRAPHIC RECORDING</skos:prefLabel>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145131" />
+				<skos:scopeNote xml:lang="en">The taking of photographs during informal site visits, which may be undertaken by amateur archaeologists or architectural students. More formal, detailed surveys should be termed Photographic Survey.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145154" />
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/147326">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/147326</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">THEMATIC SURVEY</skos:prefLabel>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145131" />
+				<skos:scopeNote xml:lang="en">The investigation of heritage assets along thematic lines, usually to inform the production of a thematic study. Such studies bring specialist insights to bear on the particular area of study, but may not address other aspects of the site's significance.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145174" />
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/163245">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/163245</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">UNDERWATER SURVEY</skos:prefLabel>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145131" />
+				<skos:scopeNote xml:lang="en">The non intrusive processes by which information is collected about the location, distribution and organisation of past human activities that are now submerged by water. The approaches can be either extensive or intensive depending on the objectives.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/147322" />
+		<skos:scopeNote xml:lang="en">The non intrusive processes by which information is collected about the location, distribution and organisation of past human activities. The approaches can be either extensive or intensive depending the objectivies that need to be addressed.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/145132">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/145132</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">SYSTEMATIC FIELDWALKING SURVEY</skos:prefLabel>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+		<skos:altLabel xml:lang="en">Fieldwalking</skos:altLabel>
+		<skos:altLabel xml:lang="en">Topsoil Artefact Survey</skos:altLabel>
+		<skos:altLabel xml:lang="en">Surface Collection</skos:altLabel>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/152410" />
+		<skos:related rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145176" />
+		<skos:scopeNote xml:lang="en">The systematic study of ground surfaces and collection of visible archaeological material. Fieldwalking can be carried out as line-walking, grid collection and transect or quadrant sampling. Any material recovered is logged and stored by sample unit.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/145133">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/145133</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">GEOCHEMICAL SURVEY</skos:prefLabel>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145126" />
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/145152">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/145152</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">PHOSPHATE SURVEY</skos:prefLabel>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145133" />
+				<skos:scopeNote xml:lang="en">The systematic collection of samples from a defined study area analysed for phosphate content. Elevated concentrations of phosphate are a generalised signature of human activity.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:scopeNote xml:lang="en">The taking of samples at regular intervals from the surface of a study area in order to retrieve information on the different chemical elements present.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/145134">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/145134</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">GEOPHYSICAL SURVEY</skos:prefLabel>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/147324" />
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/147321">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/147321</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">ACOUSTIC GROUND DISCRIMINATING RADAR</skos:prefLabel>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145134" />
+				<skos:scopeNote xml:lang="en">An extra processing unit which can be used in conjunction with single beam echo sounders to determine the roughness and hardness of the seafloor. Mainly used for marine biology, but has been used in archaeology.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145158" />
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/146347" />
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/147323" />
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145131" />
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/145135">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/145135</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">GROUND PENETRATING RADAR SURVEY</skos:prefLabel>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+				<skos:altLabel xml:lang="en">Ground Penetrating Radar</skos:altLabel>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145134" />
+				<skos:scopeNote xml:lang="en">A technique that measures the amount of time it takes pulses of  electromagnetic energy sent into the ground, from a transmitter, to reflect back from the interfaces between layers and other subsurface features in order to produce a subsurface profile.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/145143">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/145143</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">MAGNETIC SUSCEPTIBILITY SURVEY</skos:prefLabel>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+				<skos:altLabel xml:lang="en">Geophysical Magnetic Susceptibility</skos:altLabel>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145134" />
+				<skos:scopeNote xml:lang="en">The extraction of samples from selected features on a site to identify a characteristic magnetic response from sediments derived from the features in order to predict the response that similar features would produce. Also used to prospect for sites.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/145144">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/145144</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">MAGNETOMETRY SURVEY</skos:prefLabel>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+				<skos:altLabel xml:lang="en">Geophysical Magnetometer</skos:altLabel>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145134" />
+				<skos:scopeNote xml:lang="en">Survey using a magnetometer, a device capable of detecting variations in magnetic susceptibility between topsoils, subsoils and rocks, can also be used in a maritime context to detect variations in the magnetic field of seabed sediments.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/146339">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/146339</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">MICROGRAVITY SURVEY</skos:prefLabel>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145134" />
+				<skos:scopeNote xml:lang="en">A sensing technique that consists of measuring minute variations in the gravitational pull of the Earth in order to detect gravity anomalies arising from voids and cavities within the earth.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/146337">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/146337</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">SEISMIC SURVEY</skos:prefLabel>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+				<skos:altLabel xml:lang="en">Seismograph Survey</skos:altLabel>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145134" />
+				<skos:scopeNote xml:lang="en">An acoustic method which involves the creation of a shock wave through the ground. By recording the time interval between the initial shock and the reflected or refracted shock waves it is possible to define subsurface deposits.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/147265" />
+		<skos:scopeNote xml:lang="en">Ground-based or marine subsurface mapping of archaeological features using different sensing technologies. Most commonly applied are magnetometers, electrical resistance meters, ground penetrating radar, side scan sonar, and electromagnetic conductivity.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/145142">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/145142</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">LIDAR SURVEY</skos:prefLabel>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+		<skos:altLabel xml:lang="en">Airborne Lidar Survey</skos:altLabel>
+		<skos:altLabel xml:lang="en">Airborne Laser Scanning</skos:altLabel>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145108" />
+		<skos:related rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/146342" />
+		<skos:scopeNote xml:lang="en">Light detection and ranging is a type of aircraft based remote sensing which records reflected laser pulses. The data can be used to produce very accurate digital elevation models. For ground-based work use LASER SCANNING SURVEY.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/145146">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/145146</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">MEASURED SURVEY</skos:prefLabel>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145131" />
+		<skos:related rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145110" />
+		<skos:related rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145118" />
+		<skos:scopeNote xml:lang="en">A dimensional check on a building or site giving detailed measurements.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/145147">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/145147</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">METAL DETECTING SURVEY</skos:prefLabel>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+		<skos:altLabel xml:lang="en">Metal Detectors</skos:altLabel>
+		<skos:altLabel xml:lang="en">Systematic Metal Detector Survey</skos:altLabel>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145131" />
+		<skos:related rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145148" />
+		<skos:scopeNote xml:lang="en">Structured and carefully executed scanning of the ground surface with a metal detecting device in order to recover surface scatters of metal objects and plot them spatially within the study area; a technique useful in battlefield archaeology.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/145148">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/145148</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">METAL DETECTING USE</skos:prefLabel>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145109" />
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145150" />
+		<skos:related rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145147" />
+		<skos:scopeNote xml:lang="en">The hobby of using a metal detector to hunt for buried coins or artefacts; alternatively the use of a metal detector to locate metal artefacts on an archaeological excavation that otherwise would go unnoticed.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/145149">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/145149</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">MULTI SPECTRAL AERIAL PHOTOGRAPHY</skos:prefLabel>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/145139">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/145139</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">INFRARED AERIAL PHOTOGRAPHY</skos:prefLabel>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+				<skos:altLabel xml:lang="en">Infra Red Aerial Photography</skos:altLabel>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145149" />
+				<skos:scopeNote xml:lang="en">Aerial photography using infrared sensitive film or sensors to reveal soil and vegetation characteristics not apparent in photographs derived from conventional aerial photography.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/145140">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/145140</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">INFRARED LINE SCAN AERIAL PHOTOGRAPHY</skos:prefLabel>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+				<skos:altLabel xml:lang="en">Infra Red Line Scan Aerial Photography</skos:altLabel>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145149" />
+				<skos:scopeNote xml:lang="en">A specific type of Infrared photography that uses an airborne scanning infrared sensor to record differential spectrums of features both extant and buried.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/145141">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/145141</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">INFRARED THERMOGRAPHY SURVEY</skos:prefLabel>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+				<skos:altLabel xml:lang="en">Infra Red Thermography Survey</skos:altLabel>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145149" />
+				<skos:scopeNote xml:lang="en">An investigative method using an infrared camera to detect temperature differences in the ground. The thermal camera does not record the actual temperature of the object in question. Instead the camera records the infrared radiation emitted by the object.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145107" />
+		<skos:scopeNote xml:lang="en">Recording using specialist equipment that allows discrete wavelengths in the visible spectrum and beyond to be recorded. The combination of different spectral bands allows features to be identified that would not be visible to the naked eye.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/145150">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/145150</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">NON ARCHAEOLOGICAL INTERVENTION</skos:prefLabel>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145111" />
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145112" />
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/146344">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/146344</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">CASUAL OBSERVATION</skos:prefLabel>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145150" />
+				<skos:scopeNote xml:lang="en">The unplanned observation of archaeological features or the recovery of artefacts of interest, for example either random finds by members of the public or the unplanned observation of archaeological features during the course of unmonitored developments.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/147259" />
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145148" />
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/147297" />
+		<skos:scopeNote xml:lang="en">Any activities, that have a physical impact upon the archaeological resource where the purpose is not primarily archaeological research.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/145153">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/145153</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">PHOTOGRAMMETRIC SURVEY</skos:prefLabel>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+		<skos:altLabel xml:lang="en">Photogrammetry</skos:altLabel>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145154" />
+		<skos:related rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145155" />
+		<skos:scopeNote xml:lang="en">The measurement of a surface, either in elevation or plan, determined from measurements derived from two or more photographic images taken from different positions; this allows three dimensional viewing of the surface to be mapped.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/145154">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/145154</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">PHOTOGRAPHIC SURVEY</skos:prefLabel>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145153" />
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145131" />
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145155" />
+		<skos:scopeNote xml:lang="en">Detailed survey using photographic images to record archaeological and architectural sites or features of interest. Record photography is an important aspect of recording such features before they are destroyed.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/145155">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/145155</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">RECTIFIED PHOTOGRAPHIC SURVEY</skos:prefLabel>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145154" />
+		<skos:related rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145153" />
+		<skos:scopeNote xml:lang="en">Systematic recording of building facades that produces a seamless mosaic of digital images by identifying control points and defining limits to each image. The rectified mosaic can then be introduced into a CAD environment.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/145156">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/145156</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">REMOTE SENSING</skos:prefLabel>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145108" />
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/147311">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/147311</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">REMOTE OPERATED VEHICLE SURVEY</skos:prefLabel>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145156" />
+				<skos:scopeNote xml:lang="en">A technique utilised in maritime recording; a remote operated vehicle (ROV) is a tethered underwater robot. ROVs have been used to locate and inspect a number of historic shipwrecks in depths beyond the reach of human divers.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/147298" />
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/145162">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/145162</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">SATELLITE IMAGING</skos:prefLabel>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145156" />
+				<skos:scopeNote xml:lang="en">The capture of imagery using an orbiting satellite. The type of imagery is very varied including visible light photography, infrared and multi spectral photography as well as imagery derived from radar and lidar data.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:scopeNote xml:lang="en">Survey using photographic or other recording equipment mounted on or used from either an aircraft or other airborne vehicle or a maritime vessel/submersible craft.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/145158">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/145158</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">EARTH RESISTANCE (RESISTIVITY) SURVEY</skos:prefLabel>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+		<skos:altLabel xml:lang="en">Resistivity Survey</skos:altLabel>
+		<skos:altLabel xml:lang="en">Earth Resistance Survey</skos:altLabel>
+		<skos:altLabel xml:lang="en">Electrical Survey</skos:altLabel>
+		<skos:altLabel xml:lang="en">Geophysical Resistivity</skos:altLabel>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145134" />
+		<skos:related rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/146347" />
+		<skos:related rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/147323" />
+		<skos:scopeNote xml:lang="en">Examination, recording and plotting of variations in the electrical resistivity of soils in order to locate and define buried features.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/145160">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/145160</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">SALVAGE RECORDING</skos:prefLabel>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145109" />
+		<skos:related rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145177" />
+		<skos:scopeNote xml:lang="en">The monitoring of the excavation of a hole made by a non-archaeologically trained person. Any archaeological evidence that comes to light is recorded by the archaeologist during the course of the work although he/she cannot suspend the groundwork.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/145168">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/145168</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">SUB BOTTOM PROFILING SURVEY</skos:prefLabel>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/147265" />
+		<skos:related rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/147324" />
+		<skos:scopeNote xml:lang="en">Used to identify and measure various sediment layers that exist below the seabed. A sound source emits a signal vertically downwards and a receiver monitors the return signal that has been reflected off the seafloor and sub seabed sediment layers.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/145173">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/145173</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">TIMBER SAMPLING</skos:prefLabel>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145126" />
+		<skos:related rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145122" />
+		<skos:scopeNote xml:lang="en">The extraction of a limited quantity of wood for scientific analysis.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/145174">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/145174</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">TOPOGRAPHIC SURVEY</skos:prefLabel>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+		<skos:altLabel xml:lang="en">Contour Survey</skos:altLabel>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145131" />
+		<skos:related rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/147244" />
+		<skos:scopeNote xml:lang="en">The controlled measurement of natural and artificial landscape features to produce a measured plan or a 3D data set reading as a plan. Features are depicted by either hachures, symbols or contour lines.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/145176">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/145176</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">UNSYSTEMATIC FIELDWALKING SURVEY</skos:prefLabel>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+		<skos:altLabel xml:lang="en">Fieldwalking</skos:altLabel>
+		<skos:altLabel xml:lang="en">Topsoil Artefact Survey</skos:altLabel>
+		<skos:altLabel xml:lang="en">Surface Collection</skos:altLabel>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/152410" />
+		<skos:related rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145132" />
+		<skos:scopeNote xml:lang="en">The unsystematic study of ground surfaces and collection of visible archaeological material.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/145177">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/145177</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">WATCHING BRIEF</skos:prefLabel>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145109" />
+		<skos:related rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145130" />
+		<skos:related rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145160" />
+		<skos:scopeNote xml:lang="en">A formal programme of observation and investigation conducted during any operation carried out for non-archaeological reasons that may damage archaeological deposits. This will be within a specified area or site on land, inter-tidal zone or underwater.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/agl_et/concepts/152410">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/agl_et" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/agl_et/concepts/152410</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">FIELDWALKING SURVEY</skos:prefLabel>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T08:43:37</dcterms:issued>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145131" />
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145132" />
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/agl_et/concepts/145176" />
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+</rdf:RDF>

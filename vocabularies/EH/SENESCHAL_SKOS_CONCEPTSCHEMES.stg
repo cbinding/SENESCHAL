@@ -1,0 +1,20 @@
+//==============================================================================
+// Creator : Ceri Binding, University of Glamorgan
+// Project : SENESCHAL
+// Classes : SENESCHAL_SKOS_CONCEPTSCHEMES.stg
+// Version : 002
+// Summary : string template group for use with STELLAR application
+// License : http://creativecommons.org/licenses/by/3.0/ 
+// =============================================================================
+// History :
+
+// 001 20/10/2011 CFB Initially created template group
+// 002 27/03/2013 CFB Branched version specifically for SENESCHAL project
+//============================================================================//
+delimiters "$", "$"
+import "SENESCHAL_SKOS.stg"
+
+HEADER(options) ::= "$RDF_HEADER()$"
+FOOTER(options) ::= "$RDF_FOOTER()$"
+RECORD(options, data) ::= "$SKOS_CONCEPTSCHEME(options, data)$"
+

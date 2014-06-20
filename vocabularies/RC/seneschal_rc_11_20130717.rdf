@@ -1,0 +1,264 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cc="http://creativecommons.org/ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:base="http://stellar/">
+	<skos:ConceptScheme rdf:about="http://purl.org/heritagedata/schemes/11">
+		<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+		<dcterms:contributor rdf:resource="http://www.cpat.org.uk" />
+		<dcterms:contributor rdf:resource="http://www.dyfedarchaeology.org.uk" />
+		<dcterms:contributor rdf:resource="http://www.heneb.co.uk" />
+		<dcterms:contributor rdf:resource="http://www.ggat.org.uk" />
+		<dcterms:contributor rdf:resource="http://www.rcahmw.gov.uk" />
+		<dcterms:contributor rdf:resource="http://cadw.wales.gov.uk" />
+		<dcterms:contributor rdf:resource="http://www.museumwales.ac.uk" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/11</dcterms:identifier>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+		<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+		<dcterms:title xml:lang="en">PERIOD (WALES)</dcterms:title>
+		<rdfs:label xml:lang="en">PERIOD (WALES)</rdfs:label>
+		<dcterms:description xml:lang="en">A list of periods for use in Wales.</dcterms:description>
+		<dcterms:coverage rdf:resource="http://data.ordnancesurvey.co.uk/id/7000000000041424" />
+		<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-05T09:55:07</dcterms:created>
+		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-05T14:36:44</dcterms:modified>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:09:59</dcterms:issued>
+		<skos:hasTopConcept>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/11/concepts/505127">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/11" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/11/concepts/505127</dcterms:identifier>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+				<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+				<skos:topConceptOf rdf:resource="http://purl.org/heritagedata/schemes/11" />
+				<skos:prefLabel xml:lang="en">EARLY MEDIEVAL</skos:prefLabel>
+				<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-05T10:20:36</dcterms:created>
+				<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-05T10:21:08</dcterms:modified>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:09:59</dcterms:issued>
+				<skos:scopeNote xml:lang="en">From the abandonment of Britain by the Roman legions in 410AD to the establishment of Norman control over large parts of Wales in 1086.</skos:scopeNote>
+			</skos:Concept>
+		</skos:hasTopConcept>
+		<skos:hasTopConcept>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/11/concepts/505128">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/11" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/11/concepts/505128</dcterms:identifier>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+				<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+				<skos:topConceptOf rdf:resource="http://purl.org/heritagedata/schemes/11" />
+				<skos:prefLabel xml:lang="en">MEDIEVAL</skos:prefLabel>
+				<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-05T10:21:21</dcterms:created>
+				<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-05T10:21:53</dcterms:modified>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:09:59</dcterms:issued>
+				<skos:scopeNote xml:lang="en">From the establishment of Norman control over large parts of Wales in 1086 to the Act of Union between England and Wales in 1536.</skos:scopeNote>
+			</skos:Concept>
+		</skos:hasTopConcept>
+		<skos:hasTopConcept>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/11/concepts/505130">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/11" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/11/concepts/505130</dcterms:identifier>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+				<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+				<skos:topConceptOf rdf:resource="http://purl.org/heritagedata/schemes/11" />
+				<skos:prefLabel xml:lang="en">MODERN</skos:prefLabel>
+				<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-05T10:23:02</dcterms:created>
+				<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-05T10:24:11</dcterms:modified>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:09:59</dcterms:issued>
+				<skos:scopeNote xml:lang="en">The twentieth and twenty-first century.</skos:scopeNote>
+			</skos:Concept>
+		</skos:hasTopConcept>
+		<skos:hasTopConcept>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/11/concepts/505131">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/11" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/11/concepts/505131</dcterms:identifier>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+				<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+				<skos:topConceptOf rdf:resource="http://purl.org/heritagedata/schemes/11" />
+				<skos:prefLabel xml:lang="en">MULTIPERIOD</skos:prefLabel>
+				<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-05T10:24:29</dcterms:created>
+				<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-05T10:38:45</dcterms:modified>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:09:59</dcterms:issued>
+				<skos:scopeNote xml:lang="en">Should be used where the date or use if the feature spans more than one period.</skos:scopeNote>
+			</skos:Concept>
+		</skos:hasTopConcept>
+		<skos:hasTopConcept>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/11/concepts/505133">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/11" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/11/concepts/505133</dcterms:identifier>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+				<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+				<skos:topConceptOf rdf:resource="http://purl.org/heritagedata/schemes/11" />
+				<skos:prefLabel xml:lang="en">NOT APPLICABLE</skos:prefLabel>
+				<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-05T10:25:43</dcterms:created>
+				<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-05T10:26:28</dcterms:modified>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:09:59</dcterms:issued>
+				<skos:altLabel xml:lang="en">GENERAL</skos:altLabel>
+				<skos:scopeNote xml:lang="en">Where the period of the record is not significant. This value is often used for topographic or natural features.</skos:scopeNote>
+			</skos:Concept>
+		</skos:hasTopConcept>
+		<skos:hasTopConcept>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/11/concepts/505129">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/11" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/11/concepts/505129</dcterms:identifier>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+				<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+				<skos:topConceptOf rdf:resource="http://purl.org/heritagedata/schemes/11" />
+				<skos:prefLabel xml:lang="en">POST MEDIEVAL</skos:prefLabel>
+				<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-05T10:22:07</dcterms:created>
+				<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-05T10:22:42</dcterms:modified>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:09:59</dcterms:issued>
+				<skos:scopeNote xml:lang="en">From the Act of Union between England and Wales in 1536 to the end of the nineteenth century.</skos:scopeNote>
+			</skos:Concept>
+		</skos:hasTopConcept>
+		<skos:hasTopConcept rdf:resource="http://purl.org/heritagedata/schemes/11/concepts/505102" />
+		<skos:hasTopConcept>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/11/concepts/505126">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/11" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/11/concepts/505126</dcterms:identifier>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+				<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+				<skos:topConceptOf rdf:resource="http://purl.org/heritagedata/schemes/11" />
+				<skos:prefLabel xml:lang="en">ROMAN</skos:prefLabel>
+				<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-05T10:19:46</dcterms:created>
+				<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-05T10:20:15</dcterms:modified>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:09:59</dcterms:issued>
+				<skos:scopeNote xml:lang="en">From the invasion of Britain by the Romans in 43AD to its abandonment by the legions in 410AD.</skos:scopeNote>
+			</skos:Concept>
+		</skos:hasTopConcept>
+		<skos:hasTopConcept>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/11/concepts/505132">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/11" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/11/concepts/505132</dcterms:identifier>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+				<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+				<skos:topConceptOf rdf:resource="http://purl.org/heritagedata/schemes/11" />
+				<skos:prefLabel xml:lang="en">UNKNOWN</skos:prefLabel>
+				<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-05T10:25:02</dcterms:created>
+				<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-05T10:25:28</dcterms:modified>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:09:59</dcterms:issued>
+				<skos:scopeNote xml:lang="en">Where the period of the monument cannot be established.</skos:scopeNote>
+			</skos:Concept>
+		</skos:hasTopConcept>
+	</skos:ConceptScheme>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/11/concepts/505102">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/11" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/11/concepts/505102</dcterms:identifier>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+		<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+		<skos:topConceptOf rdf:resource="http://purl.org/heritagedata/schemes/11" />
+		<skos:prefLabel xml:lang="en">PREHISTORIC</skos:prefLabel>
+		<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-05T10:09:24</dcterms:created>
+		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-05T10:10:49</dcterms:modified>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:09:59</dcterms:issued>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/11/concepts/505121">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/11" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/11/concepts/505121</dcterms:identifier>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+				<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+				<skos:prefLabel xml:lang="en">PLEISTOCENE</skos:prefLabel>
+				<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-05T10:14:20</dcterms:created>
+				<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-05T10:15:06</dcterms:modified>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:09:59</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/11/concepts/505102" />
+				<skos:scopeNote xml:lang="en">The period that covers the span of the Palaeolithic periods (Lower, Middle, Early Upper, Late Upper and Final) that were commonly known as the Old Stone Age.</skos:scopeNote>
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/11/concepts/505122">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/11" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/11/concepts/505122</dcterms:identifier>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+				<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+				<skos:prefLabel xml:lang="en">PALAEOLITHIC</skos:prefLabel>
+				<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-05T10:16:28</dcterms:created>
+				<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-05T10:16:55</dcterms:modified>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:09:59</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/11/concepts/505102" />
+				<skos:scopeNote xml:lang="en">The 'Old Stone Age' from the earliest appearance of man in the British Isles to the end of the last Ice Age around 8,500 years BC.</skos:scopeNote>
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/11/concepts/505123">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/11" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/11/concepts/505123</dcterms:identifier>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+				<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+				<skos:prefLabel xml:lang="en">MESOLITHIC</skos:prefLabel>
+				<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-05T10:17:12</dcterms:created>
+				<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-05T10:17:41</dcterms:modified>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:09:59</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/11/concepts/505102" />
+				<skos:scopeNote xml:lang="en">The 'Middle Stone Age' from the end of the last Ice Age around 8,500 years BC ago to the introduction of farming in the British Isles around 4,000 years BC. 10000 - 4400BC</skos:scopeNote>
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/11/concepts/505124">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/11" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/11/concepts/505124</dcterms:identifier>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+				<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+				<skos:prefLabel xml:lang="en">NEOLITHIC</skos:prefLabel>
+				<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-05T10:18:09</dcterms:created>
+				<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-05T10:18:36</dcterms:modified>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:09:59</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/11/concepts/505102" />
+				<skos:scopeNote xml:lang="en">The 'New Stone Age' from the introduction of farming in the British Isles to the introduction of metal technology in the Bronze Age around 2,200 years BC.</skos:scopeNote>
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/11/concepts/505125">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/11" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/11/concepts/505125</dcterms:identifier>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+				<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+				<skos:prefLabel xml:lang="en">IRON AGE</skos:prefLabel>
+				<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-05T10:18:53</dcterms:created>
+				<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-05T10:19:21</dcterms:modified>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:09:59</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/11/concepts/505102" />
+				<skos:scopeNote xml:lang="en">From the introduction of iron working technology around 700 years BC to the invasion of Britain by Rome in 43AD.</skos:scopeNote>
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/11/concepts/505101">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/11" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/11/concepts/505101</dcterms:identifier>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+				<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+				<skos:prefLabel xml:lang="en">BRONZE AGE</skos:prefLabel>
+				<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-05T09:57:23</dcterms:created>
+				<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-05T10:08:48</dcterms:modified>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:09:59</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/11/concepts/505102" />
+				<skos:scopeNote xml:lang="en">From the introduction of bronze working technology around 2,200 years BC to the beginning of iron working technology around 700 years BC.</skos:scopeNote>
+			</skos:Concept>
+		</skos:narrower>
+		<skos:scopeNote xml:lang="en">All periods up to the invasion of Britain by the Romans in 43AD.</skos:scopeNote>
+	</skos:Concept>
+</rdf:RDF>

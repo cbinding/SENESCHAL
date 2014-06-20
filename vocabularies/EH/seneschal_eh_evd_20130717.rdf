@@ -1,0 +1,738 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cc="http://creativecommons.org/ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:base="http://stellar/">
+	<skos:ConceptScheme rdf:about="http://purl.org/heritagedata/schemes/eh_evd">
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/eh_evd</dcterms:identifier>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:title xml:lang="en">EVIDENCE (EH)</dcterms:title>
+		<rdfs:label xml:lang="en">EVIDENCE (EH)</rdfs:label>
+		<dcterms:description xml:lang="en">Terminology covering the existing physical remains of a monument, or the means by which a monument has been identified where no physical remains exist</dcterms:description>
+		<dcterms:coverage rdf:resource="http://data.ordnancesurvey.co.uk/id/country/england" />
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+		<skos:hasTopConcept>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/eh_evd/concepts/82790">
+				<skos:topConceptOf rdf:resource="http://purl.org/heritagedata/schemes/eh_evd" />
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/eh_evd" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/eh_evd/concepts/82790</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">EVIDENCE</skos:prefLabel>
+				<skos:narrower>
+					<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/eh_evd/concepts/84565">
+						<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/eh_evd" />
+						<dcterms:identifier>http://purl.org/heritagedata/schemes/eh_evd/concepts/84565</dcterms:identifier>
+						<skos:prefLabel xml:lang="en">DESTROYED MONUMENT</skos:prefLabel>
+						<skos:altLabel xml:lang="en">Destroyed</skos:altLabel>
+						<skos:altLabel xml:lang="en">Partially Destroyed Monument</skos:altLabel>
+						<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/82790" />
+						<skos:scopeNote xml:lang="en">All physical evidence for a monument has certainly been completely destroyed (allowing no future reinvestigation) by activity implying substantial ground disturbance. Eg quarrying, road cutting, or natural disaster, erosion, acts of God etc.</skos:scopeNote>
+						<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+						<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+						<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+						<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+					</skos:Concept>
+				</skos:narrower>
+				<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/97293" />
+				<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/97294" />
+				<skos:narrower>
+					<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/eh_evd/concepts/82798">
+						<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/eh_evd" />
+						<dcterms:identifier>http://purl.org/heritagedata/schemes/eh_evd/concepts/82798</dcterms:identifier>
+						<skos:prefLabel xml:lang="en">UNCERTAIN EVIDENCE</skos:prefLabel>
+						<skos:altLabel xml:lang="en">Uncertain</skos:altLabel>
+						<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/82790" />
+						<skos:scopeNote xml:lang="en">Current recorded information does not give the evidence for a monument, or the information is regarded as unreliable.</skos:scopeNote>
+						<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+						<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+						<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+						<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+					</skos:Concept>
+				</skos:narrower>
+				<skos:scopeNote xml:lang="en">Do not use</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:hasTopConcept>
+	</skos:ConceptScheme>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/eh_evd/concepts/84569">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/eh_evd" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/eh_evd/concepts/84569</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">SUB SURFACE DEPOSIT</skos:prefLabel>
+		<skos:altLabel xml:lang="en">Geophysical Evidence</skos:altLabel>
+		<skos:altLabel xml:lang="en">Flat - Accumulated</skos:altLabel>
+		<skos:altLabel xml:lang="en">Flat - Unaccumulated</skos:altLabel>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/97294" />
+		<skos:related rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/100510" />
+		<skos:related rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/100512" />
+		<skos:related rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/151454" />
+		<skos:related rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/99974" />
+		<skos:scopeNote xml:lang="en">Monument either never or no longer visible above ground surface, but whose presence is indicated by proven below ground stratigraphy revealed by deliberate investigation, including geophysical survey, or other surface disturbance.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/eh_evd/concepts/84570">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/eh_evd" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/eh_evd/concepts/84570</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">STRUCTURE</skos:prefLabel>
+		<skos:altLabel xml:lang="en">Other Structure</skos:altLabel>
+		<skos:altLabel xml:lang="en">Standing  Monument</skos:altLabel>
+		<skos:altLabel xml:lang="en">Standing Structure - Bonded</skos:altLabel>
+		<skos:altLabel xml:lang="en">Standing Structure - Unbonded</skos:altLabel>
+		<skos:altLabel xml:lang="en">Partially Destroyed Monument</skos:altLabel>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/eh_evd/concepts/142987">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/eh_evd" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/eh_evd/concepts/142987</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">DEMOLISHED STRUCTURE</skos:prefLabel>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/84570" />
+				<skos:scopeNote xml:lang="en">A monument consisting of a built structure, but which has been demolished so that only a ground plan and foundations, or similar, are thought to remain. Where all below ground traces have also been removed use DESTROYED MONUMENT.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/eh_evd/concepts/142986">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/eh_evd" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/eh_evd/concepts/142986</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">EXTANT STRUCTURE</skos:prefLabel>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/84570" />
+				<skos:scopeNote xml:lang="en">Man-made roofless edifice or construction which is intact or substantially intant, with significant survival of original features, even if no longer serving original intended funtion.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/141909" />
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/eh_evd/concepts/142985">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/eh_evd" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/eh_evd/concepts/142985</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">RUINED STRUCTURE</skos:prefLabel>
+				<skos:altLabel xml:lang="en">Ruined Structure - Bonded</skos:altLabel>
+				<skos:altLabel xml:lang="en">Ruined Structure - Unbonded</skos:altLabel>
+				<skos:altLabel xml:lang="en">Partially Destroyed Monument</skos:altLabel>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/84570" />
+				<skos:scopeNote xml:lang="en">Man-made, roofless edifice or construction visible as substantial above-ground remains retaining evidence of architecture and materials, but which has been substantially destroyed.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/97294" />
+		<skos:scopeNote xml:lang="en">Man-made building, edifice or construction of assembled material parts.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/eh_evd/concepts/84564">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/eh_evd" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/eh_evd/concepts/84564</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">BUILDING</skos:prefLabel>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/97294" />
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/100510" />
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/eh_evd/concepts/97291">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/eh_evd" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/eh_evd/concepts/97291</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">EXTANT BUILDING</skos:prefLabel>
+				<skos:altLabel xml:lang="en">Roofed Building</skos:altLabel>
+				<skos:altLabel xml:lang="en">Building Complex</skos:altLabel>
+				<skos:altLabel xml:lang="en">Roofed Ruin</skos:altLabel>
+				<skos:altLabel xml:lang="en">Building - Bonded</skos:altLabel>
+				<skos:altLabel xml:lang="en">Building - Other</skos:altLabel>
+				<skos:altLabel xml:lang="en">Inhabited Building</skos:altLabel>
+				<skos:altLabel xml:lang="en">Uninhabited Building</skos:altLabel>
+				<skos:altLabel xml:lang="en">Partially Demolished Building</skos:altLabel>
+				<skos:altLabel xml:lang="en">Partially Destroyed Monument</skos:altLabel>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/84564" />
+				<skos:scopeNote xml:lang="en">Monument with roof or walls intact or substantially intact, significant survival of original features, even if building no longer in use for original function.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/141908" />
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/eh_evd/concepts/87962">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/eh_evd" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/eh_evd/concepts/87962</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">RUINED BUILDING</skos:prefLabel>
+				<skos:altLabel xml:lang="en">Partially Demolished Building</skos:altLabel>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/84564" />
+				<skos:scopeNote xml:lang="en">Monument visible as substantial above ground remains, retaining evidence of architecture and materials, with walls partially or completely intact but with roof and interior walls substantially or completely destroyed.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:scopeNote xml:lang="en">Monument with a roof and walls or evidence of these.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/eh_evd/concepts/97294">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/eh_evd" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/eh_evd/concepts/97294</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">PHYSICAL EVIDENCE</skos:prefLabel>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/eh_evd/concepts/97296">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/eh_evd" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/eh_evd/concepts/97296</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">ARCHITECTURAL COMPONENT</skos:prefLabel>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/97294" />
+				<skos:scopeNote xml:lang="en">Monument whose existence is inferred from the traces of architectural features. Eg include shadow marks on building walls or beams, pillars, floors incorporated into a later structure, suggesting the existence of an earlier building.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/eh_evd/concepts/99691">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/eh_evd" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/eh_evd/concepts/99691</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">BOTANICAL FEATURE</skos:prefLabel>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/97294" />
+				<skos:scopeNote xml:lang="en">A monument composed of plants or trees which are still extant. Especially relevant for park and garden features. For example tree avenue, orchard, rose garden and lawn.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/84564" />
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/151454" />
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/eh_evd/concepts/78253">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/eh_evd" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/eh_evd/concepts/78253</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">CROPMARK</skos:prefLabel>
+				<skos:altLabel xml:lang="en">Ap Site</skos:altLabel>
+				<skos:altLabel xml:lang="en">Ap Enclosure</skos:altLabel>
+				<skos:altLabel xml:lang="en">Ap Linear Feature</skos:altLabel>
+				<skos:altLabel xml:lang="en">Ap Macula</skos:altLabel>
+				<skos:altLabel xml:lang="en">Parchmark</skos:altLabel>
+				<skos:altLabel xml:lang="en">Crop Mark</skos:altLabel>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/97294" />
+				<skos:scopeNote xml:lang="en">Monument visible as a mark in standing crops or parchmarks, but where no subsurface deposits have been proven eg by excavation or other ground disturbance, in which case SUB SURFACE DEPOSIT should be used.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/eh_evd/concepts/151455">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/eh_evd" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/eh_evd/concepts/151455</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">DESIGNED LANDSCAPE</skos:prefLabel>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/97294" />
+				<skos:scopeNote xml:lang="en">A landscape which has been specifically designed or modified. Often indicated by proven below ground stratigraphy, revealed by deliberate investigation including geophysical survey, or other surface monuments or structures.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/78252" />
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/eh_evd/concepts/84567">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/eh_evd" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/eh_evd/concepts/84567</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">ENHANCED NATURAL FEATURE</skos:prefLabel>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/97294" />
+				<skos:scopeNote xml:lang="en">Natural feature or area deliberately enhanced to construct a monument, eg rock carving, cave, rock shelter.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/eh_evd/concepts/143015">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/eh_evd" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/eh_evd/concepts/143015</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">EXCAVATED FEATURE</skos:prefLabel>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/97294" />
+				<skos:scopeNote xml:lang="en">Feature visible following archaeological excavation</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/82791" />
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/eh_evd/concepts/100511">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/eh_evd" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/eh_evd/concepts/100511</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">MODIFIED SURFACE</skos:prefLabel>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/97294" />
+				<skos:scopeNote xml:lang="en">A monument where the evidence that defines the type of the monument derives from the nature of surface markings. Examples include graffitti on quarry walls.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/eh_evd/concepts/84568">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/eh_evd" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/eh_evd/concepts/84568</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">NATURAL FEATURE</skos:prefLabel>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/97294" />
+				<skos:scopeNote xml:lang="en">Monument thought to be archaeological or historical but proved to be natural.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/82790" />
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/eh_evd/concepts/99982">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/eh_evd" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/eh_evd/concepts/99982</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">SOILMARK</skos:prefLabel>
+				<skos:altLabel xml:lang="en">Ap Site</skos:altLabel>
+				<skos:altLabel xml:lang="en">Ap Enclosure</skos:altLabel>
+				<skos:altLabel xml:lang="en">Ap Linear Feature</skos:altLabel>
+				<skos:altLabel xml:lang="en">Ap Macula</skos:altLabel>
+				<skos:altLabel xml:lang="en">Soil Mark</skos:altLabel>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/97294" />
+				<skos:scopeNote xml:lang="en">Monument visible, usually from the air, due to the fill of features being of a different colour than the surrounding subsoil. Soilmarks show up well in ploughed fields or areas where the topsoil has been stripped.  Term derived from AN32 Glossary</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/84570" />
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/84569" />
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/99975" />
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/eh_evd/concepts/84571">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/eh_evd" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/eh_evd/concepts/84571</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">SUBTERRANEAN FEATURE</skos:prefLabel>
+				<skos:altLabel xml:lang="en">Subterranean</skos:altLabel>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/97294" />
+				<skos:scopeNote xml:lang="en">Monument visible as a below ground man-made structure. Use for tunnels, mineworking, cellars, shelters.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/eh_evd/concepts/142975">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/eh_evd" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/eh_evd/concepts/142975</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">SURFACE DEPOSIT</skos:prefLabel>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/97294" />
+				<skos:scopeNote xml:lang="en">A deposit that forms the ground surface (when the evidence is collected), particularly a hard surface such as a floor or road.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/eh_evd/concepts/139114">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/eh_evd" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/eh_evd/concepts/139114</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">WRECKAGE</skos:prefLabel>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/97294" />
+				<skos:scopeNote xml:lang="en">The fragmentary or substantial remains of a vehicle or aircraft. Where recovered from excavation double index with SUB SURFACE DEPOSIT.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:scopeNote xml:lang="en">Not to be used for indexing. Broad term used to assist retreival of all monuments where physical evidence is recorded.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/eh_evd/concepts/78252">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/eh_evd" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/eh_evd/concepts/78252</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">EARTHWORK</skos:prefLabel>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/97294" />
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/99974" />
+		<skos:scopeNote xml:lang="en">Monument existing as an upstanding earthwork, ditch or artificial watercourse, or as a low stone built feature not covered by the other categories.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/eh_evd/concepts/82791">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/eh_evd" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/eh_evd/concepts/82791</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">FIND</skos:prefLabel>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/eh_evd/concepts/135585">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/eh_evd" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/eh_evd/concepts/135585</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">ARTEFACT SCATTER</skos:prefLabel>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/82791" />
+				<skos:scopeNote xml:lang="en">A distribution of artefacts indicating the presence of former presence of a monument.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/97294" />
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/100512" />
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/eh_evd/concepts/111153">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/eh_evd" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/eh_evd/concepts/111153</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">UNSTRATIFIED FIND</skos:prefLabel>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/82791" />
+				<skos:scopeNote xml:lang="en">Monument whose presence is inferred by discovery of unstratified artefacts, for instance in plough soil.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:scopeNote xml:lang="en">Monument whose existence is indicated by the discovery of isolated artefacts or an artefact scatter. Eg a scatter of roofing tiles indicating the presence of a building. Use narrow terms where circumstances of discovery are known.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/eh_evd/concepts/97293">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/eh_evd" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/eh_evd/concepts/97293</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">IMPLIED EVIDENCE</skos:prefLabel>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/eh_evd/concepts/84573">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/eh_evd" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/eh_evd/concepts/84573</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">CONJECTURAL EVIDENCE</skos:prefLabel>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/97293" />
+				<skos:scopeNote xml:lang="en">Monument type/interpretation is inferred, based on informed speculation eg by comparison with similar monuments, proximity to other monuments, topography, site character etc.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/eh_evd/concepts/82788">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/eh_evd" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/eh_evd/concepts/82788</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">DOCUMENTARY EVIDENCE</skos:prefLabel>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/97293" />
+				<skos:scopeNote xml:lang="en">Monument known only from primary documentary sources eg books, maps, legal records, where no physical evidence exists. Use also where a monument has been planned but never constructed.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/82790" />
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/99976" />
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/eh_evd/concepts/146360">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/eh_evd" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/eh_evd/concepts/146360</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">MARINE TRAWLING PLOT</skos:prefLabel>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/97293" />
+				<skos:scopeNote xml:lang="en">An object in the sea bed recorded on the Hydrographic Office plot of objects snagged by nets during trawling.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/eh_evd/concepts/140391">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/eh_evd" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/eh_evd/concepts/140391</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">ORAL EVIDENCE</skos:prefLabel>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/97293" />
+				<skos:scopeNote xml:lang="en">A monument whose presence is inferred from verbally delivered information drawn from the speaker's personal knowledge.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/eh_evd/concepts/84574">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/eh_evd" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/eh_evd/concepts/84574</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">PLACENAME EVIDENCE</skos:prefLabel>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/97293" />
+				<skos:scopeNote xml:lang="en">Use where the presence or nature of a monument is inferred from placenames or placename elements.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:scopeNote xml:lang="en">Not to be used for indexing. Broad term to assist retreival of all monuments where non-physical evidence is recorded.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/eh_evd/concepts/99974">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/eh_evd" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/eh_evd/concepts/99974</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">LEVELLED EARTHWORK</skos:prefLabel>
+		<skos:altLabel xml:lang="en">Plough Levelled Earthwork</skos:altLabel>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/78252" />
+		<skos:related rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/84569" />
+		<skos:scopeNote xml:lang="en">Monument visible as remains of former earthworks.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/eh_evd/concepts/99975">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/eh_evd" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/eh_evd/concepts/99975</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">SUBMERGED MONUMENT</skos:prefLabel>
+		<skos:altLabel xml:lang="en">Submerged</skos:altLabel>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/97294" />
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/82799" />
+		<skos:related rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/99976" />
+		<skos:scopeNote xml:lang="en">Monument visible on the sea, lake or river bed, either totally submerged at all times, or exposed at low tide, low water conditions etc.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/eh_evd/concepts/99976">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/eh_evd" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/eh_evd/concepts/99976</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">MARINE GEOPHYSICAL EVIDENCE</skos:prefLabel>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/eh_evd/concepts/82789">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/eh_evd" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/eh_evd/concepts/82789</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">ECHOSOUNDER TRACE</skos:prefLabel>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/99976" />
+				<skos:scopeNote xml:lang="en">An object in the sea bed detected by marine survey equipment that shows the contours of the sea bed beneath a vessel.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/97293" />
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/eh_evd/concepts/111133">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/eh_evd" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/eh_evd/concepts/111133</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">MARINE MAGNETOMETER READING</skos:prefLabel>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/99976" />
+				<skos:scopeNote xml:lang="en">Maritime monument identified as a ferrous object lying on the sea bed detected using marine surveying equipment that detects localised anomalies in the Earth's magnetic field.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/eh_evd/concepts/143438">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/eh_evd" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/eh_evd/concepts/143438</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">MULTIBEAM SURVEY</skos:prefLabel>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/99976" />
+				<skos:scopeNote xml:lang="en">A marine survey in which a multi-element transducer provides many (30-150) individual soundings of the water depth and echo strength for each ping.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/82797" />
+		<skos:related rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/99975" />
+		<skos:scopeNote xml:lang="en">A monument visible as a trace on marine survey equipment</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/eh_evd/concepts/82799">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/eh_evd" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/eh_evd/concepts/82799</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">VESSEL STRUCTURE</skos:prefLabel>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/eh_evd/concepts/82785">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/eh_evd" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/eh_evd/concepts/82785</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">BURIED VESSEL STRUCTURE</skos:prefLabel>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/82799" />
+				<skos:scopeNote xml:lang="en">A maritime monument where the vessel remains are buried in the sea bed.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/eh_evd/concepts/82786">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/eh_evd" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/eh_evd/concepts/82786</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">COHERENT VESSEL STRUCTURE</skos:prefLabel>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/82799" />
+				<skos:scopeNote xml:lang="en">A maritime monument where the hull structure and fabric of a vessel remain wholly or mainly intact.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/eh_evd/concepts/82787">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/eh_evd" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/eh_evd/concepts/82787</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">COLLAPSED VESSEL STRUCTURE</skos:prefLabel>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/82799" />
+				<skos:scopeNote xml:lang="en">A maritime monument where the fabric of a vessel has collapsed, leaving the hull structure flat on the sea bed but not widely dispersed.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/eh_evd/concepts/82793">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/eh_evd" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/eh_evd/concepts/82793</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">INTACT VESSEL STRUCTURE</skos:prefLabel>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/82799" />
+				<skos:scopeNote xml:lang="en">A maritime monument where the hull of a vessel is mostly in one piece, with large pieces of the superstructure intact.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/eh_evd/concepts/82795">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/eh_evd" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/eh_evd/concepts/82795</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">SCATTERED VESSEL STRUCTURE</skos:prefLabel>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/82799" />
+				<skos:scopeNote xml:lang="en">A maritime monument where the remains of a vessel are scattered over a wide area.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/99975" />
+		<skos:scopeNote xml:lang="en">A maritime monument where the remains of a vessel are known to exist but where no detailed information is available.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/eh_evd/concepts/82797">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/eh_evd" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/eh_evd/concepts/82797</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">SONAR CONTACT</skos:prefLabel>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/eh_evd/concepts/82796">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/eh_evd" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/eh_evd/concepts/82796</dcterms:identifier>
+				<skos:prefLabel xml:lang="en">SIDE SCAN SONAR CONTACT</skos:prefLabel>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/82797" />
+				<skos:scopeNote xml:lang="en">An object projecting out of the sea bed detected by marine survey equipment that emits and receives high frequency sound waves projected sideways from a boat or towed array.</skos:scopeNote>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+				<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+			</skos:Concept>
+		</skos:narrower>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/99976" />
+		<skos:scopeNote xml:lang="en">An object lying on the sea bed detected by marine survey equipment that emits and receives high frequency sound waves.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/eh_evd/concepts/100510">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/eh_evd" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/eh_evd/concepts/100510</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">DEMOLISHED BUILDING</skos:prefLabel>
+		<skos:altLabel xml:lang="en">Building Foundation</skos:altLabel>
+		<skos:altLabel xml:lang="en">Partially Demolished Building</skos:altLabel>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/84564" />
+		<skos:related rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/84569" />
+		<skos:scopeNote xml:lang="en">A monument previously consisting of a built structure, but which has been demolished, such that only a ground plan and foundations or similar are thought to remain. Where all below ground traces have also been removed use DESTROYED MONUMENT.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/eh_evd/concepts/100512">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/eh_evd" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/eh_evd/concepts/100512</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">STRATIFIED FIND</skos:prefLabel>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/82791" />
+		<skos:related rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/84569" />
+		<skos:scopeNote xml:lang="en">A Monument whose presence is inferred from artefacts found in stratified below ground deposits, as distinct from surface collection or chance find.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/eh_evd/concepts/141908">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/eh_evd" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/eh_evd/concepts/141908</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">MOVED BUILDING</skos:prefLabel>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/84564" />
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/141909" />
+		<skos:scopeNote xml:lang="en">A building which has been moved from its original site either through active human intervention or natural processes such as erosion. For structures or objects such as gravestones use MOVED STRUCTURE.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/eh_evd/concepts/141909">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/eh_evd" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/eh_evd/concepts/141909</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">MOVED STRUCTURE</skos:prefLabel>
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/141908" />
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/84570" />
+		<skos:scopeNote xml:lang="en">A man-made construction or object (such as a gravestone) which has been moved from its original site either through active human intervention or natural processes such as erosion. For buildings which have been moved use MOVED BUILDING.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/eh_evd/concepts/151454">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/eh_evd" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/eh_evd/concepts/151454</dcterms:identifier>
+		<skos:prefLabel xml:lang="en">BURIAL</skos:prefLabel>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/97294" />
+		<skos:related rdf:resource="http://purl.org/heritagedata/schemes/eh_evd/concepts/84569" />
+		<skos:scopeNote xml:lang="en">The deliberate deposit of a body in the ground, usually located in a special area set aside for the purpose of burial, such as a graveyard or cemetery.</skos:scopeNote>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.english-heritage.org.uk" />
+		<cc:attributionName xml:lang="en">English Heritage</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.english-heritage.org.uk" />
+	</skos:Concept>
+</rdf:RDF>

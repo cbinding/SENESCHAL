@@ -1,0 +1,854 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cc="http://creativecommons.org/ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:base="http://stellar/">
+	<skos:ConceptScheme rdf:about="http://purl.org/heritagedata/schemes/17">
+		<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+		<dcterms:contributor rdf:resource="http://www.cpat.org.uk" />
+		<dcterms:contributor rdf:resource="http://www.dyfedarchaeology.org.uk" />
+		<dcterms:contributor rdf:resource="http://www.heneb.co.uk" />
+		<dcterms:contributor rdf:resource="http://www.ggat.org.uk" />
+		<dcterms:contributor rdf:resource="http://www.rcahmw.gov.uk" />
+		<dcterms:contributor rdf:resource="http://cadw.wales.gov.uk" />
+		<dcterms:contributor rdf:resource="http://www.museumwales.ac.uk" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/17</dcterms:identifier>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+		<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+		<dcterms:title xml:lang="en">EVENT (WALES)</dcterms:title>
+		<rdfs:label xml:lang="en">EVENT (WALES)</rdfs:label>
+		<dcterms:description xml:lang="en">A list of intrusive and non-intrusive event types used in Wales</dcterms:description>
+		<dcterms:coverage rdf:resource="http://data.ordnancesurvey.co.uk/id/7000000000041424" />
+		<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-05T14:35:35</dcterms:created>
+		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T11:55:27</dcterms:modified>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:09:59</dcterms:issued>
+		<skos:hasTopConcept rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507132" />
+		<skos:hasTopConcept rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507133" />
+		<skos:hasTopConcept>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/17/concepts/507134">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/17" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/17/concepts/507134</dcterms:identifier>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+				<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+				<skos:topConceptOf rdf:resource="http://purl.org/heritagedata/schemes/17" />
+				<skos:prefLabel xml:lang="en">PROJECT</skos:prefLabel>
+				<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T13:26:27</dcterms:created>
+				<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T13:27:02</dcterms:modified>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:10:00</dcterms:issued>
+				<skos:scopeNote xml:lang="en">A number of individual events grouped together. Typically projects will include documentation that provide a summary or overview description for the work undertaken. It includes projects that have been undertaken through a series of stages over a number of years.</skos:scopeNote>
+			</skos:Concept>
+		</skos:hasTopConcept>
+	</skos:ConceptScheme>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/17/concepts/505245">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/17" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/17/concepts/505245</dcterms:identifier>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+		<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+		<skos:prefLabel xml:lang="en">NEGLIGIBLE</skos:prefLabel>
+		<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-05T14:39:40</dcterms:created>
+		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-08-05T14:39:55</dcterms:modified>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:10:00</dcterms:issued>
+		<skos:scopeNote xml:lang="en">The threat to the site is negligible.</skos:scopeNote>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/17/concepts/507149">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/17" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/17/concepts/507149</dcterms:identifier>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+		<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+		<skos:prefLabel xml:lang="en">AUGER SURVEY</skos:prefLabel>
+		<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:04:26</dcterms:created>
+		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:04:50</dcterms:modified>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:10:00</dcterms:issued>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507135" />
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507136" />
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507140" />
+		<skos:scopeNote xml:lang="en">Transect or area-based arrangements of drilled auger-holes used to describe deposits and collect samples.</skos:scopeNote>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/17/concepts/507151">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/17" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/17/concepts/507151</dcterms:identifier>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+		<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+		<skos:prefLabel xml:lang="en">BOREHOLE SURVEY</skos:prefLabel>
+		<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:06:54</dcterms:created>
+		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:07:17</dcterms:modified>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:10:00</dcterms:issued>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507135" />
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507140" />
+		<skos:scopeNote xml:lang="en">Type of survey involving the drilling of deep and narrow shafts in the ground used to describe deposits, understand stratigraphy and collect core samples.</skos:scopeNote>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/17/concepts/507132">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/17" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/17/concepts/507132</dcterms:identifier>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+		<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+		<skos:topConceptOf rdf:resource="http://purl.org/heritagedata/schemes/17" />
+		<skos:prefLabel xml:lang="en">INTRUSIVE EVENT</skos:prefLabel>
+		<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T11:57:50</dcterms:created>
+		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T11:59:05</dcterms:modified>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:10:00</dcterms:issued>
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507135" />
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507136" />
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507137" />
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507140" />
+		<skos:scopeNote xml:lang="en">Broad terrm for an event that has an effect on the monument</skos:scopeNote>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/17/concepts/507133">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/17" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/17/concepts/507133</dcterms:identifier>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+		<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+		<skos:topConceptOf rdf:resource="http://purl.org/heritagedata/schemes/17" />
+		<skos:prefLabel xml:lang="en">NON INTRUSIVE EVENT</skos:prefLabel>
+		<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T13:24:48</dcterms:created>
+		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T13:29:41</dcterms:modified>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:10:00</dcterms:issued>
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507137" />
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507139" />
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507141" />
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507142" />
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507143" />
+		<skos:scopeNote xml:lang="en">An event that does not have any effect on the monument or monuments which is or are its subject.</skos:scopeNote>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/17/concepts/507135">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/17" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/17/concepts/507135</dcterms:identifier>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+		<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+		<skos:prefLabel xml:lang="en">ARCHAEOLOGICAL INTERVENTION</skos:prefLabel>
+		<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T13:27:41</dcterms:created>
+		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T13:29:28</dcterms:modified>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:10:00</dcterms:issued>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507132" />
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/17/concepts/507146">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/17" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/17/concepts/507146</dcterms:identifier>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+				<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+				<skos:prefLabel xml:lang="en">ANTIQUARIAN EXCAVATION</skos:prefLabel>
+				<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T13:43:52</dcterms:created>
+				<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:02:14</dcterms:modified>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:10:00</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507135" />
+				<skos:scopeNote xml:lang="en">Excavations carried out by antiquarians (Those who studied sites and landscapes prior to archaeology and architectural history becoming established disciplines in the 19th century) and reported through publication or from unpublished manuscripts.</skos:scopeNote>
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507149" />
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507151" />
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/17/concepts/507162">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/17" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/17/concepts/507162</dcterms:identifier>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+				<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+				<skos:prefLabel xml:lang="en">EVALUATION</skos:prefLabel>
+				<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:16:50</dcterms:created>
+				<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:17:14</dcterms:modified>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:10:00</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507135" />
+				<skos:scopeNote xml:lang="en">A limited programme of intrusive fieldwork which determines the presence or absence of archaeological features, structures, deposits, artefacts or ecofacts within a specified area or site on land, inter-tidal zone or underwater.</skos:scopeNote>
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/17/concepts/507163">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/17" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/17/concepts/507163</dcterms:identifier>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+				<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+				<skos:prefLabel xml:lang="en">EXCAVATION</skos:prefLabel>
+				<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:17:30</dcterms:created>
+				<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:17:53</dcterms:modified>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:10:00</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507135" />
+				<skos:scopeNote xml:lang="en">Controlled intrusive fieldwork which examines, records and interprets archaeological deposits, features and structures and, as appropriate, retrieves artefacts and ecofact remains within a
+specified area or site on land, inter-tidal zone or underwater.</skos:scopeNote>
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/17/concepts/507164">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/17" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/17/concepts/507164</dcterms:identifier>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+				<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+				<skos:prefLabel xml:lang="en">FIELD OBSERVATION</skos:prefLabel>
+				<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:18:20</dcterms:created>
+				<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:18:44</dcterms:modified>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:10:00</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507135" />
+				<skos:scopeNote xml:lang="en">Periodic visits being made to a site by an archaeologist to record archaeological deposits and recover finds that have come to light since the previous visit. An archaeological presence is not maintained during groundwork as it is with a watching brief.</skos:scopeNote>
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507179" />
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/17/concepts/507185">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/17" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/17/concepts/507185</dcterms:identifier>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+				<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+				<skos:prefLabel xml:lang="en">WATCHING BRIEF</skos:prefLabel>
+				<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:35:29</dcterms:created>
+				<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:36:20</dcterms:modified>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:10:00</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507135" />
+				<skos:scopeNote xml:lang="en">A formal programme of observation and investigation conducted during any operation carried out for non-archaeological reasons that may damage archaeological deposits. This will be within a specified area or site on land, inter-tidal zone or underwater.</skos:scopeNote>
+			</skos:Concept>
+		</skos:narrower>
+		<skos:scopeNote xml:lang="en">An event that uses techniques of archaeological investigation to record a monument.</skos:scopeNote>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/17/concepts/507136">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/17" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/17/concepts/507136</dcterms:identifier>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+		<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+		<skos:prefLabel xml:lang="en">ENVIRONMENTAL INTERVENTION</skos:prefLabel>
+		<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T13:30:26</dcterms:created>
+		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T13:31:35</dcterms:modified>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:10:00</dcterms:issued>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507132" />
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507149" />
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/17/concepts/507155">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/17" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/17/concepts/507155</dcterms:identifier>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+				<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+				<skos:prefLabel xml:lang="en">CORE SAMPLING</skos:prefLabel>
+				<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:11:22</dcterms:created>
+				<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:11:50</dcterms:modified>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:10:00</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507136" />
+				<skos:scopeNote xml:lang="en">The retrieval of samples for laboratory analysis from buried features that have been sampled using coring equipment.  Use for cases where the sampling method does not fit under Auger Survey or Borehole Survey.</skos:scopeNote>
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/17/concepts/507156">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/17" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/17/concepts/507156</dcterms:identifier>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+				<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+				<skos:prefLabel xml:lang="en">DENDROCHRONOLOGICAL SURVEY</skos:prefLabel>
+				<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:12:12</dcterms:created>
+				<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:12:35</dcterms:modified>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:10:00</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507136" />
+				<skos:scopeNote xml:lang="en">The extraction of wood samples for dating analysis. Tree ring dating is the science of dating cultural and environmental events in the past by comparative study of the growth rings in trees and aged wood.</skos:scopeNote>
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/17/concepts/507160">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/17" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/17/concepts/507160</dcterms:identifier>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+				<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+				<skos:prefLabel xml:lang="en">ENVIRONMENTAL SAMPLING</skos:prefLabel>
+				<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:15:01</dcterms:created>
+				<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:15:47</dcterms:modified>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:10:00</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507136" />
+				<skos:scopeNote xml:lang="en">Removal of samples from deposits, including archaeological contexts to recover information about past environments and economies, retrieve material for scientific dating and for the investigation of the deposits themselves e.g. formation processes.</skos:scopeNote>
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/17/concepts/507168">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/17" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/17/concepts/507168</dcterms:identifier>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+				<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+				<skos:prefLabel xml:lang="en">GEOCHEMICAL SURVEY</skos:prefLabel>
+				<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:20:52</dcterms:created>
+				<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:21:13</dcterms:modified>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:10:00</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507136" />
+				<skos:scopeNote xml:lang="en">The taking of samples at regular intervals from the surface of a study area in order to retrieve information on the different chemical elements present.</skos:scopeNote>
+			</skos:Concept>
+		</skos:narrower>
+		<skos:scopeNote xml:lang="en">An intervention that uses techniques of environmental archaeology to investigate the archaeological resource.</skos:scopeNote>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/17/concepts/507137">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/17" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/17/concepts/507137</dcterms:identifier>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+		<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+		<skos:prefLabel xml:lang="en">FIELD SURVEY</skos:prefLabel>
+		<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T13:31:47</dcterms:created>
+		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T13:32:55</dcterms:modified>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:10:00</dcterms:issued>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507133" />
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507132" />
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/17/concepts/507172">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/17" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/17/concepts/507172</dcterms:identifier>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+				<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+				<skos:prefLabel xml:lang="en">HEDGEROW SURVEY</skos:prefLabel>
+				<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:23:46</dcterms:created>
+				<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:24:16</dcterms:modified>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:10:00</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507137" />
+				<skos:scopeNote xml:lang="en">The assessment of the age of a hedge based on its nature, condition and the number and type of woody plant species present. Most surveys make use of Hooper’s hypothesis which states that for every 27m a new woody species invades a hedge every 100 years.</skos:scopeNote>
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/17/concepts/507147">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/17" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/17/concepts/507147</dcterms:identifier>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+				<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+				<skos:prefLabel xml:lang="en">ANTIQUARIAN OBSERVATION</skos:prefLabel>
+				<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:02:45</dcterms:created>
+				<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:03:11</dcterms:modified>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:10:00</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507137" />
+				<skos:scopeNote xml:lang="en">Observations made by antiquarians (Those who studied sites and landscapes prior to archaeology and architectural history becoming established disciplines in the 19th century) and reported through publication or from unpublished manuscripts.</skos:scopeNote>
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/17/concepts/507148">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/17" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/17/concepts/507148</dcterms:identifier>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+				<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+				<skos:prefLabel xml:lang="en">ARCHITECTURAL SURVEY</skos:prefLabel>
+				<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:03:42</dcterms:created>
+				<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:04:09</dcterms:modified>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:10:00</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507137" />
+				<skos:scopeNote xml:lang="en">Recording and analysis of built structures utilising close observation as well as manual or electronic survey equipment such as GPS and REDM (Reflectorless Electromagnetic Distance Measurement). Includes research, fieldwork and a report.</skos:scopeNote>
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/17/concepts/507152">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/17" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/17/concepts/507152</dcterms:identifier>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+				<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+				<skos:prefLabel xml:lang="en">BOSING SURVEY</skos:prefLabel>
+				<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:07:46</dcterms:created>
+				<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:08:09</dcterms:modified>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:10:00</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507137" />
+				<skos:scopeNote xml:lang="en">A subsurface detection method performed by striking the ground with a heavy wooden mallet or a lead-filled container on a long handle.</skos:scopeNote>
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/17/concepts/507153">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/17" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/17/concepts/507153</dcterms:identifier>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+				<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+				<skos:prefLabel xml:lang="en">BUILDING SURVEY</skos:prefLabel>
+				<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:08:39</dcterms:created>
+				<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:09:14</dcterms:modified>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:10:00</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507137" />
+				<skos:scopeNote xml:lang="en">A descriptive survey involving the systematic measurement and recording of the dimensions or features of a building.  May also include the taking of photographs. Where the survey is accompanied by systematic investigation and analysis, use Architectural Survey.</skos:scopeNote>
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/17/concepts/507158">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/17" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/17/concepts/507158</dcterms:identifier>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+				<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+				<skos:prefLabel xml:lang="en">DOWSING SURVEY</skos:prefLabel>
+				<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:13:44</dcterms:created>
+				<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:14:05</dcterms:modified>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:10:00</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507137" />
+				<skos:scopeNote xml:lang="en">The supposed detection of subsurface features by employing a twig, copper rod, pendulum, or other instrument. Discontinuous movements in these instruments are believed by some to record the existence of buried features.</skos:scopeNote>
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/17/concepts/507166">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/17" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/17/concepts/507166</dcterms:identifier>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+				<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+				<skos:prefLabel xml:lang="en">FIELD VISIT</skos:prefLabel>
+				<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:19:28</dcterms:created>
+				<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:19:55</dcterms:modified>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:10:00</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507137" />
+				<skos:scopeNote xml:lang="en">A site visit to ascertain the nature, extent and possibly condition of the site and its surrounding environs by means of a visual inspection from which a written and/or photographic record is made.</skos:scopeNote>
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/17/concepts/507167">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/17" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/17/concepts/507167</dcterms:identifier>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+				<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+				<skos:prefLabel xml:lang="en">FIELD WALKING SURVEY</skos:prefLabel>
+				<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:20:10</dcterms:created>
+				<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:20:33</dcterms:modified>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:10:00</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507137" />
+				<skos:scopeNote xml:lang="en">The study of ground surfaces and collection of visible archaeological material. Fieldwalking can be carried out either unsystematically or systematically such as line-walking, grid collection and transect or quadrant sampling.</skos:scopeNote>
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/17/concepts/507169">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/17" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/17/concepts/507169</dcterms:identifier>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+				<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+				<skos:prefLabel xml:lang="en">GEOMORPHOLOGICAL SURVEY</skos:prefLabel>
+				<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:21:30</dcterms:created>
+				<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:22:00</dcterms:modified>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:10:00</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507137" />
+				<skos:scopeNote xml:lang="en">Field survey undertaken to investigate land formation processes often carried out in association with, or in the vicinity of, an archaeological site, or as part of a wider landscape project.</skos:scopeNote>
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/17/concepts/507138">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/17" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/17/concepts/507138</dcterms:identifier>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+				<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+				<skos:prefLabel xml:lang="en">GEOPHYSICAL SURVEY</skos:prefLabel>
+				<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T13:33:47</dcterms:created>
+				<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T13:35:06</dcterms:modified>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:10:00</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507137" />
+				<skos:scopeNote xml:lang="en">Ground-based or marine subsurface mapping of archaeological features using different sensing technologies. Most commonly applied are magnetometers, electrical resistance meters, ground penetrating radar, side scan sonar, and electromagnetic conductivity.</skos:scopeNote>
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/17/concepts/507176">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/17" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/17/concepts/507176</dcterms:identifier>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+				<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+				<skos:prefLabel xml:lang="en">LASER SCANNING SURVEY</skos:prefLabel>
+				<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:27:41</dcterms:created>
+				<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:28:05</dcterms:modified>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:10:00</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507137" />
+				<skos:scopeNote xml:lang="en">The recording of a surface, or surfaces, using scanning technologies, to create a 3D model of the target structure/object.</skos:scopeNote>
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/17/concepts/507178">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/17" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/17/concepts/507178</dcterms:identifier>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+				<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+				<skos:prefLabel xml:lang="en">METAL DETECTING SURVEY</skos:prefLabel>
+				<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:29:05</dcterms:created>
+				<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:29:45</dcterms:modified>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:10:00</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507137" />
+				<skos:scopeNote xml:lang="en">Structured and carefully executed scanning of the ground surface with a metal detecting device in order to recover surface scatters of metal objects and plot them spatially within the study area; a technique useful in battlefield archaeology.</skos:scopeNote>
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/17/concepts/507183">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/17" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/17/concepts/507183</dcterms:identifier>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+				<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+				<skos:prefLabel xml:lang="en">TOPOGRAPHIC SURVEY</skos:prefLabel>
+				<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:33:50</dcterms:created>
+				<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:34:26</dcterms:modified>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:10:00</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507137" />
+				<skos:scopeNote xml:lang="en">The controlled measurement of natural and artificial landscape features to produce a measured plan or a 3D data set reading as a plan. Features are depicted by either hachures, symbols or contour lines.</skos:scopeNote>
+			</skos:Concept>
+		</skos:narrower>
+		<skos:scopeNote xml:lang="en">An event that uses techniques of archaeological field survey to invesigate the archaeological resource.</skos:scopeNote>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/17/concepts/507139">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/17" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/17/concepts/507139</dcterms:identifier>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+		<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+		<skos:prefLabel xml:lang="en">HERITAGE ASSESSMENT</skos:prefLabel>
+		<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T13:35:34</dcterms:created>
+		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T13:36:35</dcterms:modified>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:10:00</dcterms:issued>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507133" />
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/17/concepts/507145">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/17" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/17/concepts/507145</dcterms:identifier>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+				<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+				<skos:prefLabel xml:lang="en">AERIAL PHOTOGRAPHY INTERPRETATION</skos:prefLabel>
+				<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T13:43:02</dcterms:created>
+				<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T13:43:32</dcterms:modified>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:10:00</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507139" />
+				<skos:scopeNote xml:lang="en">The interpretation of information on aerial photographs usually resulting in the production of maps and records of archaeological sites and landscapes. Many aerial photographs may be consulted for a single analytical survey.</skos:scopeNote>
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/17/concepts/507157">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/17" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/17/concepts/507157</dcterms:identifier>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+				<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+				<skos:prefLabel xml:lang="en">DESK BASED ASSESSMENT</skos:prefLabel>
+				<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:12:58</dcterms:created>
+				<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:13:26</dcterms:modified>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:10:00</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507139" />
+				<skos:scopeNote xml:lang="en">A programme of assessment of the known or potential archaeological resource within a specified area or site on land, inter-tidal zone or underwater by the consultation and collation of existing written, graphic, photographic and electronic data.</skos:scopeNote>
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/17/concepts/507159">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/17" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/17/concepts/507159</dcterms:identifier>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+				<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+				<skos:prefLabel xml:lang="en">ENVIRONMENTAL IMPACT ASSESSMENT</skos:prefLabel>
+				<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:14:20</dcterms:created>
+				<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:14:46</dcterms:modified>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:10:00</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507139" />
+				<skos:scopeNote xml:lang="en">An information gathering exercise to facilitate an understanding of the potential environmental impact of a development proposal; includes the collation of specialist reports from a variety of
+disciplines.</skos:scopeNote>
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/17/concepts/507161">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/17" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/17/concepts/507161</dcterms:identifier>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+				<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+				<skos:prefLabel xml:lang="en">ENVIRONMENTAL STATEMENT</skos:prefLabel>
+				<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:16:09</dcterms:created>
+				<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:16:32</dcterms:modified>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:10:00</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507139" />
+				<skos:scopeNote xml:lang="en">A report of information provided by a developer in conjunction with an application for planning permission for a project.</skos:scopeNote>
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/17/concepts/507173">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/17" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/17/concepts/507173</dcterms:identifier>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+				<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+				<skos:prefLabel xml:lang="en">HISTORIC AREA ASSESSMENT</skos:prefLabel>
+				<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:25:11</dcterms:created>
+				<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:25:41</dcterms:modified>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:10:00</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507139" />
+				<skos:scopeNote xml:lang="en">An overview of the historical and architectural development, character and heritage assets of a settlement or area. An HAA may result in the creation, at varying levels of intensity, of individual site-based records informed by area context and/or GIS map</skos:scopeNote>
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/17/concepts/507174">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/17" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/17/concepts/507174</dcterms:identifier>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+				<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+				<skos:prefLabel xml:lang="en">HISTORIC SEASCAPE CHARACTERISATION</skos:prefLabel>
+				<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:26:00</dcterms:created>
+				<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:26:34</dcterms:modified>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:10:00</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507139" />
+				<skos:scopeNote xml:lang="en">A map-based understanding of coastal and marine historic character; principally through the use of GIS for the sustainable management of change from land to sea.</skos:scopeNote>
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/17/concepts/507181">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/17" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/17/concepts/507181</dcterms:identifier>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+				<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+				<skos:prefLabel xml:lang="en">POST EXCAVATION ASSESSMENT</skos:prefLabel>
+				<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:32:08</dcterms:created>
+				<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:32:34</dcterms:modified>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:10:00</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507139" />
+				<skos:scopeNote xml:lang="en">An analysis of the potential of an excavation archive to aid research, interpretation and assessment of the archaeological resource.  May include a synthesis of structures and features, detailed stratigraphic analysis as well as specialist assessments of</skos:scopeNote>
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/17/concepts/507184">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/17" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/17/concepts/507184</dcterms:identifier>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+				<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+				<skos:prefLabel xml:lang="en">VISUAL IMPACT ASSESSMENT</skos:prefLabel>
+				<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:34:44</dcterms:created>
+				<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:35:06</dcterms:modified>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:10:00</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507139" />
+				<skos:scopeNote xml:lang="en">A systematic analysis of the possible visual impacts resulting from a proposed development and the investigation of the means available to mitigate the effects of such proposals prior to implementation. Visual impact is defined as a change in the appearan</skos:scopeNote>
+			</skos:Concept>
+		</skos:narrower>
+		<skos:scopeNote xml:lang="en">An assesssment of the heritage  value of the archaeological resource</skos:scopeNote>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/17/concepts/507140">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/17" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/17/concepts/507140</dcterms:identifier>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+		<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+		<skos:prefLabel xml:lang="en">NON ARCHAEOLOGICAL INTERVENTION</skos:prefLabel>
+		<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T13:37:24</dcterms:created>
+		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T13:37:55</dcterms:modified>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:10:00</dcterms:issued>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507132" />
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507149" />
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507151" />
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/17/concepts/507154">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/17" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/17/concepts/507154</dcterms:identifier>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+				<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+				<skos:prefLabel xml:lang="en">CASUAL OBSERVATION</skos:prefLabel>
+				<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:10:21</dcterms:created>
+				<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:10:58</dcterms:modified>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:10:00</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507140" />
+				<skos:scopeNote xml:lang="en">The unplanned observation of archaeological features or the recovery of artefacts of interest, for example either random finds by members of the public or the unplanned observation of archaeological features during the course of unmonitored developments.</skos:scopeNote>
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/17/concepts/507171">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/17" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/17/concepts/507171</dcterms:identifier>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+				<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+				<skos:prefLabel xml:lang="en">GEOTECHNICAL INVESTIGATION</skos:prefLabel>
+				<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:22:57</dcterms:created>
+				<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:23:20</dcterms:modified>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:10:00</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507140" />
+				<skos:scopeNote xml:lang="en">Any subsurface investigation conducted to assist with the technical rather than archaeological aspects of a proposed development or extraction scheme.  For example, to obtain information on
+the physical properties of soil, sediments and bedrock around a</skos:scopeNote>
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507179" />
+		<skos:scopeNote xml:lang="en">Any activities, that have a physical impact upon the archaeological resource where the purpose is not primarily archaeological research.</skos:scopeNote>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/17/concepts/507141">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/17" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/17/concepts/507141</dcterms:identifier>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+		<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+		<skos:prefLabel xml:lang="en">PHOTOGRAPHIC SURVEY</skos:prefLabel>
+		<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T13:38:32</dcterms:created>
+		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T13:39:04</dcterms:modified>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:10:00</dcterms:issued>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507133" />
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/17/concepts/507180">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/17" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/17/concepts/507180</dcterms:identifier>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+				<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+				<skos:prefLabel xml:lang="en">PHOTOGRAMMETRIC SURVEY</skos:prefLabel>
+				<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:31:10</dcterms:created>
+				<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:31:32</dcterms:modified>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:10:00</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507141" />
+				<skos:scopeNote xml:lang="en">The measurement of a surface, either in elevation or plan, determined from measurements derived from two or more photographic images taken from different positions; this allows three dimensional viewing of the surface to be mapped.</skos:scopeNote>
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/17/concepts/507182">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/17" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/17/concepts/507182</dcterms:identifier>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+				<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+				<skos:prefLabel xml:lang="en">RECTIFIED PHOTOGRAPHY</skos:prefLabel>
+				<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:32:51</dcterms:created>
+				<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:33:18</dcterms:modified>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:10:00</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507141" />
+				<skos:scopeNote xml:lang="en">Systematic recording of building facades that produces a seamless mosaic of digital images by identifying control points and defining limits to each image.</skos:scopeNote>
+			</skos:Concept>
+		</skos:narrower>
+		<skos:scopeNote xml:lang="en">The taking of photographs to record archaeological and architectural sites or
+features of interest.</skos:scopeNote>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/17/concepts/507142">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/17" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/17/concepts/507142</dcterms:identifier>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+		<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+		<skos:prefLabel xml:lang="en">REMOTE SENSING</skos:prefLabel>
+		<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T13:39:30</dcterms:created>
+		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T13:40:52</dcterms:modified>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:10:00</dcterms:issued>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507133" />
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/17/concepts/507144">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/17" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/17/concepts/507144</dcterms:identifier>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+				<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+				<skos:prefLabel xml:lang="en">AERIAL PHOTOGRAPHY</skos:prefLabel>
+				<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T13:42:03</dcterms:created>
+				<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T13:42:34</dcterms:modified>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:10:00</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507142" />
+				<skos:scopeNote xml:lang="en">The taking of photographs from above using photographic equipment mounted on, or used from an aircraft, other airborne vehicle or additionally from a telescopic mast on a ground-based vehicle.</skos:scopeNote>
+			</skos:Concept>
+		</skos:narrower>
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/17/concepts/507177">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/17" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/17/concepts/507177</dcterms:identifier>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+				<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+				<skos:prefLabel xml:lang="en">LIDAR SURVEY</skos:prefLabel>
+				<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:28:25</dcterms:created>
+				<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:28:49</dcterms:modified>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:10:00</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507142" />
+				<skos:scopeNote xml:lang="en">Light Dectection and Ranging is a type of aircraftbased remote sensing which uses laser-driven pulses of light and multispectral cameras to scan and process digital information about landscapes.</skos:scopeNote>
+			</skos:Concept>
+		</skos:narrower>
+		<skos:scopeNote xml:lang="en">Investigation of the archaeological resource through techniques of remote sensing, such as aerial photography and LiDAR.</skos:scopeNote>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/17/concepts/507143">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/17" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/17/concepts/507143</dcterms:identifier>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+		<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+		<skos:prefLabel xml:lang="en">SONAR SURVEY</skos:prefLabel>
+		<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T13:41:09</dcterms:created>
+		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T13:41:39</dcterms:modified>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:10:00</dcterms:issued>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507133" />
+		<skos:narrower>
+			<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/17/concepts/507150">
+				<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/17" />
+				<dcterms:identifier>http://purl.org/heritagedata/schemes/17/concepts/507150</dcterms:identifier>
+				<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+				<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+				<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+				<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+				<skos:prefLabel xml:lang="en">BATHYMETRIC SURVEY</skos:prefLabel>
+				<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:05:58</dcterms:created>
+				<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:06:26</dcterms:modified>
+				<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:10:00</dcterms:issued>
+				<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507143" />
+				<skos:scopeNote xml:lang="en">A maritime investigation that records depth data which can be used to map submerged topography utilising echo sounders which emit a short acoustic pulse. Depth is calculated by measuring the time taken for the pulse to be reflected back to the transducer.</skos:scopeNote>
+			</skos:Concept>
+		</skos:narrower>
+		<skos:scopeNote xml:lang="en">Active sonar systems are based on the behaviour of sound waves in water; acoustic energy is transmitted and the time for the returning echo is measured to allow submerged seabed features to be mapped.</skos:scopeNote>
+	</skos:Concept>
+	<skos:Concept rdf:about="http://purl.org/heritagedata/schemes/17/concepts/507179">
+		<skos:inScheme rdf:resource="http://purl.org/heritagedata/schemes/17" />
+		<dcterms:identifier>http://purl.org/heritagedata/schemes/17/concepts/507179</dcterms:identifier>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0" />
+		<cc:attributionURL rdf:resource="http://www.rcahmw.gov.uk" />
+		<cc:attributionName xml:lang="en">RCAHMW</cc:attributionName>
+		<dcterms:publisher rdf:resource="http://www.rcahmw.gov.uk" />
+		<skos:prefLabel xml:lang="en">METAL DETECTOR USE</skos:prefLabel>
+		<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:30:01</dcterms:created>
+		<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-11-26T14:30:29</dcterms:modified>
+		<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-07-17T10:10:00</dcterms:issued>
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507135" />
+		<skos:broader rdf:resource="http://purl.org/heritagedata/schemes/17/concepts/507140" />
+		<skos:scopeNote xml:lang="en">The unsystematic use of a metal detector to hunt for and recover buried coins or artefacts; alternatively the use of a metal detector to locate metal artefacts on an archaeological excavation that otherwise would go unnoticed.</skos:scopeNote>
+	</skos:Concept>
+</rdf:RDF>

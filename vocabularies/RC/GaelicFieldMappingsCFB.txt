@@ -1,0 +1,26 @@
+Columns from spreadsheet sent by P McKeague - sample of Gaelic translations for terms (not complete yet)
+
+THE_TE_UID - term ID (ties in with RCAHMS/W concept identifiers)
+TERM - term in English (assume duplicate of original terms)
+TERM_GD - term in Scottish Gaelic - will become prefLabel @lang='gd'
+POS_GD - ? [values: bua, nf, nm, nmp]
+KEYWORDS_GD - comma separated list of variant terms in Scottish Gaelic - will each become <skos:altLabel @lang='gd'>(term)</skos:altLabel>
+INDEX_TERM - [Y/N]
+SCOPE_NOTE - scope note in English (assume duplicate of original scopeNotes)
+SCOPE_NOTE_GD - scope note in Scottish Gaelic - will become scopeNote @lang='gd'
+STATUS - [Y/N]
+ORIGIN - [RCAHMS / EH / Highland/EH] dct:contributor?
+PROPOSED - name
+WHEN_PROPOSED - date
+ACCEPTED - name
+DATE_ACCEPTED - date
+COMMENTS
+LIST_UID - [1] = monuments...
+ENTERED_DT - date dct:created?
+ENTERED_BY - name dct:creator?
+UPDATED_DT - date dct:modified?
+UPDATED_BY - name
+SYNONYMS_GD - ? ['yes' or blank]
+
+
+would dc:publisher then be SENESCHAL/HERITAGEDATA?

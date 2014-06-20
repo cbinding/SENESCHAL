@@ -1,0 +1,179 @@
+# STELLAR command file to convert RC data to SKOS RDF using user-defined templates. 
+# Call as follows (substituting your own local path for the datadir command below):
+# datadir /dir:"C:\Users\cbinding\OneDrive\Projects\SENESCHAL\data\RC"
+# cmdfile /cmd:"STELLAR_RC_TO_SKOS.txt"
+
+# import data files to internal SQLite database, overwriting any existing previous import
+DELIM2DB /db:"rc" /data:"RC_THESAURUS_LIST.txt" /delimiter:"#"
+DELIM2DB /db:"rc" /data:"RC_THESAURUS_PREFERENCES.txt" /delimiter:"#"
+DELIM2DB /db:"rc" /data:"RC_THESAURUS_TERM_RELATIONS.txt" /delimiter:"#"
+DELIM2DB /db:"rc" /data:"RC_THESAURUS_TERMS.txt" /delimiter:"#"
+DELIM2DB /db:"rc" /data:"RC_THESAURUS_USES.txt" /delimiter:"#"
+
+# + Gaelic terms from P McKeague - sample only, will get full set later
+DELIM2DB /db:"rc" /data:"WorkingCopy 13-03-07.csv" /delimiter:","
+
+# File of Monuments to DDC Mappings (received from D Thomas)
+DELIM2DB /db:"rc" /data:"Monument Type Dewey Mapping.csv" /delimiter:"," /noheader
+
+# Perform any necessary data cleansing 
+SQLEXECUTE /db:"rc" /opt:"options.csv" /sql:"sql_rc_cleanup.sql"
+
+# split Gaelic terms if multiple values in single column - creates table workingcopy_13_03_07_keywords_gd_split 
+DBCOLSPLIT /db:"rc" /table:"workingcopy_13_03_07" /column:"KEYWORDS_GD" /keycolumn:"THE_TE_UID" /delimiter:","
+
+#####################################################################################################################
+# Extract & convert the Gaelic preferred terms, alternate terms and scope notes for RCAHMS monuments thesaurus
+#####################################################################################################################
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTS.stg" /sql:"sql_rc_1_altlabel_gd.sql" /out:"1.rdf" 
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTS.stg" /sql:"sql_rc_1_preflabel_gd.sql" /out:"2.rdf" 
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTS.stg" /sql:"sql_rc_1_scopenote_gd.sql" /out:"3.rdf" 
+
+#####################################################################################################################
+# Extract & convert the RCAHMS monuments thesaurus data, output to temporary intermediate RDF files
+#####################################################################################################################
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTSCHEMES.stg" /sql:"sql_rc_1_conceptscheme.sql" /out:"4.rdf" 
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTSCHEMES.stg" /sql:"sql_rc_1_topconcept_id.sql" /out:"5.rdf" 
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTS.stg" /sql:"sql_rc_1_preflabel.sql" /out:"6.rdf" 
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTS.stg" /sql:"sql_rc_1_altlabel.sql" /out:"7.rdf"  
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTS.stg" /sql:"sql_rc_1_broader_id.sql" /out:"8.rdf"  
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTS.stg" /sql:"sql_rc_1_related_id.sql" /out:"9.rdf" 
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTS.stg" /sql:"sql_rc_1_scopenote.sql" /out:"10.rdf"  
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTS.stg" /sql:"sql_rc_1_concept_licensing.sql" /out:"11.rdf"  
+
+# Merge temporary intermediate RDF files to single output file
+RDFMERGE /rdf:"1.rdf;2.rdf;3.rdf;4.rdf;5.rdf;6.rdf;7.rdf;8.rdf;9.rdf;10.rdf;11.rdf" /out:"merged.rdf"
+
+# Name the output file using the current datestamp
+COPY merged.rdf seneschal_rc_1_%date:~6,4%%date:~3,2%%date:~0,2%.rdf
+
+# Remove all the intermediate files
+DEL 1.rdf 2.rdf 3.rdf 4.rdf 5.rdf 6.rdf 7.rdf 8.rdf 9.rdf 10.rdf 11.rdf merged.rdf
+
+#####################################################################################################################
+# Extract & convert the RCAHMS objects thesaurus data, output to temporary intermediate RDF files
+#####################################################################################################################
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTSCHEMES.stg" /sql:"sql_rc_2_conceptscheme.sql" /out:"1.rdf"  
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTSCHEMES.stg" /sql:"sql_rc_2_topconcept_id.sql" /out:"2.rdf" 
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTS.stg" /sql:"sql_rc_2_preflabel.sql" /out:"3.rdf" 
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTS.stg" /sql:"sql_rc_2_altlabel.sql" /out:"4.rdf"  
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTS.stg" /sql:"sql_rc_2_broader_id.sql" /out:"5.rdf"  
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTS.stg" /sql:"sql_rc_2_related_id.sql" /out:"6.rdf"  
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTS.stg" /sql:"sql_rc_2_scopenote.sql" /out:"7.rdf" 
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTS.stg" /sql:"sql_rc_2_concept_licensing.sql" /out:"8.rdf" 
+
+# Merge temporary intermediate RDF files to single output file
+RDFMERGE /rdf:"1.rdf;2.rdf;3.rdf;4.rdf;5.rdf;6.rdf;7.rdf;8.rdf" /out:"merged.rdf"
+
+# Name the output file using the current datestamp
+COPY merged.rdf seneschal_rc_2_%date:~6,4%%date:~3,2%%date:~0,2%.rdf
+
+# Remove all the intermediate files
+DEL 1.rdf 2.rdf 3.rdf 4.rdf 5.rdf 6.rdf 7.rdf 8.rdf merged.rdf
+
+#####################################################################################################################
+# Extract & convert the RCAHMS maritime craft thesaurus data, output to temporary intermediate RDF files
+#####################################################################################################################
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTSCHEMES.stg" /sql:"sql_rc_3_conceptscheme.sql" /out:"1.rdf" 
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTSCHEMES.stg" /sql:"sql_rc_3_topconcept_id.sql" /out:"2.rdf"  
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTS.stg" /sql:"sql_rc_3_preflabel.sql" /out:"3.rdf"  
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTS.stg" /sql:"sql_rc_3_altlabel.sql" /out:"4.rdf"  
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTS.stg" /sql:"sql_rc_3_broader_id.sql" /out:"5.rdf"  
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTS.stg" /sql:"sql_rc_3_related_id.sql" /out:"6.rdf"  
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTS.stg" /sql:"sql_rc_3_scopenote.sql" /out:"7.rdf"  
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTS.stg" /sql:"sql_rc_3_concept_licensing.sql" /out:"8.rdf" 
+
+# Merge temporary intermediate RDF files to single output file
+RDFMERGE /rdf:"1.rdf;2.rdf;3.rdf;4.rdf;5.rdf;6.rdf;7.rdf;8.rdf" /out:"merged.rdf"
+
+# Name the output file using the current datestamp
+COPY merged.rdf seneschal_rc_3_%date:~6,4%%date:~3,2%%date:~0,2%.rdf
+
+# Remove all the intermediate files
+DEL 1.rdf 2.rdf 3.rdf 4.rdf 5.rdf 6.rdf 7.rdf 8.rdf merged.rdf
+
+#####################################################################################################################
+# Extract & convert the RCAHMS events thesaurus data, output to temporary intermediate RDF files
+#####################################################################################################################
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTSCHEMES.stg" /sql:"sql_rc_4_conceptscheme.sql" /out:"1.rdf"  
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTSCHEMES.stg" /sql:"sql_rc_4_topconcept_id.sql" /out:"2.rdf" 
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTS.stg" /sql:"sql_rc_4_preflabel.sql" /out:"3.rdf" 
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTS.stg" /sql:"sql_rc_4_altlabel.sql" /out:"4.rdf" 
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTS.stg" /sql:"sql_rc_4_broader_id.sql" /out:"5.rdf" 
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTS.stg" /sql:"sql_rc_4_related_id.sql" /out:"6.rdf"  
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTS.stg" /sql:"sql_rc_4_scopenote.sql" /out:"7.rdf"  
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTS.stg" /sql:"sql_rc_4_concept_licensing.sql" /out:"8.rdf"  
+
+# Merge temporary intermediate RDF files to single output file
+RDFMERGE /rdf:"1.rdf;2.rdf;3.rdf;4.rdf;5.rdf;6.rdf;7.rdf;8.rdf" /out:"merged.rdf"
+
+# Name the output file using the current datestamp
+COPY merged.rdf seneschal_rc_4_%date:~6,4%%date:~3,2%%date:~0,2%.rdf
+
+# Remove all the intermediate files
+DEL 1.rdf 2.rdf 3.rdf 4.rdf 5.rdf 6.rdf 7.rdf 8.rdf merged.rdf
+
+#####################################################################################################################
+# Extract & convert the RCAHMS monuments thesaurus data, output to temporary intermediate RDF files
+#####################################################################################################################
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTSCHEMES.stg" /sql:"sql_rc_10_conceptscheme.sql" /out:"1.rdf"  
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTSCHEMES.stg" /sql:"sql_rc_10_topconcept_id.sql" /out:"2.rdf"  
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTS.stg" /sql:"sql_rc_10_preflabel.sql" /out:"3.rdf"  
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTS.stg" /sql:"sql_rc_10_altlabel.sql" /out:"4.rdf" 
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTS.stg" /sql:"sql_rc_10_broader_id.sql" /out:"5.rdf"  
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTS.stg" /sql:"sql_rc_10_related_id.sql" /out:"6.rdf" 
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTS.stg" /sql:"sql_rc_10_scopenote.sql" /out:"7.rdf"  
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTS.stg" /sql:"sql_rc_10_concept_licensing.sql" /out:"8.rdf"  
+#links to DDC
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTS.stg" /sql:"sql_rc_10_monuments_to_ddc.sql" /out:"9.rdf" 
+
+# Merge temporary intermediate RDF files to single output file
+RDFMERGE /rdf:"1.rdf;2.rdf;3.rdf;4.rdf;5.rdf;6.rdf;7.rdf;8.rdf;9.rdf" /out:"merged.rdf"
+
+# Name the output file using the current datestamp
+COPY merged.rdf seneschal_rc_10_%date:~6,4%%date:~3,2%%date:~0,2%.rdf
+
+# Remove all the intermediate files
+DEL 1.rdf 2.rdf 3.rdf 4.rdf 5.rdf 6.rdf 7.rdf 8.rdf 9.rdf merged.rdf
+
+#####################################################################################################################
+# Extract & convert the RCAHMW periods thesaurus data, output to temporary intermediate RDF files
+#####################################################################################################################
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTSCHEMES.stg" /sql:"sql_rc_11_conceptscheme.sql" /out:"1.rdf"  
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTSCHEMES.stg" /sql:"sql_rc_11_topconcept_id.sql" /out:"2.rdf"  
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTS.stg" /sql:"sql_rc_11_preflabel.sql" /out:"3.rdf"  
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTS.stg" /sql:"sql_rc_11_altlabel.sql" /out:"4.rdf"  
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTS.stg" /sql:"sql_rc_11_broader_id.sql" /out:"5.rdf" 
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTS.stg" /sql:"sql_rc_11_related_id.sql" /out:"6.rdf"  
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTS.stg" /sql:"sql_rc_11_scopenote.sql" /out:"7.rdf"  
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTS.stg" /sql:"sql_rc_11_concept_licensing.sql" /out:"8.rdf"  
+
+# Merge temporary intermediate RDF files to single output file
+RDFMERGE /rdf:"1.rdf;2.rdf;3.rdf;4.rdf;5.rdf;6.rdf;7.rdf;8.rdf" /out:"merged.rdf"
+
+# Name the output file using the current datestamp
+COPY merged.rdf seneschal_rc_11_%date:~6,4%%date:~3,2%%date:~0,2%.rdf
+
+# Remove all the intermediate files
+DEL 1.rdf 2.rdf 3.rdf 4.rdf 5.rdf 6.rdf 7.rdf 8.rdf merged.rdf
+
+#####################################################################################################################
+# Extract & convert the RCAHMW events data, output to temporary intermediate RDF files
+#####################################################################################################################
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTSCHEMES.stg" /sql:"sql_rc_17_conceptscheme.sql" /out:"1.rdf"  
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTSCHEMES.stg" /sql:"sql_rc_17_topconcept_id.sql" /out:"2.rdf"  
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTS.stg" /sql:"sql_rc_17_preflabel.sql" /out:"3.rdf" 
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTS.stg" /sql:"sql_rc_17_altlabel.sql" /out:"4.rdf"  
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTS.stg" /sql:"sql_rc_17_broader_id.sql" /out:"5.rdf" 
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTS.stg" /sql:"sql_rc_17_related_id.sql" /out:"6.rdf"  
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTS.stg" /sql:"sql_rc_17_scopenote.sql" /out:"7.rdf"  
+SQL2STG /db:"rc" /opt:"options.csv" /stg:"SENESCHAL_SKOS_CONCEPTS.stg" /sql:"sql_rc_17_concept_licensing.sql" /out:"8.rdf"  
+
+# Merge temporary intermediate RDF files to single output file
+RDFMERGE /rdf:"1.rdf;2.rdf;3.rdf;4.rdf;5.rdf;6.rdf;7.rdf;8.rdf" /out:"merged.rdf"
+
+# Name the output file using the current datestamp
+COPY merged.rdf seneschal_rc_17_%date:~6,4%%date:~3,2%%date:~0,2%.rdf
+
+# Remove all the intermediate files
+DEL 1.rdf 2.rdf 3.rdf 4.rdf 5.rdf 6.rdf 7.rdf 8.rdf merged.rdf

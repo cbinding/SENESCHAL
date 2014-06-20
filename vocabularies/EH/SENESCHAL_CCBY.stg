@@ -1,0 +1,72 @@
+//==============================================================================
+// Creator : Ceri Binding, University of South Wales
+// Project : SENESCHAL
+// Classes : SENESCHAL_CCBY.stg
+// Version : 001
+// Summary : string template group for use with STELLAR application
+// License : http://creativecommons.org/licenses/by/3.0/ 
+// =============================================================================
+// History :
+// 001 17/05/2013 CFB Initially created template group in SENESCHAL project
+//============================================================================//
+delimiters "$", "$"
+
+// CCBY_LICENSE. Fields anticipated:
+// data.uri [mandatory]
+// data.attributionURL
+// data.attributionName
+// data.creator
+// data.source
+CCBY_LICENSE(options, data) ::= <<
+
+$if(data.uri)$
+
+$RDF_PROPERTY(
+	subject=data.uri, 
+	predicate="cc:license", 
+	object="http://creativecommons.org/licenses/by/3.0"
+)$
+$endif$
+
+$if(data.attributionURL)$
+$RDF_PROPERTY(
+	subject=data.uri, 
+	predicate="cc:attributionURL", 
+	object=data.attributionURL
+)$
+$endif$
+
+$if(data.attributionName)$
+$RDF_PROPERTY(
+	subject=data.uri, 
+	predicate="cc:attributionName", 
+	literal=data.attributionName,
+	language=data.language
+)$
+$endif$
+
+$if(data.creator)$
+$RDF_PROPERTY(
+	subject=data.uri, 
+	predicate="dcterms:creator", 
+	object=data.creator
+)$
+$endif$
+
+$if(data.source)$
+$RDF_PROPERTY(
+	subject=data.uri, 
+	predicate="dcterms:source", 
+	object=data.source
+)$
+$endif$
+
+$else$
+$RDF_COMMENT("uri is not present")$
+$endif$
+
+>>
+
+
+
+

@@ -87,8 +87,8 @@ class SeneschalAPI
 				
 				<li><a href='/live/getAllSchemes.php'>Scheme List</a></li>
 				<li><a href='/live/searchForm.php'>Concept Search</a></li>
-				<li><a href='/live/alignDataToScheme.php'>Data Alignment</a></li>
-				<li><a href='/live/alignPeriodsToDates.php'>Identify Periods</a></li>	
+				<!--<li><a href='/live/alignDataToScheme.php'>Data Alignment</a></li>-->
+				<!--<li><a href='/live/alignPeriodsToDates.php'>Identify Periods</a></li>-->	
 				<li><a href='/live/sparql.php'>SPARQL Query</a></li>
 				<li><a href='http://www.heritagedata.org/blog'>About The Project</a></li>
 				
@@ -819,12 +819,26 @@ class SeneschalAPI
 		
 		$label = $uri; // returns the URI if no suitable label is found
 		if(count($labels) > 0)
-		{		
-			if(empty($lang) || $labels[0]["lang"] === $lang)
-				$label = $labels[0]["value"];
-			
-			if($labels[0]["lang"] !== 'en')
+		{	
+			// 2017-06-23 CFB display English if no language is specified
+			for ($j = 0; $j < count($labels); $j++) {
+				if(empty($lang) && $labels[$j]["lang"] === 'en') {
+					$label = $labels[$j]["value"];
+					break;
+				}
+				else if(!empty($lang) && $labels[0]["lang"] === $lang) {
+					$label = $labels[$j]["value"];
+					break;
+				}
+			}
+			if(!empty($lang) && $lang !== 'en') {
 				$label .= " [" . $labels[0]["lang"] . "]";
+			}
+			//old:
+			//if((empty($lang) && $labels[0]["lang"] === 'en') || $labels[0]["lang"] === $lang)
+				//$label = $labels[0]["value"];			
+			//if($labels[0]["lang"] !== 'en')
+				//$label .= " [" . $labels[0]["lang"] . "]";
 		}
 		return ($label);
 	}

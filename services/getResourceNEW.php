@@ -1,18 +1,18 @@
 <?php
-	/*
-	================================================================================
-	Creator		: Ceri Binding, University of South Wales
-	Project		: SENESCHAL
-	Service		: getResourceNEW
-	Params		: scheme, concept, format
-	Summary		: Get description of a resource (will be a scheme or concept) 
-	License		: http://creativecommons.org/licenses/by/3.0 
-	================================================================================
-	History	 :
+/*
+================================================================================
+Creator		: Ceri Binding, University of South Wales
+Project		: SENESCHAL
+Classes		: 
+Require		: ARC2 RDF library for PHP [See https://github.com/semsol/arc2]
+Summary		: Get all RDF properties for specified resource URI
+License		: CC-BY - Creative Commons Attribution
+================================================================================
+History	 :
 
-	05/11/2013  CFB created class
-	================================================================================
-	*/
+14/11/2013 CFB Created script
+================================================================================
+*/
 	include_once("SeneschalAPI.php");
 	include_once("uri.php");
 	
@@ -51,7 +51,7 @@
 	$data = $api->getResource($uri, $format);
 
 	// possible output formats are rdf, ttl, n3, json, html		
-	switch (strtolower(trim($format)))
+	switch ($format)
 	{
 		case "rdf":
 			header('Content-Type: application/rdf+xml');
@@ -108,9 +108,9 @@
 					|| $triple['p'] === URI_SKOS_HASTOPCONCEPT)
 					{
 						$targetClass="concept";
-						$prefLabel = $api->getPrefLabel($triple['o']);
+						$prefLabel = $api->getPrefLabel($triple['o']); 
 						if($prefLabel !== "") {
-							$label = $prefLabel;							
+							$label = $prefLabel;
 						}
 						// create link to a google search on the label
 						//$s .= "&nbsp; <a href='http://www.google.co.uk/search?q=" . urlencode(trim($label)) . "'>[google]</a>";
@@ -142,8 +142,9 @@
 
 		$s .= "</table>";
 		if(!empty($uri)) {
-			$s = "<h3 class='centered'>" . $uri . "</h3>" . $s;
-			$s .= "<h4 class='centered'>RDF downloads (<a href='" . $uri . ".n3'>N-Triples</a> <a href='" . $uri . ".ttl'>Turtle</a> <a href='" . $uri . ".json'>JSON</a> <a href='" . $uri . ".rdf'>XML</a>)</h4>";			
+			// 25/02/2014 CFB - added link to generate QR Code for concept/scheme URI			
+			$s = "<h4 class='centered'>" . $uri . "&nbsp;&nbsp;(<a href='http://chart.apis.google.com/chart?cht=qr&chl=" . $uri . "&chs=240x240'>QR Code</a>)</h4> " . $s;
+			$s .= "<h4 class='centered'>RDF downloads (<a href='" . $uri . ".n3'>N-Triples</a> <a href='" . $uri . ".ttl'>Turtle</a> <a href='" . $uri . ".json'>JSON</a> <a href='" . $uri . ".rdf'>XML</a>)</h4>";				
 		}
 
 		return $s;

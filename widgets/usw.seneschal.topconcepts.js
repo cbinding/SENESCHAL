@@ -9,7 +9,7 @@ Version	: 20140115
 Summary	: List of top (root) concepts for specified	ConceptScheme
 Require	: jquery-1.7.2.min.js, jquery.ui.widget.min.js,	usw.seneschal.waitable.js
 Example	: $("#div1").topconcepts();
-License	: http://creativecommons.org/licenses/by/3.0/
+License	: https://creativecommons.org/licenses/by/3.0/
 ===============================================================================
 History
 
@@ -28,7 +28,7 @@ History
 			useCache: true,
 			schemeURI: "http://purl.org/heritagedata/schemes/mda_obj",
 			title: "Top	concepts",
-			serviceURI:	"http://www.heritagedata.org/live/services/getTopConceptsForScheme",
+			serviceURI:	"https://www.heritagedata.org/live/services/getTopConceptsForScheme",
 			//serviceURI: "http://localhost/heritagedata/getTopConceptsForScheme.php",
 			displayHeader: true,
 			displayFooter: true

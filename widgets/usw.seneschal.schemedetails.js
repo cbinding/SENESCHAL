@@ -27,7 +27,8 @@ History
 		//Default options
 		options: {
 			version: "20140117",
-			serviceURI:	"http://www.heritagedata.org/live/services/getResource.php",
+			//serviceURI:	"http://heritagedata.localhost/live/services/getResource.php",
+			serviceURI:	"https://www.heritagedata.org/live/services/getResource.php",
 			schemeURI: "http://purl.org/heritagedata/schemes/1",
 			useCache: true
 		},

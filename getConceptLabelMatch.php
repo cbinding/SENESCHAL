@@ -14,6 +14,7 @@
 	History	 :
 
 	21/10/2013  CFB created script
+	08/01/2019	CFB	Added optional 'language' parameter
 	================================================================================
 	*/	
 	require_once("SeneschalAPI.php");
@@ -29,6 +30,7 @@
     $offset = 0;
 	$alias = false;
 	$pretty = false;
+	$language = "en";
 
 	// get input parameters. Note: startsWith and contains may be used together
 	// get input parameters, ensure case insensitivity 
@@ -48,17 +50,19 @@
 			break;
 			case "pretty": $pretty = true;
 			break;
+			case "language": $language = $value;
+			break;
 		}		
 	}	
 	
 	// get the matching labels
 	$api = new SeneschalAPI();
-	$data = $api->getConceptLabelMatch($schemeURI, $startsWith, $contains, $limit, $offset);
+	$data = $api->getConceptLabelMatch($schemeURI, $startsWith, $contains, $limit, $offset, $language);
 	
 	// convert the data to JSON format for return
-	$json = str_replace('\\/', '/', json_encode($data));	
+	// $json = str_replace('\\/', '/', json_encode($data));	
 	// if server PHP version upgrades to >=PHP 5.4, we can do it like this instead:
-	// $json = json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
+	$json = json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
 	
 	// apply namespace alias prefixes
 	if($alias) $json = abbreviateURI($json);

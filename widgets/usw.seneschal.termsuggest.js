@@ -8,7 +8,7 @@ Classes	: usw.seneschal.termsuggest.js
 Summary	: Suggest terms originating from specified ConceptScheme as user types
 Require	: jquery-1.11.0.min.js, jquery.ui.widget.min.js
 Example	: $("#div1").termsuggest();
-License	: http://creativecommons.org/licenses/by/3.0/
+License	: https://creativecommons.org/licenses/by/3.0/
 ===============================================================================
 History
 
@@ -27,7 +27,7 @@ History
 			searchFor: "",
 			useCache: true,
 			schemeURI: "http://purl.org/heritagedata/schemes/mda_obj",
-			serviceURI:	"http://www.heritagedata.org/live/services/getConceptLabelMatch",
+			serviceURI:	"https://www.heritagedata.org/live/services/getConceptLabelMatch",
 			limit: 10, // max number of items to show in drop down results box
 			minLength: 3 // minimum length user input before service call is made
 		},

@@ -3,35 +3,48 @@
 	================================================================================
 	Creator		: Ceri Binding, University of South Wales
 	Project		: SENESCHAL
-	Service		: getConceptLabels
-	Params		: conceptURI [limit][offset][alias][pretty]
-	Summary		: Get all labels for a concept 
+	Service		: getConceptRelations
+	Params		: conceptURI - URI of the concept (mandatory)
+				  [verbose] - if present returns array of {[uri][property][value]}
+							containing all triples, otherwise returns array of 
+							{[uri][skos:prefLabel][skos:prefLabel lang]}
+				  [limit] - limit the number of records returned in the array
+				  [offset] - (zero based) offset for returned records  				  
+				  [alias] - shorten full URIs by appying namespace alias prefix
+				  [pretty] - pretty print the JSON output
+				  [language] - specify language (e.g. en, gd, cy) for labels and notes to be retrieved 
+	Summary		: Get the broader, narrower or related concepts for the specified conceptURI
 	License		: http://creativecommons.org/licenses/by/3.0 
 	================================================================================
 	Example		:
-	/getConceptLabels.php?uri=http://purl.org/heritagedata/schemes/mda_obj/concepts/96144
+	/getConceptRelations.php?conceptURI=http://purl.org/heritagedata/schemes/mda_obj/concepts/96665
 	================================================================================
 	History	 :
 
-	05/11/2013  CFB created class
+	14/11/2013  CFB created class
+	08/01/2019	CFB	Added optional 'language' parameter
 	================================================================================
 	*/	
 	require_once("SeneschalAPI.php");
 	require_once("uri.php");
-	
+
 	header('Expires: '.gmdate('D, d M Y H:i:s \G\M\T', time() + (24 * 60 * 60))); // cached for 24 hours
-	
+		
 	// defaults if input parameters not passed in
 	$conceptURI = "";
+	$verbose = false;
 	$alias = false;
 	$pretty = false;
 	$limit = 0;
 	$offset = 0;
+	$language = "en";
    
 	// get input parameters, ensure case insensitivity 
 	foreach ($_REQUEST as $key => $value) {
 		switch(strtolower($key)) {
 			case "concepturi": $conceptURI = $value;
+			break;
+			case "verbose": $verbose = true;
 			break;
 			case "alias": $alias = true;
 			break;
@@ -41,12 +54,13 @@
 			break;
 			case "offset": $offset = $value;
 			break;
+			case "language": $language = $value;
+			break;
 		}
 	}
 	
-	// get the scheme list
 	$api = new SeneschalAPI();
-	$data = $api->getConceptLabels($conceptURI, $limit, $offset);
+	$data = $api->getConceptRelations($conceptURI, $verbose, $limit, $offset, $language);
 	
 	// convert the data to JSON format for return
 	$json = str_replace('\\/', '/', json_encode($data));	
@@ -66,4 +80,5 @@
 	# But specifying ?callback=foo would print: foo({"some_key": "some_value"})
 	//header('Content-Type: application/json');
 	print ($jsonp_callback ? $jsonp_callback . '(' : '') . $json . ($jsonp_callback ? ')' : '');		
+	
 ?>

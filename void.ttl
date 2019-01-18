@@ -1,0 +1,612 @@
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> . 
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix : <http://heritagedata.org/void/> .
+
+:EH a foaf:Organization;
+	rdfs:label "English Heritage"@en;
+	foaf:page <http://www.english-heritage.org.uk>;
+	#foaf:mbox <mailto:fred@example.com>;
+	.
+
+:RCAHMS a foaf:Organization;
+	rdfs:label "Royal Commission on the Ancient and Historical Monuments of Scotland"@en;
+	foaf:page <http://www.rcahms.gov.uk>;
+	#foaf:mbox <mailto:fred@example.com>;
+	.
+
+:RCAHMW a foaf:Organization;
+	rdfs:label "Royal Commission on the Ancient and Historical Monuments of Wales"@en;
+	foaf:page <http://www.rcahmw.gov.uk>;
+	#foaf:mbox <mailto:fred@example.com>;
+	.
+
+:CPAT a foaf:Organization;
+	rdfs:label "Clwyd Powys Archaeological Trust"@en;
+	foaf:page <http://www.cpat.org.uk>;
+	.
+
+:DYFED a foaf:Organization;
+	rdfs:label "Dyfed Archaeological Trust"@en;
+	foaf:page <http://www.dyfedarchaeology.org.uk>;
+	.
+
+:HENEB a foaf:Organization;
+	rdfs:label "Gwynedd Archaeological Trust"@en;
+	foaf:page <http://www.heneb.co.uk>;
+	.
+
+:GGAT a foaf:Organization;
+	rdfs:label "The Glamorgan-Gwent Archaeological Trust Ltd."@en;
+	foaf:page <http://www.ggat.org.uk>;
+	.
+
+:CADW a foaf:Organization;
+	rdfs:label "Cadw"@en;
+	foaf:page <http://cadw.wales.gov.uk>;
+	.
+
+:NMW a foaf:Organization;
+	rdfs:label "National Museum of Wales"@en;
+	foaf:page <http://www.museumwales.ac.uk>;
+	.
+
+#EH Monument Types Thesaurus
+<http://purl.org/heritagedata/schemes/eh_tmt2> a void:Dataset, skos:ConceptScheme;
+	foaf:page <http://www.heritagedata.org/blog/vocabularies-provided/>;
+	foaf:page <http://fishforum.weebly.com/download-fish-terminology.html>;
+	dcterms:title "MONUMENT TYPE (EH)"@en;
+	dcterms:description "Classification of monument type records by function"@en;
+	dcterms:subject <http://dbpedia.org/resource/Archaeology>, <http://dbpedia.org/resource/Monument>;
+	dcterms:creator :EH;
+	dcterms:publisher <http://www.english-heritage.org.uk>;
+	dcterms:identifier "http://purl.org/heritagedata/schemes/eh_tmt2"^^xsd:string;
+	dcterms:contributor :EH;
+	dcterms:created "2013-07-17T08:43:50"^^xsd:dateTime;
+	dcterms:issued "2013-07-17T08:43:50"^^xsd:dateTime;
+	dcterms:modified "2013-07-17T08:43:50"^^xsd:dateTime;
+	dcterms:license <http://creativecommons.org/licenses/by/3.0>;
+	cc:license <http://creativecommons.org/licenses/by/3.0>;
+	cc:attributionURL <http://www.english-heritage.org.uk>;
+	cc:attributionName "English Heritage"^^xsd:string;
+	void:feature <http://www.w3.org/ns/formats/RDF_XML>;
+	void:triples 70314;
+	void:sparqlEndpoint <http://heritagedata.org/live/sparql>;
+	void:dataDump <http://heritagedata.org/live/seneschal_eh_tmt2_20130717.rdf>;
+	void:exampleResource <http://purl.org/heritagedata/schemes/eh_tmt2/concepts/68561>,
+		<http://purl.org/heritagedata/schemes/eh_tmt2/concepts/68722>,
+		<http://purl.org/heritagedata/schemes/eh_tmt2/concepts/68897>;
+	void:uriSpace "http://purl.org/heritagedata/schemes/eh_tmt2";
+	void:vocabulary <http://www.w3.org/2004/02/skos/core#>, <http://creativecommons.org/ns#>;	
+	void:rootResource <http://purl.org/heritagedata/schemes/eh_tmt2/concepts/102872>,
+		<http://purl.org/heritagedata/schemes/eh_tmt2/concepts/99962>,
+		<http://purl.org/heritagedata/schemes/eh_tmt2/concepts/99961>,
+		<http://purl.org/heritagedata/schemes/eh_tmt2/concepts/93771>,
+		<http://purl.org/heritagedata/schemes/eh_tmt2/concepts/68777>,
+		<http://purl.org/heritagedata/schemes/eh_tmt2/concepts/68757>,
+		<http://purl.org/heritagedata/schemes/eh_tmt2/concepts/68808>,
+		<http://purl.org/heritagedata/schemes/eh_tmt2/concepts/68921>,
+		<http://purl.org/heritagedata/schemes/eh_tmt2/concepts/69047>,
+		<http://purl.org/heritagedata/schemes/eh_tmt2/concepts/68543>,
+		<http://purl.org/heritagedata/schemes/eh_tmt2/concepts/68693>,
+		<http://purl.org/heritagedata/schemes/eh_tmt2/concepts/68675>,
+		<http://purl.org/heritagedata/schemes/eh_tmt2/concepts/68707>,
+		<http://purl.org/heritagedata/schemes/eh_tmt2/concepts/70306>,
+		<http://purl.org/heritagedata/schemes/eh_tmt2/concepts/70204>,
+		<http://purl.org/heritagedata/schemes/eh_tmt2/concepts/71344>,
+		<http://purl.org/heritagedata/schemes/eh_tmt2/concepts/69438>,
+		<http://purl.org/heritagedata/schemes/eh_tmt2/concepts/70551>;	
+	.
+
+#EH Archaeological Sciences
+<http://purl.org/heritagedata/schemes/560> a void:Dataset, skos:ConceptScheme;		
+	foaf:page <http://www.heritagedata.org/blog/vocabularies-provided/>;
+	foaf:page <http://fishforum.weebly.com/download-fish-terminology.html>;
+	dcterms:title "ARCHAEOLOGICAL SCIENCES (EH)"@en;
+	dcterms:description "Used for recording the techniques, recovery methods and materials associated with archaeological sciences"@en;
+	dcterms:subject <http://dbpedia.org/resource/Archaeology>;
+	dcterms:creator :EH;
+	dcterms:publisher <http://www.english-heritage.org.uk>;
+	dcterms:identifier "http://purl.org/heritagedata/schemes/560"^^xsd:string;
+	dcterms:contributor :EH;
+	dcterms:created "2013-07-17T09:02:44"^^xsd:dateTime;
+	dcterms:issued "2013-07-17T09:02:44"^^xsd:dateTime;
+	dcterms:modified "2013-07-17T09:02:44"^^xsd:dateTime;
+	dcterms:license <http://creativecommons.org/licenses/by/3.0>;
+	cc:license <http://creativecommons.org/licenses/by/3.0>;
+	cc:attributionURL <http://www.english-heritage.org.uk>;
+	cc:attributionName "English Heritage"^^xsd:string;
+	void:feature <http://www.w3.org/ns/formats/RDF_XML>;
+	void:triples 1531;
+	void:sparqlEndpoint <http://heritagedata.org/live/sparql>;
+	void:dataDump <http://heritagedata.org/live/seneschal_eh_560_20130717.rdf>;
+	void:exampleResource <http://purl.org/heritagedata/schemes/560/concepts/142169>,
+		<http://purl.org/heritagedata/schemes/560/concepts/147278>,
+		<http://purl.org/heritagedata/schemes/560/concepts/142131>;
+	void:uriSpace "http://purl.org/heritagedata/schemes/eh_560";
+	void:vocabulary <http://www.w3.org/2004/02/skos/core#>, <http://creativecommons.org/ns#>;
+	void:rootResource <http://purl.org/heritagedata/schemes/560/concepts/142171>,
+		<http://purl.org/heritagedata/schemes/560/concepts/142162>,	
+		<http://purl.org/heritagedata/schemes/560/concepts/142160>,	
+		<http://purl.org/heritagedata/schemes/560/concepts/142153>,	
+		<http://purl.org/heritagedata/schemes/560/concepts/142105>;	
+	.
+
+#EH Building Materials
+<http://purl.org/heritagedata/schemes/eh_tbm> a void:Dataset, skos:ConceptScheme; 
+	foaf:page <http://www.heritagedata.org/blog/vocabularies-provided/>;
+	foaf:page <http://fishforum.weebly.com/download-fish-terminology.html>;
+	dcterms:title "BUILDING MATERIALS (EH)"@en;
+	dcterms:description " Thesaurus of main constructional material types (eg. the walls) for indexing of monuments"@en;
+	dcterms:subject <http://dbpedia.org/resource/Archaeology>;
+	dcterms:creator :EH;
+	dcterms:publisher <http://www.english-heritage.org.uk>;
+	dcterms:identifier "http://purl.org/heritagedata/schemes/eh_tbm"^^xsd:string;
+	dcterms:contributor :EH;
+	dcterms:created "2013-07-17T09:02:16"^^xsd:dateTime;
+	dcterms:issued "2013-07-17T09:02:16"^^xsd:dateTime;
+	dcterms:modified "2013-07-17T09:02:16"^^xsd:dateTime;
+	dcterms:license <http://creativecommons.org/licenses/by/3.0>;
+	cc:license <http://creativecommons.org/licenses/by/3.0>;
+	cc:attributionURL <http://www.english-heritage.org.uk>;
+	cc:attributionName "English Heritage"^^xsd:string;
+	void:feature <http://www.w3.org/ns/formats/RDF_XML>;
+	void:triples 3451;
+	void:sparqlEndpoint <http://heritagedata.org/live/sparql>;
+	void:dataDump <http://heritagedata.org/live/seneschal_eh_tbm_20130717.rdf>;
+	void:exampleResource <http://purl.org/heritagedata/schemes/eh_tbm/concepts/98058>,
+		<http://purl.org/heritagedata/schemes/eh_tbm/concepts/98238>,
+		<http://purl.org/heritagedata/schemes/eh_tbm/concepts/98023>;
+	void:uriSpace "http://purl.org/heritagedata/schemes/eh_tbm";
+	void:vocabulary <http://www.w3.org/2004/02/skos/core#>, <http://creativecommons.org/ns#>;
+	void:rootResource <http://purl.org/heritagedata/schemes/eh_tbm/concepts/97903>,	
+		<http://purl.org/heritagedata/schemes/eh_tbm/concepts/97712>,	
+		<http://purl.org/heritagedata/schemes/eh_tbm/concepts/98265>,	
+		<http://purl.org/heritagedata/schemes/eh_tbm/concepts/98238>,	
+		<http://purl.org/heritagedata/schemes/eh_tbm/concepts/98216>,	
+		<http://purl.org/heritagedata/schemes/eh_tbm/concepts/98058>,	
+		<http://purl.org/heritagedata/schemes/eh_tbm/concepts/98053>,	
+		<http://purl.org/heritagedata/schemes/eh_tbm/concepts/98046>,	
+		<http://purl.org/heritagedata/schemes/eh_tbm/concepts/98041>;		
+	.
+
+#EH Components
+<http://purl.org/heritagedata/schemes/eh_com> a void:Dataset, skos:ConceptScheme; 
+	foaf:page <http://www.heritagedata.org/blog/vocabularies-provided/>;
+	foaf:page <http://fishforum.weebly.com/download-fish-terminology.html>;
+	dcterms:title "COMPONENTS (EH)"@en;
+	dcterms:description "Terminology covering divisions and structural elements of a building or monument"@en;
+	dcterms:subject <http://dbpedia.org/resource/Archaeology>;
+	dcterms:creator :EH;
+	dcterms:publisher <http://www.english-heritage.org.uk>;
+	dcterms:identifier "http://purl.org/heritagedata/schemes/eh_com"^^xsd:string;
+	dcterms:contributor :EH;
+	dcterms:created "2013-07-17T09:07:49"^^xsd:dateTime;
+	dcterms:issued "2013-07-17T09:07:49"^^xsd:dateTime;
+	dcterms:modified "2013-07-17T09:07:49"^^xsd:dateTime;
+	dcterms:license <http://creativecommons.org/licenses/by/3.0>;
+	cc:license <http://creativecommons.org/licenses/by/3.0>;
+	cc:attributionURL <http://www.english-heritage.org.uk>;
+	cc:attributionName "English Heritage"^^xsd:string;
+	void:feature <http://www.w3.org/ns/formats/RDF_XML>;
+	void:triples 17190;
+	void:sparqlEndpoint <http://heritagedata.org/live/sparql>;
+	void:dataDump <http://heritagedata.org/live/seneschal_eh_com_20130717.rdf>;
+	void:exampleResource <http://purl.org/heritagedata/schemes/eh_com/concepts/138269>,
+		<http://purl.org/heritagedata/schemes/eh_com/concepts/138283>,
+		<http://purl.org/heritagedata/schemes/eh_com/concepts/138370>;
+	void:uriSpace "http://purl.org/heritagedata/schemes/eh_com";
+	void:vocabulary <http://www.w3.org/2004/02/skos/core#>, <http://creativecommons.org/ns#>;	
+	void:rootResource <http://purl.org/heritagedata/schemes/eh_com/concepts/143259>,		
+		<http://purl.org/heritagedata/schemes/eh_com/concepts/138952>,		
+		<http://purl.org/heritagedata/schemes/eh_com/concepts/137351>,		
+		<http://purl.org/heritagedata/schemes/eh_com/concepts/138095>,		
+		<http://purl.org/heritagedata/schemes/eh_com/concepts/138036>,		
+		<http://purl.org/heritagedata/schemes/eh_com/concepts/137971>,		
+		<http://purl.org/heritagedata/schemes/eh_com/concepts/137774>,		
+		<http://purl.org/heritagedata/schemes/eh_com/concepts/137674>,		
+		<http://purl.org/heritagedata/schemes/eh_com/concepts/137489>,		
+		<http://purl.org/heritagedata/schemes/eh_com/concepts/138311>;		
+	.
+
+#EH Event Type
+<http://purl.org/heritagedata/schemes/agl_et> a void:Dataset, skos:ConceptScheme; 
+	foaf:page <http://www.heritagedata.org/blog/vocabularies-provided/>;
+	foaf:page <http://fishforum.weebly.com/download-fish-terminology.html>;
+	dcterms:title "EVENT TYPE (EH)"@en;
+	dcterms:description "Terminology used for recording archaeological and architectural investigative, data collection exercises; from intrusive interventions to non damaging surveys"@en;
+	dcterms:subject <http://dbpedia.org/resource/Archaeology>;
+	dcterms:creator :EH;
+	dcterms:publisher <http://www.english-heritage.org.uk>;
+	dcterms:identifier "http://purl.org/heritagedata/schemes/agl_et"^^xsd:string;
+	dcterms:contributor :EH;
+	dcterms:created "2013-07-17T08:43:37"^^xsd:dateTime;
+	dcterms:issued "2013-07-17T08:43:37"^^xsd:dateTime;
+	dcterms:modified "2013-07-17T08:43:37"^^xsd:dateTime;
+	dcterms:license <http://creativecommons.org/licenses/by/3.0>;
+	cc:license <http://creativecommons.org/licenses/by/3.0>;
+	cc:attributionURL <http://www.english-heritage.org.uk>;
+	cc:attributionName "English Heritage"^^xsd:string;
+	void:feature <http://www.w3.org/ns/formats/RDF_XML>;
+	void:triples 1272;
+	void:sparqlEndpoint <http://heritagedata.org/live/sparql>;
+	void:dataDump <http://heritagedata.org/live/seneschal_agl_et_20130717.rdf>;
+	void:exampleResource <http://purl.org/heritagedata/schemes/agl_et/concepts/145121>,
+		<http://purl.org/heritagedata/schemes/agl_et/concepts/145122>,
+		<http://purl.org/heritagedata/schemes/agl_et/concepts/145114>;
+	void:uriSpace "http://purl.org/heritagedata/schemes/agl_et";
+	void:vocabulary <http://www.w3.org/2004/02/skos/core#>, 
+		<http://creativecommons.org/ns#>;
+	void:rootResource <http://purl.org/heritagedata/schemes/agl_et/concepts/147298>,		
+		<http://purl.org/heritagedata/schemes/agl_et/concepts/147297>;	
+	.
+
+#EH Evidence
+<http://purl.org/heritagedata/schemes/eh_evd> a void:Dataset, skos:ConceptScheme;	
+	foaf:page <http://www.heritagedata.org/blog/vocabularies-provided/>;
+	foaf:page <http://fishforum.weebly.com/download-fish-terminology.html>;
+	dcterms:title "EVIDENCE (EH)"@en;
+	dcterms:description "Terminology covering the existing physical remains of a monument, or the means by which a monument has been identified where no physical remains exist"@en;
+	dcterms:subject <http://dbpedia.org/resource/Archaeology>;
+	dcterms:creator :EH;
+	dcterms:publisher <http://www.english-heritage.org.uk>;
+	dcterms:identifier "http://purl.org/heritagedata/schemes/eh_evd"^^xsd:string;
+	dcterms:contributor :EH;
+	#dcterms:created "2013-07-17T08:43:37"^^xsd:dateTime;
+	#dcterms:issued "2013-07-17T08:43:37"^^xsd:dateTime;
+	#dcterms:modified "2013-07-17T08:43:37"^^xsd:dateTime;
+	dcterms:license <http://creativecommons.org/licenses/by/3.0>;
+	cc:license <http://creativecommons.org/licenses/by/3.0>;
+	cc:attributionURL <http://www.english-heritage.org.uk>;
+	cc:attributionName "English Heritage"^^xsd:string;
+	void:feature <http://www.w3.org/ns/formats/RDF_XML>;
+	void:triples 645;
+	void:sparqlEndpoint <http://heritagedata.org/live/sparql>;
+	void:dataDump <http://heritagedata.org/live/seneschal_eh_evd_20130717.rdf>;
+	void:exampleResource <http://purl.org/heritagedata/schemes/eh_evd/concepts/82797>,
+		<http://purl.org/heritagedata/schemes/eh_evd/concepts/78253>,
+		<http://purl.org/heritagedata/schemes/eh_evd/concepts/84565>;
+	void:uriSpace "http://purl.org/heritagedata/schemes/eh_evd";
+	void:vocabulary <http://www.w3.org/2004/02/skos/core#>, <http://creativecommons.org/ns#>;	
+	void:rootResource <http://purl.org/heritagedata/schemes/eh_evd/concepts/82790>;
+	.
+
+#FISH Archaeological Objects Thesaurus
+<http://purl.org/heritagedata/schemes/mda_obj> a void:Dataset, skos:ConceptScheme; 	
+	foaf:page <http://www.heritagedata.org/blog/vocabularies-provided/>;
+	foaf:page <http://fishforum.weebly.com/download-fish-terminology.html>;
+	dcterms:title "FISH Archaeological Objects Thesaurus"@en;
+	dcterms:description "Originally developed by the Archaeological Objects Working Party and published by the mda. It provides guidance for the recording of archaeological objects in Britain and Ireland covering all historical periods. Now maintained by FISH on behalf of the heritage sector"@en;
+	dcterms:subject <http://dbpedia.org/resource/Archaeology>;
+	dcterms:creator :EH;
+	dcterms:publisher <http://www.english-heritage.org.uk>;
+	dcterms:identifier "http://purl.org/heritagedata/schemes/mda_obj"^^xsd:string;
+	dcterms:contributor :EH;
+	#dcterms:created "2013-07-17T09:03:00"^^xsd:dateTime;
+	#dcterms:issued "2013-07-17T09:03:00"^^xsd:dateTime;
+	#dcterms:modified "2013-07-17T09:03:00"^^xsd:dateTime;
+	dcterms:license <http://creativecommons.org/licenses/by/3.0>;
+	cc:license <http://creativecommons.org/licenses/by/3.0>;
+	cc:attributionURL <http://www.english-heritage.org.uk>;
+	cc:attributionName "English Heritage"^^xsd:string;
+	void:feature <http://www.w3.org/ns/formats/RDF_XML>;
+	void:triples 25410;
+	void:sparqlEndpoint <http://heritagedata.org/live/sparql>;
+	void:dataDump <http://heritagedata.org/live/seneschal_mda_obj_20130717.rdf>;
+	void:exampleResource <http://purl.org/heritagedata/schemes/mda_obj/concepts/95424>,
+		<http://purl.org/heritagedata/schemes/mda_obj/concepts/99628>,
+		<http://purl.org/heritagedata/schemes/mda_obj/concepts/95253>;
+	void:uriSpace "http://purl.org/heritagedata/schemes/mda_obj";
+	void:vocabulary <http://www.w3.org/2004/02/skos/core#>, <http://creativecommons.org/ns#>;	
+	void:rootResource <http://purl.org/heritagedata/schemes/mda_obj/concepts/97692>,
+		<http://purl.org/heritagedata/schemes/mda_obj/concepts/100141>,
+		<http://purl.org/heritagedata/schemes/mda_obj/concepts/97685>,
+		<http://purl.org/heritagedata/schemes/mda_obj/concepts/95070>,
+		<http://purl.org/heritagedata/schemes/mda_obj/concepts/96982>,
+		<http://purl.org/heritagedata/schemes/mda_obj/concepts/97083>,
+		<http://purl.org/heritagedata/schemes/mda_obj/concepts/99614>,
+		<http://purl.org/heritagedata/schemes/mda_obj/concepts/100075>,
+		<http://purl.org/heritagedata/schemes/mda_obj/concepts/97088>,
+		<http://purl.org/heritagedata/schemes/mda_obj/concepts/97086>,
+		<http://purl.org/heritagedata/schemes/mda_obj/concepts/96817>,
+		<http://purl.org/heritagedata/schemes/mda_obj/concepts/96751>,
+		<http://purl.org/heritagedata/schemes/mda_obj/concepts/97581>,
+		<http://purl.org/heritagedata/schemes/mda_obj/concepts/95654>,
+		<http://purl.org/heritagedata/schemes/mda_obj/concepts/97212>,
+		<http://purl.org/heritagedata/schemes/mda_obj/concepts/97209>,
+		<http://purl.org/heritagedata/schemes/mda_obj/concepts/95069>,
+		<http://purl.org/heritagedata/schemes/mda_obj/concepts/95064>,
+		<http://purl.org/heritagedata/schemes/mda_obj/concepts/95056>,
+		<http://purl.org/heritagedata/schemes/mda_obj/concepts/95055>,
+		<http://purl.org/heritagedata/schemes/mda_obj/concepts/95054>,
+		<http://purl.org/heritagedata/schemes/mda_obj/concepts/97090>,
+		<http://purl.org/heritagedata/schemes/mda_obj/concepts/97089>,
+		<http://purl.org/heritagedata/schemes/mda_obj/concepts/97087>,
+		<http://purl.org/heritagedata/schemes/mda_obj/concepts/97085>;	
+	.
+
+#EH Maritime Craft Type
+<http://purl.org/heritagedata/schemes/eh_tmc> a void:Dataset, skos:ConceptScheme;	
+	foaf:page <http://www.heritagedata.org/blog/vocabularies-provided/>;
+	foaf:page <http://fishforum.weebly.com/download-fish-terminology.html>;
+	dcterms:title "MARITIME CRAFT TYPE (EH)"@en;
+	dcterms:description "A thesaurus of craft types which survive as wrecks in English Heritage's maritime record"@en;
+	dcterms:subject <http://dbpedia.org/resource/Archaeology>;
+	dcterms:creator :EH;
+	dcterms:publisher <http://www.english-heritage.org.uk>;
+	dcterms:identifier "http://purl.org/heritagedata/schemes/eh_tmc"^^xsd:string;
+	dcterms:contributor :EH;
+	dcterms:created "2013-07-17T09:01:42"^^xsd:dateTime;
+	dcterms:issued "2013-07-17T09:01:42"^^xsd:dateTime;
+	dcterms:modified "2013-07-17T09:01:42"^^xsd:dateTime;
+	dcterms:license <http://creativecommons.org/licenses/by/3.0>;
+	cc:license <http://creativecommons.org/licenses/by/3.0>;
+	cc:attributionURL <http://www.english-heritage.org.uk>;
+	cc:attributionName "English Heritage"^^xsd:string;
+	void:feature <http://www.w3.org/ns/formats/RDF_XML>;
+	void:triples 3494;
+	void:sparqlEndpoint <http://heritagedata.org/live/sparql>;
+	void:dataDump <http://heritagedata.org/live/seneschal_eh_tmc_20130717.rdf>;
+	void:exampleResource <http://purl.org/heritagedata/schemes/eh_tmc/concepts/100355>,
+		<http://purl.org/heritagedata/schemes/eh_tmc/concepts/100445>,
+		<http://purl.org/heritagedata/schemes/eh_tmc/concepts/100416>;
+	void:uriSpace "http://purl.org/heritagedata/schemes/eh_tmc";
+	void:vocabulary <http://www.w3.org/2004/02/skos/core#>, <http://creativecommons.org/ns#>;	
+	void:rootResource <http://purl.org/heritagedata/schemes/eh_tmc/concepts/100394>;
+	.
+
+#EH Periods
+<http://purl.org/heritagedata/schemes/eh_period> a void:Dataset, skos:ConceptScheme;	
+	foaf:page <http://www.heritagedata.org/blog/vocabularies-provided/>;
+	foaf:page <http://fishforum.weebly.com/download-fish-terminology.html>;
+	dcterms:title "PERIOD (EH)"@en;
+	dcterms:description "English Heritage Periods List"@en;
+	dcterms:subject <http://dbpedia.org/resource/Archaeology>;
+	dcterms:creator :EH;
+	dcterms:publisher <http://www.english-heritage.org.uk>;
+	dcterms:identifier "http://purl.org/heritagedata/schemes/eh_period"^^xsd:string;
+	dcterms:contributor :EH;
+	dcterms:created "2013-12-06T16:44:37"^^xsd:dateTime;
+	dcterms:issued "2013-12-06T16:44:37"^^xsd:dateTime;
+	dcterms:modified "2013-12-06T16:44:37"^^xsd:dateTime;
+	dcterms:license <http://creativecommons.org/licenses/by/3.0>;
+	cc:license <http://creativecommons.org/licenses/by/3.0>;
+	cc:attributionURL <http://www.english-heritage.org.uk>;
+	cc:attributionName "English Heritage"^^xsd:string;
+	void:feature <http://www.w3.org/ns/formats/RDF_XML>;
+	void:triples 557;
+	void:sparqlEndpoint <http://heritagedata.org/live/sparql>;
+	void:dataDump <http://heritagedata.org/live/seneschal_eh_period_20130717.rdf>;
+	void:exampleResource <http://purl.org/heritagedata/schemes/eh_period/concepts/RO>,
+		<http://purl.org/heritagedata/schemes/eh_period/concepts/IA>,
+		<http://purl.org/heritagedata/schemes/eh_period/concepts/ME>;
+	void:uriSpace "http://purl.org/heritagedata/schemes/eh_period";
+	void:vocabulary <http://www.w3.org/2004/02/skos/core#>, <http://creativecommons.org/ns#>;	
+	void:rootResource <http://purl.org/heritagedata/schemes/eh_period/concepts/PM>,
+		<http://purl.org/heritagedata/schemes/eh_period/concepts/MD>,
+		<http://purl.org/heritagedata/schemes/eh_period/concepts/EM>,
+		<http://purl.org/heritagedata/schemes/eh_period/concepts/RO>,
+		<http://purl.org/heritagedata/schemes/eh_period/concepts/PR>,
+		<http://purl.org/heritagedata/schemes/eh_period/concepts/UN>,
+		<http://purl.org/heritagedata/schemes/eh_period/concepts/C20>,
+		<http://purl.org/heritagedata/schemes/eh_period/concepts/C21>;	
+	.
+
+#RCAHMS Monument Types
+<http://purl.org/heritagedata/schemes/1> a void:Dataset, skos:ConceptScheme;	
+	foaf:page <http://www.heritagedata.org/blog/vocabularies-provided/>;
+	dcterms:title "Monument Type Thesaurus (Scotland)"@en;
+	dcterms:description "Monument types relating to the archaeological and built heritage of Scotland."@en;
+	dcterms:subject <http://dbpedia.org/resource/Archaeology>;
+	dcterms:creator :RCAHMS;
+	dcterms:publisher <http://www.rcahms.gov.uk>;
+	dcterms:identifier "http://purl.org/heritagedata/schemes/1"^^xsd:string;
+	dcterms:contributor :RCAHMS;
+	dcterms:created "2006-07-03T14:26:54"^^xsd:dateTime;
+	dcterms:issued "2013-07-17T10:06:54"^^xsd:dateTime;
+	dcterms:modified "2012-12-04T11:48:39"^^xsd:dateTime;
+	dcterms:license <http://reference.data.gov.uk/id/open-government-licence>;
+	cc:license <http://reference.data.gov.uk/id/open-government-licence>;
+	cc:attributionURL <http://www.rcahms.gov.uk>;
+	cc:attributionName "RCAHMS"^^xsd:string;
+	void:feature <http://www.w3.org/ns/formats/RDF_XML>;
+	void:triples 33544;
+	void:sparqlEndpoint <http://heritagedata.org/live/sparql>;
+	void:dataDump <http://heritagedata.org/live/seneschal_rc_1_20130717.rdf>;
+	void:exampleResource <http://purl.org/heritagedata/schemes/1/concepts/409>,
+		<http://purl.org/heritagedata/schemes/1/concepts/500499>,
+		<http://purl.org/heritagedata/schemes/1/concepts/1895>,
+		<http://purl.org/heritagedata/schemes/1/concepts/447>;
+	void:uriSpace "http://purl.org/heritagedata/schemes/1";
+	void:vocabulary <http://www.w3.org/2004/02/skos/core#>, <http://creativecommons.org/ns#>;	
+	void:rootResource <http://purl.org/heritagedata/schemes/1/concepts/1959>,	
+		<http://purl.org/heritagedata/schemes/1/concepts/1897>,	
+		<http://purl.org/heritagedata/schemes/1/concepts/1775>,	
+		<http://purl.org/heritagedata/schemes/1/concepts/1645>,	
+		<http://purl.org/heritagedata/schemes/1/concepts/1587>,	
+		<http://purl.org/heritagedata/schemes/1/concepts/1442>,	
+		<http://purl.org/heritagedata/schemes/1/concepts/1382>,	
+		<http://purl.org/heritagedata/schemes/1/concepts/647>,	
+		<http://purl.org/heritagedata/schemes/1/concepts/624>,	
+		<http://purl.org/heritagedata/schemes/1/concepts/552>,	
+		<http://purl.org/heritagedata/schemes/1/concepts/537>,	
+		<http://purl.org/heritagedata/schemes/1/concepts/405>,	
+		<http://purl.org/heritagedata/schemes/1/concepts/278>,	
+		<http://purl.org/heritagedata/schemes/1/concepts/258>,	
+		<http://purl.org/heritagedata/schemes/1/concepts/211>,	
+		<http://purl.org/heritagedata/schemes/1/concepts/202>,	
+		<http://purl.org/heritagedata/schemes/1/concepts/151>,	
+		<http://purl.org/heritagedata/schemes/1/concepts/1>;	
+	.
+
+#RCAHMS Archaeological Objects
+<http://purl.org/heritagedata/schemes/2> a void:Dataset, skos:ConceptScheme;	
+	foaf:page <http://www.heritagedata.org/blog/vocabularies-provided/>;
+	dcterms:title "Archaeological Objects Thesaurus (Scotland)"@en;
+	dcterms:description "Objects made by human activity."@en;
+	dcterms:subject <http://dbpedia.org/resource/Archaeology>;
+	dcterms:creator :RCAHMS;
+	dcterms:publisher <http://www.rcahms.gov.uk>;
+	dcterms:identifier "http://purl.org/heritagedata/schemes/2"^^xsd:string;
+	dcterms:contributor :RCAHMS;
+	dcterms:created "2007-04-05T11:32:30"^^xsd:dateTime;
+	dcterms:issued "2013-07-17T10:08:33"^^xsd:dateTime;
+	dcterms:modified "2013-02-12T10:12:29"^^xsd:dateTime;
+	dcterms:license <http://reference.data.gov.uk/id/open-government-licence>;
+	cc:license <http://reference.data.gov.uk/id/open-government-licence>;
+	cc:attributionURL <http://www.rcahms.gov.uk>;
+	cc:attributionName "RCAHMS"^^xsd:string;
+	void:feature <http://www.w3.org/ns/formats/RDF_XML>;
+	void:triples 6108;
+	void:sparqlEndpoint <http://heritagedata.org/live/sparql>;
+	void:dataDump <http://heritagedata.org/live/seneschal_rc_2_20130717.rdf>;
+	void:exampleResource <http://purl.org/heritagedata/schemes/2/concepts/501158>,
+		<http://purl.org/heritagedata/schemes/2/concepts/501386>,
+		<http://purl.org/heritagedata/schemes/2/concepts/501549>;
+	void:uriSpace "http://purl.org/heritagedata/schemes/2";
+	void:vocabulary <http://www.w3.org/2004/02/skos/core#>, <http://creativecommons.org/ns#>;	
+	void:rootResource <http://purl.org/heritagedata/schemes/2/concepts/501620>,	
+		<http://purl.org/heritagedata/schemes/2/concepts/501596>,	
+		<http://purl.org/heritagedata/schemes/2/concepts/501588>,	
+		<http://purl.org/heritagedata/schemes/2/concepts/501586>,	
+		<http://purl.org/heritagedata/schemes/2/concepts/501540>,	
+		<http://purl.org/heritagedata/schemes/2/concepts/501528>,	
+		<http://purl.org/heritagedata/schemes/2/concepts/501497>,	
+		<http://purl.org/heritagedata/schemes/2/concepts/501765>,	
+		<http://purl.org/heritagedata/schemes/2/concepts/501436>,	
+		<http://purl.org/heritagedata/schemes/2/concepts/501425>,	
+		<http://purl.org/heritagedata/schemes/2/concepts/501420>,	
+		<http://purl.org/heritagedata/schemes/2/concepts/501366>,	
+		<http://purl.org/heritagedata/schemes/2/concepts/501326>,	
+		<http://purl.org/heritagedata/schemes/2/concepts/501320>,	
+		<http://purl.org/heritagedata/schemes/2/concepts/501294>,	
+		<http://purl.org/heritagedata/schemes/2/concepts/501282>,	
+		<http://purl.org/heritagedata/schemes/2/concepts/501281>,	
+		<http://purl.org/heritagedata/schemes/2/concepts/501256>,	
+		<http://purl.org/heritagedata/schemes/2/concepts/501243>,	
+		<http://purl.org/heritagedata/schemes/2/concepts/501138>,	
+		<http://purl.org/heritagedata/schemes/2/concepts/501129>,	
+		<http://purl.org/heritagedata/schemes/2/concepts/501122>,	
+		<http://purl.org/heritagedata/schemes/2/concepts/501117>;	
+	.
+
+#RCAHMS Maritime Craft Type
+<http://purl.org/heritagedata/schemes/3> a void:Dataset, skos:ConceptScheme;	
+	foaf:page <http://www.heritagedata.org/blog/vocabularies-provided/>;
+	dcterms:title "Maritime Craft Thesaurus (Scotland)"@en;
+	dcterms:description "Types of craft that survive as wrecks, or are documented as losses, in Scottish maritime waters"@en;
+	dcterms:subject <http://dbpedia.org/resource/Archaeology>;
+	dcterms:creator :RCAHMS;
+	dcterms:publisher <http://www.rcahms.gov.uk>;
+	dcterms:identifier "http://purl.org/heritagedata/schemes/3"^^xsd:string;
+	dcterms:contributor :RCAHMS;
+	dcterms:created "2007-04-23T18:00:29"^^xsd:dateTime;
+	dcterms:issued "2013-07-17T10:08:38"^^xsd:dateTime;
+	dcterms:modified "2012-12-04T11:48:39"^^xsd:dateTime;
+	dcterms:license <http://reference.data.gov.uk/id/open-government-licence>;
+	cc:license <http://reference.data.gov.uk/id/open-government-licence>;
+	cc:attributionURL <http://www.rcahms.gov.uk>;
+	cc:attributionName "RCAHMS"^^xsd:string;
+	void:feature <http://www.w3.org/ns/formats/RDF_XML>;
+	void:triples 2511;
+	void:sparqlEndpoint <http://heritagedata.org/live/sparql>;
+	void:dataDump <http://heritagedata.org/live/seneschal_rc_3_20130717.rdf>;
+	void:exampleResource <http://purl.org/heritagedata/schemes/3/concepts/506041>,
+		<http://purl.org/heritagedata/schemes/3/concepts/501972>,
+		<http://purl.org/heritagedata/schemes/3/concepts/501851>;
+	void:uriSpace "http://purl.org/heritagedata/schemes/3";
+	void:vocabulary <http://www.w3.org/2004/02/skos/core#>, <http://creativecommons.org/ns#>;	
+	void:rootResource <http://purl.org/heritagedata/schemes/3/concepts/501925>;		
+	.
+
+#RCAHMW Monument Types
+<http://purl.org/heritagedata/schemes/10> a void:Dataset, skos:ConceptScheme;	
+	foaf:page <http://www.heritagedata.org/blog/vocabularies-provided/>;
+	dcterms:title "MONUMENT THESAURUS (Wales)"@en;
+	dcterms:description "Classification of monument types in Wales by function"@en;
+	dcterms:subject <http://dbpedia.org/resource/Archaeology>;
+	dcterms:creator :RCAHMW;
+	dcterms:publisher <http://www.rcahmw.gov.uk>;
+	dcterms:identifier "http://purl.org/heritagedata/schemes/10"^^xsd:string;
+	dcterms:contributor :RCAHMW, :CPAT, :DYFED, :HENEB, :GGAT, :CADW, :NMW;
+	dcterms:created "2006-07-03T14:26:54"^^xsd:dateTime;
+	dcterms:issued "2013-07-17T15:11:19"^^xsd:dateTime;
+	dcterms:modified "2007-04-05T11:33:47"^^xsd:dateTime;
+	dcterms:license <http://creativecommons.org/licenses/by/3.0>;
+	cc:license <http://creativecommons.org/licenses/by/3.0>;
+	cc:attributionURL <http://www.rcahmw.gov.uk>;
+	cc:attributionName "RCAHMW"^^xsd:string;
+	void:feature <http://www.w3.org/ns/formats/RDF_XML>;
+	void:triples 28537;
+	void:sparqlEndpoint <http://heritagedata.org/live/sparql>;
+	void:dataDump <http://heritagedata.org/live/seneschal_rc_10_20130717.rdf>;
+	void:exampleResource <http://purl.org/heritagedata/schemes/10/concepts/71390>,
+		<http://purl.org/heritagedata/schemes/10/concepts/68715>,
+		<http://purl.org/heritagedata/schemes/10/concepts/500272>;
+	void:uriSpace "http://purl.org/heritagedata/schemes/10";
+	void:vocabulary <http://www.w3.org/2004/02/skos/core#>, <http://creativecommons.org/ns#>;
+	void:rootResource <http://purl.org/heritagedata/schemes/10/concepts/93771>,		
+		<http://purl.org/heritagedata/schemes/10/concepts/70306>,		
+		<http://purl.org/heritagedata/schemes/10/concepts/70204>,		
+		<http://purl.org/heritagedata/schemes/10/concepts/99962>,		
+		<http://purl.org/heritagedata/schemes/10/concepts/70551>,		
+		<http://purl.org/heritagedata/schemes/10/concepts/102872>,		
+		<http://purl.org/heritagedata/schemes/10/concepts/69438>,		
+		<http://purl.org/heritagedata/schemes/10/concepts/69047>,		
+		<http://purl.org/heritagedata/schemes/10/concepts/68707>,		
+		<http://purl.org/heritagedata/schemes/10/concepts/99961>,		
+		<http://purl.org/heritagedata/schemes/10/concepts/68693>,		
+		<http://purl.org/heritagedata/schemes/10/concepts/68921>,		
+		<http://purl.org/heritagedata/schemes/10/concepts/68808>,		
+		<http://purl.org/heritagedata/schemes/10/concepts/71344>,		
+		<http://purl.org/heritagedata/schemes/10/concepts/68777>,		
+		<http://purl.org/heritagedata/schemes/10/concepts/68757>,		
+		<http://purl.org/heritagedata/schemes/10/concepts/68675>,		
+		<http://purl.org/heritagedata/schemes/10/concepts/68543>;
+	.
+
+#RCAHMW Periods
+<http://purl.org/heritagedata/schemes/11> a void:Dataset, skos:ConceptScheme;	
+	foaf:page <http://www.heritagedata.org/blog/vocabularies-provided/>;
+	dcterms:title "PERIOD (WALES)"@en;
+	dcterms:description "A list of periods for use in Wales"@en;
+	dcterms:subject <http://dbpedia.org/resource/Archaeology>;
+	dcterms:creator :RCAHMW;
+	dcterms:publisher <http://www.rcahmw.gov.uk>;
+	dcterms:identifier "http://purl.org/heritagedata/schemes/11"^^xsd:string;
+	dcterms:contributor :RCAHMW, :CPAT, :DYFED, :HENEB, :GGAT, :CADW, :NMW;
+	dcterms:created "2010-08-05T09:55:07"^^xsd:dateTime;
+	dcterms:issued "2013-07-17T10:09:59"^^xsd:dateTime;
+	dcterms:modified "2010-08-05T14:36:44"^^xsd:dateTime;
+	dcterms:license <http://creativecommons.org/licenses/by/3.0>;
+	cc:license <http://creativecommons.org/licenses/by/3.0>;
+	cc:attributionURL <http://www.rcahmw.gov.uk>;
+	cc:attributionName "RCAHMW"^^xsd:string;
+	void:feature <http://www.w3.org/ns/formats/RDF_XML>;
+	void:triples 231;
+	void:sparqlEndpoint <http://heritagedata.org/live/sparql>;
+	void:dataDump <http://heritagedata.org/live/seneschal_rc_11_20130717.rdf>;
+	void:exampleResource <http://purl.org/heritagedata/schemes/11/concepts/505126>,
+		<http://purl.org/heritagedata/schemes/11/concepts/505128>,
+		<http://purl.org/heritagedata/schemes/11/concepts/505130>;
+	void:uriSpace "http://purl.org/heritagedata/schemes/11";
+	void:vocabulary <http://www.w3.org/2004/02/skos/core#>, 
+		<http://creativecommons.org/ns#>;	
+	void:rootResource <http://purl.org/heritagedata/schemes/11/concepts/505127>,
+		<http://purl.org/heritagedata/schemes/11/concepts/505128>,
+		<http://purl.org/heritagedata/schemes/11/concepts/505130>,
+		<http://purl.org/heritagedata/schemes/11/concepts/505131>,
+		<http://purl.org/heritagedata/schemes/11/concepts/505133>,
+		<http://purl.org/heritagedata/schemes/11/concepts/505129>,
+		<http://purl.org/heritagedata/schemes/11/concepts/505102>,
+		<http://purl.org/heritagedata/schemes/11/concepts/505126>,
+		<http://purl.org/heritagedata/schemes/11/concepts/505132>;	
+	.
+

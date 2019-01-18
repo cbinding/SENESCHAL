@@ -16,11 +16,16 @@ Example		:
 ================================================================================
 History	 :
 
-21/10/2013 CFB created class
-25/02/2014 CFB Added 'Data Alignment' link to getHtmlHeader
+21/10/2013 CFB	created class
+25/02/2014 CFB	Added 'Data Alignment' link to getHtmlHeader
+08/01/2018 CFB	Optional 'language' parameter added to service calls, 
+				also now additionally returning scope notes for concepts
+				code upgraded for move to PHP 7.3 on fasthosts platform
 ================================================================================
 */
-require_once("../arc2-master/ARC2.php");
+#require_once("../arc2-master/ARC2.php");
+require_once(__DIR__."/vendor/autoload.php"); // because ARC2 was installed with composer
+
 require_once("config.php");
 
 class ReturnType
@@ -32,16 +37,15 @@ class ReturnType
 class SeneschalAPI
 {		
 	// class constructor
-	function SeneschalAPI() {
+	function __construct() {
 		global $config;
 		if(empty($this->store)) {
-			$this->store = ARC2::getStore($config['db']);
+			$this->store = ARC2::getStore($config);
 		}
 		if (!$this->store->isSetUp()) {
 			$this->store->setUp();
 		}		
 	}	
-
 
 	// Run SPARQL SELECT query against the current data store
 	private function sparqlSelect($sparql, $returnType=ReturnType::ROWS)
@@ -67,35 +71,51 @@ class SeneschalAPI
 	// 31/01/2014 - moved from SENESCHAL.php
 	public function getHtmlHeader() {
 		$s = "<!DOCTYPE html>
-			<html>
+			<html lang='en'>
 			<head>
-			<title>Heritage Data: Linked Data Vocabularies for Cultural Heritage</title>
+			<title>Heritage Data</title>
+			<meta name='author' content='Ceri Binding, University of South Wales'>
+			<meta name='description' content='Heritage Data: Linked Data Vocabularies for Cultural Heritage'>
+			
+			 <!-- Basic Page Needs -->			
+			<meta charset='utf-8'>			
 			<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
-			<meta charset='utf-8'>	
-			<!--<meta HTTP-EQUIV='EXPIRES' CONTENT='Mon, 22 Jul 2002 11:12:01 GMT'>-->
-			<meta name='Author' content='Ceri Binding, University of South Wales'>
-			<link rel='stylesheet' href='http://www.heritagedata.org/live/styles.css' media='all'>
-			<link rel='shortcut icon' href='http://www.heritagedata.org/live/favicon.ico' />
-
+			<meta http-equiv='X-UA-Compatible' content='IE=edge'>		
+			
+			<!-- Mobile Specific Metas -->
+			<meta name='viewport' content='width=device-width, initial-scale=1'>
+				
+			<!-- favicon -->
+			<link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/>
+			<link rel='icon' href='favicon.ico' type='image/x-icon'>	
+			
+			<!-- styles -->			
+			<link rel='stylesheet' href='https://www.heritagedata.org/live/styles.css' media='all'>
+			
 			</head>
 			<body>
-			<div id='main'><!--start div#main wrapper-->
-			<div id='header'><!--start div#header-->			
-			<img src='http://www.heritagedata.org/live/bannerfans_8217281.png' style='width:600; height:90; border:0;' alt='Heritage Data'>
-			<div id='navcontainer'><!--start div#navcontainer-->
+			<!-- div.container is main centered wrapper within body. container has header, content, and (possibly) footer--> 
+			<div id='main' class='container'><!--start div#main wrapper-->
+			
+			<section id='header' class='header center' role='banner'>		
+				<img src='https://www.heritagedata.org/live/bannerfans_8217281.png' style='width:600; height:90; border:0;' alt='Heritage Data: Linked Data Vocabularies for Cultural Heritage'>
+			</section>
+			
+			<section id='navcontainer'><!--start section#navcontainer-->
 			<ul id='navlist'><!--start ul#navlist-->
 				
-				<li><a href='/live/getAllSchemes.php'>Scheme List</a></li>
-				<li><a href='/live/searchForm.php'>Concept Search</a></li>
+				<li><a href='/live/schemes.php'>Scheme List</a></li>
+				<li><a href='/live/search.php'>Concept Search</a></li>
 				<!--<li><a href='/live/alignDataToScheme.php'>Data Alignment</a></li>-->
 				<!--<li><a href='/live/alignPeriodsToDates.php'>Identify Periods</a></li>-->	
 				<li><a href='/live/sparql.php'>SPARQL Query</a></li>
-				<li><a href='http://www.heritagedata.org/blog'>About The Project</a></li>
+				<li><a href='/blog'>About The Project</a></li>
 				
 			</ul><!--end ul#navlist-->
-			</div><!--end div#navcontainer-->
-			</div><!--end div#header-->
-			<div id='content'><!--start div#content-->";
+			</section><!--end section#navcontainer-->
+			
+		
+			<div id='content' class='content'><!--start div#content-->";
 		return $s;
 	}
 
@@ -104,7 +124,7 @@ class SeneschalAPI
 		$s = "</div><!--end div#content-->
 			<div id='footer'><!--start div#footer-->
 			<small>Except where otherwise noted, data content on this site is licensed by the respective attributed organisations under a 
-			<a href='http://creativecommons.org/licenses/by/3.0'>Creative Commons Attribution 3.0 License</a></small>
+			<a href='https://creativecommons.org/licenses/by/3.0'>Creative Commons Attribution 3.0 License</a></small>
 			</div><!--end div#footer-->
 			</div><!--end div#main-->
 			</body>
@@ -112,19 +132,20 @@ class SeneschalAPI
 		return $s;
 	}
 
-	// 31/01/2014 - moved from SENESCHAL.php
 	// returns a <select> tag populated with all ConceptSchemes, grouped by attributionName
-	function getSchemeSelector($currentSchemeURI = null) {
+	function getSchemeSelector($currentSchemeURI = null, $language='en') {
 		$s = "<select name='scheme' id='scheme'>";
 		
-		$schemes = $this->getSchemeList();		
+		$schemes = $this->getSchemeList($language);		
 		// group and sort schemes alphabetically by attributionName
 		$arr = array();
-		foreach ($schemes as $scheme) {		
-			$attributionName = $scheme['attributionName'];
-			if(!array_key_exists($attributionName, $arr))
-				$arr[$attributionName] = array();		
-			array_push($arr[$attributionName], $scheme);	
+		foreach ($schemes as $scheme) {	
+			if(!empty($scheme['attributionName'])) {				
+				$attributionName = $scheme['attributionName'];
+				if(!array_key_exists($attributionName, $arr))
+					$arr[$attributionName] = array();		
+				array_push($arr[$attributionName], $scheme);
+			}			
 		}
 		ksort($arr, SORT_NATURAL | SORT_FLAG_CASE);
 
@@ -158,7 +179,7 @@ class SeneschalAPI
 	// List ConceptSchemes currently in the store. Returns a multidimensional array: 
 	// [0] => Array(['uri']['title']['description']['attributionName']) 
 	// [1] => Array(['uri']['title']['description']['attributionName']) (etc.)	
-	public function getSchemeList($maxRows=0, $returnType=ReturnType::ROWS)
+	public function getSchemeList($maxRows=0, $returnType=ReturnType::ROWS, $language='en')
 	{
 		// ensure valid input parameters
 		if(is_numeric($maxRows))
@@ -170,12 +191,15 @@ class SeneschalAPI
 		$sparql = "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 			PREFIX dcterms: <http://purl.org/dc/terms/>
 			PREFIX cc: <http://creativecommons.org/ns#>
-			SELECT ?uri ?title ?description ?attributionName WHERE 
+			SELECT DISTINCT ?uri ?title ?description ?attributionName WHERE 
 			{
 				?uri a skos:ConceptScheme .
 				OPTIONAL { ?uri dcterms:title ?title }
 				OPTIONAL { ?uri dcterms:description ?description }
 				OPTIONAL { ?uri cc:attributionName ?attributionName }
+				FILTER (langMatches(lang(?title), '" . $language ."') || !bound(?title)) 
+				FILTER (langMatches(lang(?description), '" . $language ."') || !bound(?description))
+				FILTER (langMatches(lang(?attributionName), '" . $language ."') || !bound(?attributionName))
 			}
 			ORDER BY ?attributionName ?title";
 		if($maxRows > 0)
@@ -184,39 +208,26 @@ class SeneschalAPI
 		// run the SPARQL query
 		$data = $this->sparqlSelect($sparql, $returnType);
 
-		// anonymous inline functions don't (currently) work on server as PHP version is 5.2.17,
-		// so declaring named nested function instead, to use with array_map in next step
-		// $data is initially a multidimensional array containing some fields we won't really need:
-		// [0] => Array([uri] => 'http://xxx' [uri type] => 'uri' [title] => 'xxxx' [title type] => 'literal' [title lang] => 'en'))
-		// [1] => Array([uri] => 'http://yyy' [uri type] => 'uri' [title] => 'yyyy' [title type] => 'literal' [title lang] => 'en'))
-		// so reduce returned data to multidimensional array containing just [uri][title][title lang][description][description lang][attributionName]:
+		// reduce returned data to multidimensional array containing just [uri][title][title lang][description][description lang][attributionName]:
 		// [0] => Array([uri] => 'http://xxx' [title] => 'xxxx' [description] => 'gggg' [attributionName] => 'kkkk')
 		if($returnType == ReturnType::ROWS)
-		{
-			function reduceSchemeArray($row) {
-				return Array(
-					"uri" => $row['uri'], 
-					"title" => $row['title'], 
-					"title lang" => $row['title lang'], 
-					"description" => $row['description'], 
-					"description lang" => $row['description lang'], 
-					"attributionName" => $row['attributionName']
-					);
-			}
-			$data = array_map("reduceSchemeArray", $data);
-			/*$data = array_map(
-					function($row){
-						return Array("uri" => $row['uri'], "title" => $row['title'], "title lang" => $row['title lang'], "description" => $row['description'], "description lang" => $row['description lang'], "attributionName" => $row['attributionName']);
-					}, $data);*/
-		}
-				
+		{	
+				// remove selected (not required) columns from output
+				$data = array_map(function($row){
+				$keysToIgnore = array('uri type', 'title type', 'description type');
+				foreach($row as $key=>$value){
+					if (in_array($key, $keysToIgnore)) unset($row[$key]);					
+				};
+				return $row;
+			}, $data);
+		}				
 		return $data;
 	}	
 
 	// List Concepts for specified scheme. Returns raw data or a multidimensional array: 
 	// [0] => Array(['uri']['label']['label lang'])
 	// [1] => Array(['uri']['label']['label lang']) (etc.)
-	public function getConceptList($schemeURI, $maxRows=0, $returnType=ReturnType::ROWS)
+	public function getConceptList($schemeURI, $maxRows=0, $returnType=ReturnType::ROWS, $language='en')
 	{
 		// ensure valid input parameters		
 		if (!$schemeURI)
@@ -234,9 +245,12 @@ class SeneschalAPI
 
 		// build the SPARQL query
 		$sparql = "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-			SELECT ?uri ?label WHERE 
+			SELECT DISTINCT ?uri ?label ?note WHERE 
 			{
-				?uri skos:inScheme <" . $schemeURI . "> ; skos:prefLabel ?label .
+				?uri skos:inScheme <". $schemeURI ."> ; skos:prefLabel ?label .
+				FILTER (langMatches(lang(?label), '". $language ."')) 
+				OPTIONAL { ?uri skos:scopeNote ?note }
+				FILTER (langMatches(lang(?note), '". $language ."') || !bound(?note))
 			}";
 		if($maxRows > 0)
 			$sparql .= " LIMIT " . $maxRows;
@@ -276,7 +290,7 @@ class SeneschalAPI
 	}
 
 	//getSchemes supersedes getSchemeList...
-	public function getSchemes($verbose=false, $limit=0, $offset=0)
+	public function getSchemes($verbose=false, $limit=0, $offset=0, $language='en')
 	{	
 		// clean up input parameters
 		if(is_numeric($limit))
@@ -293,7 +307,7 @@ class SeneschalAPI
 		{
 			// build the verbose SPARQL query			
 			$sparql = "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-				SELECT ?uri ?property ?value WHERE { 
+				SELECT DISTINCT ?uri ?property ?value WHERE { 
 					?uri a skos:ConceptScheme; ?property ?value . 
 				}"; // ORDER BY ?uri
 			if($limit > 0)
@@ -303,18 +317,15 @@ class SeneschalAPI
 
 			// run the verbose SPARQL query
 			$data = $this->sparqlSelect($sparql, ReturnType::ROWS);	
-
-			// function to remove unrequired columns
-			function reduceArray2($row) {
+			
+			// remove selected (not required) columns from output
+			$data = array_map(function($row){
 				$keysToIgnore = array('uri type', 'property type', 'value type');
 				foreach($row as $key=>$value){
 					if (in_array($key, $keysToIgnore)) unset($row[$key]);					
 				};
 				return $row;
-			}
-			
-			// remove unrequired columns from results
-			$data = array_map("reduceArray2", $data);
+			}, $data);			
 
 			// return the results
 			return $data;
@@ -328,31 +339,29 @@ class SeneschalAPI
 
 				SELECT DISTINCT ?uri ?label ?description ?attribution WHERE { 
 					?uri a skos:ConceptScheme; dct:title ?label .
+					FILTER (langMatches(lang(?label), '" . $language ."')) 
 					OPTIONAL { ?uri cc:attributionName ?attribution }
-					OPTIONAL { ?uri dct:description ?description }
-				}"; // ORDER BY ?attributionName ?title";
+					OPTIONAL { ?uri dct:description ?description  }
+					FILTER (langMatches(lang(?attribution), '" . $language ."') || !bound(?attribution))
+					FILTER (langMatches(lang(?description), '" . $language ."') || !bound(?description))
+				}"; 
 
 			if($limit > 0)
 				$sparql .= " LIMIT " . $limit;
 			if($offset > 0)
 				$sparql .= " OFFSET " . $offset;
-
-			// run the non-verbose SPARQL query
-			$data = $this->sparqlSelect($sparql, ReturnType::ROWS);
 			
-			// function to include (&rename) only selected columns
-			function reduceArray3($row) {
-				return Array(
-					"uri" => $row['uri'], 
-					"label" => $row['label'], 
-					"label lang" => $row['label lang'],
-					"description" => $row['description'],
-					"attribution" => $row['attribution']
-				);
-			}
-
-			// include (&rename) only selected columns
-			$data = array_map("reduceArray3", $data);
+			// run the SPARQL query
+			$data = $this->sparqlSelect($sparql, ReturnType::ROWS);	
+			
+			// remove selected (not required) columns from output
+			$data = array_map(function($row){
+				$keysToIgnore = array('uri type', 'label type', 'description type', 'attribution type');
+				foreach($row as $key=>$value){
+					if (in_array($key, $keysToIgnore)) unset($row[$key]);					
+				};
+				return $row;
+			}, $data);			
 			
 			// return the results
 			return $data;
@@ -360,7 +369,7 @@ class SeneschalAPI
 	}
 	
 	// experimental functionality for ARCHES
-	public function getTopConceptsForScheme($schemeURI, $verbose=false, $limit=0, $offset=0)
+	public function getTopConceptsForScheme($schemeURI, $verbose=false, $limit=0, $offset=0, $language='en')
 	{
 		// if no scheme specified, just return empty array
 		if (!$schemeURI)
@@ -381,8 +390,11 @@ class SeneschalAPI
 		{
 			// build the verbose SPARQL query			
 			$sparql = "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-				SELECT ?uri ?property ?value WHERE { 
-					?uri skos:topConceptOf <" . $schemeURI . "> ; ?property ?value . 
+				SELECT DISTINCT ?uri ?property ?value WHERE { 
+					{ ?uri skos:topConceptOf <" . $schemeURI . "> }
+					#UNION
+					#{ <" . $schemeURI . "> skos:hasTopConcept ?uri }
+					?uri ?property ?value . 
 				}"; // ORDER BY ?uri";
 			if($limit > 0)
 				$sparql .= " LIMIT " . $limit;
@@ -391,19 +403,16 @@ class SeneschalAPI
 
 			// run the verbose SPARQL query
 			$data = $this->sparqlSelect($sparql, ReturnType::ROWS);	
-
-			// function to remove unrequired columns
-			function reduceArray4($row) {
+			
+			// remove selected (not required) columns from output
+			$data = array_map(function($row){
 				$keysToIgnore = array('uri type', 'property type', 'value type');
 				foreach($row as $key=>$value){
 					if (in_array($key, $keysToIgnore)) unset($row[$key]);					
 				};
 				return $row;
-			}
+			}, $data);			
 			
-			// remove unrequired columns from results
-			$data = array_map("reduceArray4", $data);
-
 			// return the results
 			return $data;
 		}
@@ -411,9 +420,15 @@ class SeneschalAPI
 		{
 			// build the non-verbose SPARQL query	
 			$sparql = "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-				SELECT DISTINCT ?uri ?label WHERE { 
-					?uri skos:topConceptOf <" . $schemeURI . "> ; skos:prefLabel ?label . 
-				}"; // ORDER BY ?uri";
+				SELECT DISTINCT ?uri ?label ?note WHERE { 
+					{ ?uri skos:topConceptOf <" . $schemeURI . "> }
+					#UNION
+					#{ <" . $schemeURI . "> skos:hasTopConcept ?uri } 
+					?uri skos:prefLabel ?label .
+					FILTER (langMatches(lang(?label), '". $language ."')) 	
+					OPTIONAL { ?uri skos:scopeNote ?note }		
+					FILTER (langMatches(lang(?note), '" . $language . "') || !bound(?note))
+				}"; 
 			if($limit > 0)
 				$sparql .= " LIMIT " . $limit;
 			if($offset > 0)
@@ -422,24 +437,21 @@ class SeneschalAPI
 			// run the non-verbose SPARQL query
 			$data = $this->sparqlSelect($sparql, ReturnType::ROWS);
 			
-			// function to include (&rename) only selected columns
-			function reduceArray5($row) {
-				return Array(
-					"uri" => $row['uri'], 
-					"label" => $row['label'], 
-					"label lang" => $row['label lang']
-				);
-			}
-
-			// include (&rename) only selected columns
-			$data = array_map("reduceArray5", $data);
+			// remove selected (not required) columns from output
+			$data = array_map(function($row){
+				$keysToIgnore = array('uri type', 'label type', 'note type');
+				foreach($row as $key=>$value){
+					if (in_array($key, $keysToIgnore)) unset($row[$key]);					
+				};
+				return $row;
+			}, $data);
 			
 			// return the results
 			return $data;
 		}
 	}	
 
-	public function getConceptRelations($conceptURI, $verbose=false, $limit=0, $offset=0)
+	public function getConceptRelations($conceptURI, $verbose=false, $limit=0, $offset=0, $language='en')
 	{
 		// if no concept specified, just return empty array
 		if (!$conceptURI)
@@ -460,7 +472,7 @@ class SeneschalAPI
 		{
 			// build the verbose SPARQL query			
 			$sparql = "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-				SELECT ?uri ?property ?value WHERE { 
+				SELECT DISTINCT ?uri ?property ?value WHERE { 
 				{ <" . $conceptURI . "> skos:broader ?uri }
 				UNION
 				{ <" . $conceptURI . "> skos:narrower ?uri }
@@ -475,25 +487,22 @@ class SeneschalAPI
 			// run the verbose SPARQL query
 			$data = $this->sparqlSelect($sparql, ReturnType::ROWS);	
 
-			// function to remove unrequired columns
-			function reduceArray6($row) {
+			// remove selected (not required) columns from output
+			$data = array_map(function($row){
 				$keysToIgnore = array('uri type', 'property type', 'value type');
 				foreach($row as $key=>$value){
 					if (in_array($key, $keysToIgnore)) unset($row[$key]);					
 				};
 				return $row;
-			}
+			}, $data);			
 			
-			// remove unrequired columns from results
-			$data = array_map("reduceArray6", $data);
-
 			// return the results
 			return $data;
 		}
 		else
 		{
 			// build the non-verbose SPARQL query	
-			$sparql = "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+			/* $sparql = "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 				SELECT ?property ?uri ?label WHERE { 
 					{ <" . $conceptURI . "> skos:broader ?uri; ?property ?uri }
 					UNION
@@ -501,6 +510,20 @@ class SeneschalAPI
 					UNION
 					{ <" . $conceptURI . "> skos:related ?uri; ?property ?uri }
 					OPTIONAL { ?uri skos:prefLabel ?label }
+				}"; */
+				
+				// build the non-verbose SPARQL query	
+			$sparql = "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+				SELECT DISTINCT ?property ?uri ?label ?note WHERE { 
+					{ <" . $conceptURI . "> skos:broader ?uri; ?property ?uri }
+					UNION
+					{ <" . $conceptURI . "> skos:narrower ?uri; ?property ?uri }
+					UNION
+					{ <" . $conceptURI . "> skos:related ?uri; ?property ?uri }
+					OPTIONAL { ?uri skos:prefLabel ?label }
+					OPTIONAL { ?uri skos:scopeNote ?note  }			
+					FILTER (langMatches(lang(?label), '" . $language ."') || !bound(?label))
+					FILTER (langMatches(lang(?note), '" . $language ."') || !bound(?note))					
 				}"; 
 			if($limit > 0)
 				$sparql .= " LIMIT " . $limit;
@@ -509,26 +532,22 @@ class SeneschalAPI
 
 			// run the non-verbose SPARQL query
 			$data = $this->sparqlSelect($sparql, ReturnType::ROWS);
-			
-			// function to include (&rename) only selected columns
-			function reduceArray7($row) {
-				return Array(
-					"property" => $row['property'],
-					"uri" => $row['uri'], 
-					"label" => $row['label'], 
-					"label lang" => $row['label lang']
-				);
-			}
+					
+			// remove selected (not required) columns from output
+			$data = array_map(function($row){
+				$keysToIgnore = array('uri type', 'property type', 'label type', 'note type');
+				foreach($row as $key=>$value){
+					if (in_array($key, $keysToIgnore)) unset($row[$key]);					
+				};
+				return $row;
+			}, $data);			
 
-			// include (&rename) only selected columns
-			$data = array_map("reduceArray7", $data);
-			
 			// return the results
 			return $data;
 		}
 	}	
 
-	public function getConceptLabels($conceptURI, $limit=0, $offset=0)
+	public function getConceptLabels($conceptURI, $limit=0, $offset=0, $language='en')
 	{
 		// if no concept specified, just return empty array
 		if (!$conceptURI)
@@ -547,10 +566,11 @@ class SeneschalAPI
 		
 		// build the non-verbose SPARQL query	
 		$sparql = "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-			SELECT ?property ?label WHERE { 
+			SELECT DISTINCT ?property ?label WHERE { 
 				{ <" . $conceptURI . "> skos:prefLabel ?label; ?property ?label }
 				UNION
-				{ <" . $conceptURI . "> skos:altLabel ?label; ?property ?label }				
+				{ <" . $conceptURI . "> skos:altLabel ?label; ?property ?label }
+				FILTER langMatches(lang(?label), '". $language ."') 
 			}"; 
 		if($limit > 0)
 			$sparql .= " LIMIT " . $limit;
@@ -560,24 +580,21 @@ class SeneschalAPI
 		// run the non-verbose SPARQL query
 		$data = $this->sparqlSelect($sparql, ReturnType::ROWS);
 		
-		// function to include (&rename) only selected columns
-		function reduceArray8($row) {
-			return Array(
-				"property" => $row['property'],
-				"label" => $row['label'], 
-				"label lang" => $row['label lang']
-			);
-		}
-
-		// include (&rename) only selected columns
-		$data = array_map("reduceArray8", $data);
+		// remove selected (not required) columns from output
+		$data = array_map(function($row){
+			$keysToIgnore = array('property type', 'label type');
+			foreach($row as $key=>$value){
+				if (in_array($key, $keysToIgnore)) unset($row[$key]);					
+			};
+			return $row;
+		}, $data);		
 		
 		// return the results
 		return $data;
 		
 	}	
 
-	public function getConceptsForScheme($schemeURI, $verbose=false, $limit=0, $offset=0)
+	public function getConceptsForScheme($schemeURI, $verbose=false, $limit=0, $offset=0, $language='en')
 	{		
 		// if no scheme specified, just return empty array
 		if (!$schemeURI) return array();	
@@ -597,9 +614,9 @@ class SeneschalAPI
 		{
 			// build the verbose SPARQL query
 			$sparql = "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-				SELECT ?uri ?property ?value WHERE { 
-					?uri skos:inScheme <" . $schemeURI . "> ; ?property ?value .
-				}"; // ORDER BY ?uri";
+				SELECT DISTINCT ?uri ?property ?value WHERE { 
+					?uri skos:inScheme <" . $schemeURI . "> ; ?property ?value .					
+				}"; 
 			if($limit > 0)
 				$sparql .= " LIMIT " . $limit;
 			if($offset > 0)
@@ -608,17 +625,14 @@ class SeneschalAPI
 			// run the SPARQL query
 			$data = $this->sparqlSelect($sparql, ReturnType::ROWS);				
 			
-			// function to remove unrequired columns
-			function reduceArray9($row) {
+			// remove selected (not required) columns from output
+			$data = array_map(function($row){
 				$keysToIgnore = array('uri type', 'property type', 'value type');
 				foreach($row as $key=>$value){
 					if (in_array($key, $keysToIgnore)) unset($row[$key]);					
 				};
 				return $row;
-			}		
-			
-			// remove unrequired columns from results
-			$data = array_map("reduceArray9", $data);
+			}, $data);			
 
 			// return the results
 			return $data;
@@ -627,10 +641,12 @@ class SeneschalAPI
 		{
 			// build the non-verbose SPARQL query
 			$sparql = "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-				SELECT DISTINCT ?uri ?label WHERE { 
-					?uri skos:inScheme <" . $schemeURI . "> ; 
-					skos:prefLabel ?label .
-				}"; // ORDER BY ?uri";
+				SELECT DISTINCT ?uri ?label ?note WHERE { 
+					?uri skos:inScheme <" . $schemeURI . "> ; skos:prefLabel ?label .
+					FILTER (langMatches(lang(?label), '". $language ."')) 	
+					OPTIONAL { ?uri skos:scopeNote ?note }	
+					FILTER (langMatches(lang(?note), '". $language ."') || !bound(?note))
+				}"; 
 			if($limit > 0)
 				$sparql .= " LIMIT " . $limit;
 			if($offset > 0)
@@ -638,20 +654,15 @@ class SeneschalAPI
 
 			// run the SPARQL query
 			$data = $this->sparqlSelect($sparql, ReturnType::ROWS);
-
-			// function to include (and rename) only selected columns
-			if(!function_exists('reduceArray10')){
-				function reduceArray10($row) {
-					return Array(
-						"uri" => $row['uri'], 
-						"label" => $row['label'], 
-						"label lang" => $row['label lang']
-					);
-				}
-			}
-
-			// include (&rename) only selected columns
-			$data = array_map("reduceArray10", $data);
+			
+			// remove selected (not required) columns from output
+			$data = array_map(function($row){
+				$keysToIgnore = array('uri type', 'label type', 'note type');
+				foreach($row as $key=>$value){
+					if (in_array($key, $keysToIgnore)) unset($row[$key]);					
+				};
+				return $row;
+			}, $data);			
 			
 			// return the results
 			return $data;
@@ -663,7 +674,7 @@ class SeneschalAPI
 	// List concept labels for specified ConceptScheme matching parameters. Returns a multidimensional array: 
 	// [0] => Array([uri] => 'http://xxx' [label] => 'xxxx')	
 	// [1] => Array([uri] => 'http://yyy' [label] => 'yyyy')			
-	public function getConceptLabelMatch($schemeURI, $startsWith='', $contains='', $limit=0, $offset=0)
+	public function getConceptLabelMatch($schemeURI, $startsWith='', $contains='', $limit=0, $offset=0, $language='en')
 	{
 		// if no scheme specified, just return empty array
 		if (!$schemeURI) return array();	
@@ -683,14 +694,18 @@ class SeneschalAPI
 
 		// build the SPARQL query to retrieve the data
 		$sparql = "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>			
-			SELECT ?uri ?label WHERE 
+			SELECT DISTINCT ?uri ?label ?note WHERE 
 			{
 				?uri skos:inScheme <" . $schemeURI . "> . 
-				{ ?uri skos:prefLabel ?label } UNION { ?uri skos:altLabel ?label } .";
+				{ ?uri skos:prefLabel ?label } UNION { ?uri skos:altLabel ?label } 
+				FILTER (langMatches(lang(?label), '". $language ."')) 		
+				OPTIONAL { ?uri skos:scopeNote ?note }
+				FILTER (langMatches(lang(?note), '". $language ."') || !bound(?note))"; 
+				
 		if($startsWith != '')
-			$sparql .= " FILTER(REGEX(?label, '^" . $startsWith . "', 'i')) . ";
+			$sparql .= " FILTER(REGEX(?label, '^" . $startsWith . ".*', 'i')) . ";
 		if($contains != '')
-			$sparql .= " FILTER(REGEX(?label, '" . $contains . "', 'i')) . ";
+			$sparql .= " FILTER(REGEX(?label, '.*" . $contains . ".*', 'i')) . ";		
 		$sparql .= "}"; // ORDER BY ?label";
 		if($limit > 0)
 			$sparql .= " LIMIT " . $limit;
@@ -700,18 +715,14 @@ class SeneschalAPI
 		// run the SPARQL query
 		$data = $this->sparqlSelect($sparql, ReturnType::ROWS);
 		
-		// function to include (and rename) only selected columns
-		//TODO: 'label' is inconsistent with use of prefixed fields in other functions...
-		function reduceLabelArray($row) {
-			return Array(
-				"uri" => $row['uri'], 
-				"label" => $row['label'], 
-				"label lang" => $row['label lang']
-			);
-		}
-
-		// include (&rename) only selected columns
-		$data = array_map("reduceLabelArray", $data);
+		// remove selected (not required) columns from output
+		$data = array_map(function($row){
+			$keysToIgnore = array('uri type', 'label type', 'note type');
+			foreach($row as $key=>$value){
+				if (in_array($key, $keysToIgnore)) unset($row[$key]);					
+			};
+			return $row;
+		}, $data);			
 			
 		// return the results
 		return $data;
@@ -719,7 +730,7 @@ class SeneschalAPI
 
 	// check whether a concept with this label exists in the specified scheme
 	// match is case insensitive prefLabel OR altLabel, returns true or false
-	public function getConceptExists($schemeURI, $label='')
+	public function getConceptExists($schemeURI, $label='', $language='en')
 	{
 		// ensure valid input parameters
 		if (!$schemeURI) return false;
@@ -732,6 +743,7 @@ class SeneschalAPI
 			{
 				?uri skos:inScheme <" . $schemeURI . "> .
 				{ ?uri skos:prefLabel ?label } UNION { ?uri skos:altLabel ?label } .
+				FILTER(langMatches(lang(?label), '". $language ."')) . 
 				FILTER(REGEX(?label, '^" . $label . "\\$', 'i')) . 
 			}";		
 
@@ -742,8 +754,8 @@ class SeneschalAPI
 	}
 
 	// get preferred label for specified concept, 
-	// TODO: optionally specify language, and allow for input as array of URIs
-	public function getConceptPrefLabel($conceptURI)
+	// TODO: allow for input as array of URIs
+	public function getConceptPrefLabel($conceptURI, $language='en')
 	{
 		// ensure valid input parameters
 		if (!$conceptURI)		
@@ -751,7 +763,10 @@ class SeneschalAPI
 		
 		// build a SPARQL query to retrieve the required data
 		$sparql = "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>			
-			SELECT ?label WHERE { <" . $conceptURI . "> skos:prefLabel ?label }";
+			SELECT DISTINCT ?label WHERE { 
+				<" . $conceptURI . "> skos:prefLabel ?label .
+				FILTER(langMatches(lang(?label), '". $language ."')) .
+			}";	
 		
 		// run the SPARQL query, return an array
 		$data = $this->sparqlSelect($sparql, ReturnType::ROWS);		

@@ -28,9 +28,9 @@ History
 		// stateful	defaults
 		options: {
 			useCache: true,
-			serviceURI:	"http://www.heritagedata.org/live/services/getconceptrelations",
+			serviceURI:	"https://www.heritagedata.org/live/services/getconceptrelations",
 			conceptURI:	"http://purl.org/heritagedata/schemes/1/concepts/447"
-			//serviceURI: "http://www.heritagedata.org/live/getconceptrelations.php"
+			//serviceURI: "https://www.heritagedata.org/live/getconceptrelations.php"
 			//serviceURI: "http://localhost/heritagedata/getconceptrelations.php"
 		},
 

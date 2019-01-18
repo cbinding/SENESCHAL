@@ -3,7 +3,7 @@
 	================================================================================
 	Creator		: Ceri Binding, University of South Wales
 	Project		: SENESCHAL
-	Service		: getAllASchemes
+	Module		: schemes
 	Params		: list all schemes in the store as a html table
 	License		: http://creativecommons.org/licenses/by/3.0 
 	================================================================================

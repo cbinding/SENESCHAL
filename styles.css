@@ -1,0 +1,121 @@
+	body
+	{
+		color: #555;
+		background: aliceblue;
+		font-family: arial, helvetica, sans-serif;
+		font-size: 0.9em;
+		margin: 0px;
+		padding: 0px;
+		border: 0px;
+	}
+	.centered
+	{
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+	#main
+	{
+		width: 98%;
+		margin: 5px;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0px;
+		border: 1px solid lightsteelblue;		
+	}
+	#header
+	{
+		background: #2185c5; /*was lightsteelblue;*/
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+		height: 90px;
+		/*text-align: center;*/
+		/*padding: 5px;*/
+	}	
+	#content
+	{
+		padding: 10px;
+		min-height: 700px;
+		/*background: lightyellow;*/
+		background: #f8f8f8;
+	}
+	#footer
+	{
+		background: #2185c5; /*was lightsteelblue;*/
+		padding: 5px;
+		text-align: center;
+		color:lightyellow;
+	}
+	#footer a {color:lightyellow;}
+	#footer a:hover {color:red;background: #2185c5;}
+
+	.properties
+	{
+		width: 97%;
+		border-collapse:collapse;	
+		margin-left: auto;
+		margin-right: auto;
+		
+	}
+	.properties th, td
+	{		
+		border: 1px solid lightgray;
+		padding: 3px;
+		text-align: left;
+	}
+
+	a
+	{
+		color: steelblue;
+		padding: 3px;
+	}
+	a:hover
+	{
+		color: red;
+		background: ghostwhite; /*aliceblue;*/
+	}
+
+	.concept
+	{
+		color: darkgreen;
+	}
+	.scheme
+	{
+		color: darkblue;
+	}
+	.hilite
+	{
+		background: yellow;
+	}
+
+	#navcontainer ul
+	{
+		 padding-left: 0;
+		 margin-left: 0;
+		 margin-top:0;		 
+		 background-color: #036;
+		 color: White;
+		 float: left;
+		 width: 100%;
+		 font-family: arial, helvetica, sans-serif;
+	}
+
+	#navcontainer ul li { display: inline; }
+	
+	#navcontainer ul li a
+	{
+		 padding: 0.2em 1em;
+		 background-color: #036;
+		 color: White;
+		 text-decoration: none;
+		 float: left;
+		 border-right: 1px solid #fff;
+	}
+
+	#navcontainer ul li a:hover
+	{
+		background-color: #369;
+		color: #fff;
+	}
+

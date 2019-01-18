@@ -10,7 +10,7 @@ Summary	: Graphical	display	of concepts	related	to the specified concept
 Require	: jquery-XXX.min.js, jquery.ui.widget.min.js, usw.seneschal.waitable.js,
 		usw.uri.skos.js, usw.seneschal.conceptdetails, usw.seneschal.conceptrelations
 Example	: $("#div1").conceptdetailscomposite();
-License	: http://creativecommons.org/licenses/by/3.0/
+License	: https://creativecommons.org/licenses/by/3.0/
 ===============================================================================
 History
 

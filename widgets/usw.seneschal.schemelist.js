@@ -27,7 +27,7 @@ History
 		options: {
 			useCache: true,
 			title: "Concept	schemes",
-			serviceURI:	"http://www.heritagedata.org/live/services/getSchemes",
+			serviceURI:	"https://www.heritagedata.org/live/services/getSchemes",
 			displayHeader: true
 		},
 

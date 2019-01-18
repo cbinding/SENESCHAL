@@ -35,7 +35,7 @@ History
 			limit: 0,
 			offset:	0,
 			//serviceURI: "http://localhost/heritagedata/getConceptLabelMatch.php"
-			serviceURI:	"http://www.heritagedata.org/live/services/getConceptLabelMatch.php"
+			serviceURI:	"https://www.heritagedata.org/live/services/getConceptLabelMatch.php"
 		},
 
 		// initialization code (runs once only)
